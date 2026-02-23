@@ -11,11 +11,26 @@ import { ArrowRight, MapPin, HelpCircle } from 'lucide-react';
 
 // For 200,000+ pages, generating all paths at build time (SSG) will cause OOM errors.
 // By returning [] and setting dynamicParams = true, Next.js uses On-Demand ISR.
-// Pages are statically generated on the very first request (e.g. Google crawl), then cached forever.
-export const dynamicParams = true;
+// Transition to Strict SSG Export to support Cloudflare Pages
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-    return [];
+    const locations = getLocations().slice(0, 100);
+    const services = getServices();
+
+    const paths: any[] = [];
+    locations.forEach(loc => {
+        services.forEach(srv => {
+            if (loc.country_slug && loc.city_slug && srv.service_slug) {
+                paths.push({
+                    country: loc.country_slug,
+                    city: loc.city_slug,
+                    service: srv.service_slug
+                });
+            }
+        });
+    });
+    return paths;
 }
 
 function processTemplate(loc: any, srv: any): { metadata: any, content: string } {

@@ -9,11 +9,26 @@ import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import Link from 'next/link';
 import { ArrowRight, Code, MapPin, HelpCircle } from 'lucide-react';
 
-// Transition to On-Demand ISR to support 200,000+ indexable paths without Next.js build-time OOMs
-export const dynamicParams = true;
+// Transition to Strict SSG Export to support Cloudflare Pages
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-    return [];
+    const locations = getLocations().slice(0, 100);
+    const skills = getSkills();
+
+    const paths: any[] = [];
+    locations.forEach(loc => {
+        skills.forEach(skl => {
+            if (loc.country_slug && loc.city_slug && skl.skill_slug) {
+                paths.push({
+                    country: loc.country_slug,
+                    city: loc.city_slug,
+                    skill: skl.skill_slug
+                });
+            }
+        });
+    });
+    return paths;
 }
 
 function processTemplate(loc: any, skl: any): { metadata: any, content: string } {
