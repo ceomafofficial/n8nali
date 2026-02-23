@@ -1,0 +1,57 @@
+{
+  "categories": [
+    "CRM Automation",
+    "E-commerce Workflows",
+    "Chatbot & Messaging",
+    "Marketing Automation",
+    "Data Pipeline",
+    "Financial Operations",
+    "HR & Onboarding"
+  ],
+  "tools": [
+    {"name": "HubSpot", "type": "CRM"},
+    {"name": "Salesforce", "type": "CRM"},
+    {"name": "Shopify", "type": "E-commerce"},
+    {"name": "WhatsApp Business API", "type": "Messaging"},
+    {"name": "Slack", "type": "Messaging"},
+    {"name": "Mailchimp", "type": "Marketing"},
+    {"name": "PostgreSQL", "type": "Database"},
+    {"name": "QuickBooks", "type": "Accounting"},
+    {"name": "Notion", "type": "Productivity"},
+    {"name": "Airtable", "type": "Database"},
+    {"name": "Zendesk", "type": "Support"},
+    {"name": "Google Sheets", "type": "Spreadsheet"}
+  ],
+  "locations": [
+    {"city": "New York", "country": "USA", "region": "North America"},
+    {"city": "Dubai", "country": "UAE", "region": "Middle East"},
+    {"city": "Toronto", "country": "Canada", "region": "North America"},
+    {"city": "Amsterdam", "country": "Netherlands", "region": "Europe"},
+    {"city": "London", "country": "UK", "region": "Europe"},
+    {"city": "Sydney", "country": "Australia", "region": "Oceania"}
+  ],
+  "personas": [
+    {"title": "Sales Managers", "goal": "closing more deals faster"},
+    {"title": "Marketing Agencies", "goal": "scaling client campaigns"},
+    {"title": "E-commerce Founders", "goal": "automating order fulfillment"},
+    {"title": "HR Leads", "goal": "streamlining employee onboarding"},
+    {"title": "Customer Support Teams", "goal": "reducing ticket resolution time"},
+    {"title": "Operations Directors", "goal": "eliminating manual data entry"}
+  ],
+  "file_formats": ["CSV", "JSON", "XML", "PDF", "Excel"],
+  "languages": [
+    {"name": "English", "code": "en"},
+    {"name": "Spanish", "code": "es"},
+    {"name": "Arabic", "code": "ar"},
+    {"name": "German", "code": "de"}
+  ],
+  "integrations": [
+    {"source": "HubSpot", "target": "Slack", "useCase": "Lead Notifications"},
+    {"source": "Shopify", "target": "QuickBooks", "useCase": "Automated Invoicing"},
+    {"source": "WhatsApp Business API", "target": "Salesforce", "useCase": "CRM Sync from Chat"},
+    {"source": "Mailchimp", "target": "Notion", "useCase": "Campaign Tracking"},
+    {"source": "Airtable", "target": "PostgreSQL", "useCase": "Database Sync"},
+    {"source": "Zendesk", "target": "Slack", "useCase": "Ticket Alerts"},
+    {"source": "Stripe", "target": "Google Sheets", "useCase": "Financial Reporting"}
+  ]
+}

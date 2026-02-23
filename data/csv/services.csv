@@ -1,0 +1,17 @@
+service_slug,service_name,category,short_description
+business-process-automation,Business Process Automation,Core,Streamline operations with intelligent workflow automation that eliminates manual tasks and reduces errors by 95%
+ai-based-automation,AI-Based Automation,AI,Harness the power of artificial intelligence to create smart automations that learn, adapt, and optimize themselves
+crm-sales-automation,CRM & Sales Automation,Sales,Automate your entire sales pipeline from lead capture to close with n8n
+social-media-automation,Social Media Automation,Marketing,Automate content scheduling, engagement, and social listening across platforms
+ecommerce-automation,E-commerce Automation,E-commerce,Automate inventory sync, order processing, shipping & customer communication
+whatsapp-messaging-automation,WhatsApp & Messaging Automation,Messaging,Engage customers on WhatsApp with intelligent chatbots and broadcast campaigns
+data-integration-sync,Data Integration & Sync,Integration,Connect all your systems with real-time seamless data synchronization
+monitoring-alert-systems,Monitoring & Alert Systems,Operations,Intelligent monitoring that detects problems before they impact your business
+saas-automation-service,SaaS Automation as a Service,Managed,Fully managed n8n infrastructure, workflow development & 24/7 support
+freelancing-agency-services,Freelancing & Agency Services,Agency,Custom n8n automation projects and consulting for agencies & freelancers
+ai-call-center-agent,AI Call Center Agent,Voice,24/7 intelligent voice agents that handle customer calls with human-like conversation
+appointment-booking-voice-bot,Appointment Booking Voice Bot,Voice,Automate appointment scheduling with natural conversation voice bots
+hotel-restaurant-voice-agent,Hotel & Restaurant Voice Agent,Hospitality,Elevate hospitality with AI voice agents for reservations and guest services
+payment-billing-voice-agent,Payment & Billing Voice Agent,Finance,Secure voice agents for payment inquiries, billing, and collections
+sales-voice-ai-agent,Sales Voice AI Agent,Sales,AI-powered outbound sales agents that qualify leads and book meetings
+logistics-delivery-voice-agent,Logistics & Delivery Voice Agent,Logistics,Voice AI for delivery tracking, scheduling, and customer updates

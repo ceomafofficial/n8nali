@@ -41,5 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # data (user submissions)
-/data/
+/data/generated_pages/
 next-env.d.ts

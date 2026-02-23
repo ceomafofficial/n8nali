@@ -1,0 +1,75 @@
+skill_slug,skill_name,category,short_description
+send-whatsapp-message,Send WhatsApp Message,Communication,Send rich WhatsApp messages with buttons, templates and media during live AI agent conversations
+send-telegram-message,Send Telegram Message,Communication,Deliver instant Telegram notifications and interactive messages from your AI agent
+send-slack-message,Send Slack Message,Communication,Post formatted Slack messages and create threads for team notifications
+send-gmail-email,Send Gmail Email,Communication,Send personalized Gmail emails with attachments and tracking
+send-sms-twilio,Send SMS via Twilio,Communication,Send SMS notifications with delivery reports and two-way replies
+make-outbound-call,Make Outbound Phone Call,Voice,Initiate outbound voice calls with natural AI speech synthesis
+transcribe-call,Transcribe Voice Call,Voice,Real-time and post-call high-accuracy speech-to-text transcription
+synthesize-speech,Text-to-Speech Synthesis,Voice,Convert text to ultra-realistic voice audio using ElevenLabs or Azure
+detect-user-intent,Detect User Intent,AI,Classify customer intent and intelligently route conversations
+escalate-to-human,Escalate to Human Agent,Voice,Seamlessly transfer call to live agent with full context
+create-google-calendar-event,Create Google Calendar Event,Scheduling,Create events with smart time suggestions and attendee invites
+check-calendar-availability,Check Calendar Availability,Scheduling,Find free slots across Google, Outlook and team calendars in real-time
+book-appointment,Book Appointment,Scheduling,Confirm and book meetings with automatic calendar sync and reminders
+cancel-appointment,Cancel Appointment,Scheduling,Cancel or reschedule bookings with instant notifications
+get-upcoming-events,Get Upcoming Events,Scheduling,Summarize today’s and week’s schedule for the customer
+process-stripe-payment,Process Stripe Payment,Payments,Securely process credit cards, subscriptions and one-time payments
+create-invoice-stripe,Create Invoice,Payments,Generate and email professional invoices instantly
+check-payment-status,Check Payment Status,Payments,Verify transaction status and update customer in real-time
+issue-refund,Issue Refund,Payments,Process full or partial refunds with confirmation and accounting sync
+send-payment-link,Send Secure Payment Link,Payments,Generate and share one-click secure payment links
+get-hubspot-contact,Retrieve HubSpot Contact,CRM,Pull complete customer profile, deals and interaction history
+create-hubspot-deal,Create HubSpot Deal,CRM,Log new sales opportunities directly into the pipeline
+update-crm-record,Update CRM Record,CRM,Update any field in HubSpot, Salesforce or Pipedrive
+log-call-in-crm,Log Call in CRM,CRM,Automatically log full call details and recording as activity
+qualify-lead,Qualify Lead Score,CRM,Score and prioritize leads using AI qualification questions
+create-shopify-order,Create Shopify Order,E-commerce,Place customer orders directly in Shopify from agent chats
+get-order-status-shopify,Get Order Status,E-commerce,Provide real-time order tracking and status updates
+update-shopify-inventory,Update Shopify Inventory,E-commerce,Adjust stock levels after sales or returns
+send-abandoned-cart-reminder,Send Abandoned Cart Reminder,E-commerce,Recover lost sales with personalized cart reminders
+lookup-airtable-record,Lookup Airtable Record,Data,Search Airtable bases for customer or product information
+append-to-google-sheet,Append to Google Sheets,Data,Log leads, calls, metrics and conversation data in real-time
+create-notion-page,Create Notion Page,Data,Generate project notes, tickets or knowledge base entries
+query-postgres-database,Query Postgres Database,Data,Run safe read queries on your PostgreSQL database
+upload-file-to-drive,Upload File to Google Drive,Data,Store documents and instantly generate shareable links
+generate-pdf-invoice,Generate PDF Invoice,Data,Create branded PDF invoices and contracts on the fly
+post-to-linkedin,Post to LinkedIn,Social,Publish company updates, job postings or lead alerts
+monitor-social-mentions,Monitor Social Mentions,Marketing,Alert on brand mentions across platforms in real-time
+track-shipment,Track Shipment Status,Logistics,Provide live tracking updates from DHL, FedEx, UPS and more
+create-shipping-label,Create Shipping Label,Logistics,Generate printable shipping labels instantly
+optimize-delivery-route,Optimize Delivery Route,Logistics,AI-powered route optimization for multiple stops
+handle-dtmf-input,Handle DTMF Keypad Input,Voice,Process touch-tone menu selections during IVR calls
+play-audio-prompt,Play Audio Prompt,Voice,Play custom audio files or text-to-speech prompts
+record-voicemail-message,Record Voicemail,Voice,Capture and transcribe voicemail for follow-up
+start-conference-call,Start Conference Call,Voice,Invite multiple parties to a voice conference
+transfer-call-warm,Transfer Call Warm,Voice,Warm handoff to another agent with briefing
+analyze-call-sentiment,Analyze Call Sentiment,Voice,Detect frustration or satisfaction in real-time
+enrich-lead-with-clearbit,Enrich Lead with Clearbit,CRM,Add company size, industry and tech stack data
+sync-with-salesforce,Sync with Salesforce,CRM,Real-time bidirectional sync with Salesforce CRM
+process-paypal-transaction,Process PayPal Transaction,Payments,Handle PayPal checkout, refunds and payouts
+integrate-razorpay,Integrate Razorpay,Payments,India-focused Razorpay payment gateway integration
+send-team-slack-alert,Send Team Slack Alert,Communication,Alert internal teams on high-priority customer events
+generate-ai-summary,Generate AI Conversation Summary,AI,Create post-call summaries and action items automatically
+fetch-knowledge-base,Fetch from Knowledge Base,AI,Retrieve accurate answers from your internal documents
+validate-address,Validate Shipping Address,Logistics,Verify and auto-correct customer shipping addresses
+calculate-shipping-cost,Calculate Shipping Cost,Logistics,Compute real-time shipping rates by carrier
+manage-subscription,Manage Subscription Status,Payments,Check, pause, upgrade or cancel subscriptions
+retrieve-sales-metrics,Retrieve Sales Metrics,CRM,Pull KPI dashboards and performance data during calls
+trigger-marketing-automation,Trigger Marketing Automation,Marketing,Start drip campaigns based on customer behavior
+schedule-follow-up-call,Schedule Follow-up Call,Scheduling,Automatically book next touchpoint
+detect-language,Detect Customer Language,AI,Automatically detect and switch language/accent
+translate-message,Translate Message,AI,Real-time translation for multilingual support
+integrate-woocommerce,Integrate WooCommerce,E-commerce,Full two-way integration with WooCommerce stores
+manage-mailchimp-subscriber,Manage Mailchimp Subscriber,Marketing,Add, update or tag email subscribers
+post-to-facebook,Post to Facebook,Social,Publish to Facebook pages and groups
+get-twitter-mentions,Get Twitter/X Mentions,Social,Monitor and reply to brand mentions
+backup-to-s3,Backup Data to AWS S3,Data,Secure automated backups to Amazon S3
+query-mongodb,Query MongoDB,Data,Perform safe lookups in MongoDB collections
+send-push-notification,Send Push Notification,Communication,Send mobile push notifications via OneSignal or Firebase
+verify-phone-number,Verify Phone Number,Voice,OTP verification via call or SMS
+play-hold-music,Play Hold Music,Voice,Play custom hold music and queue messages
+collect-voice-input,Collect Voice Input,Voice,Gather spoken information with confirmation loops
+end-call-gracefully,End Call Gracefully,Voice,Professional call closure with optional survey
+generate-performance-report,Generate Performance Report,AI,Create daily/weekly automation performance reports
+monitor-workflow-health,Monitor Workflow Health,Operations,Alert on failed workflows and automations
