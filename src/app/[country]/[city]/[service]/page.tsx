@@ -15,15 +15,28 @@ import { ArrowRight, MapPin, HelpCircle } from 'lucide-react';
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-    const locations = getLocations().slice(0, 100);
+    const allLocations = getLocations();
+
+    // Select top cities per country to ensure all regions build while respecting limits
+    const locations: any[] = [];
+    ['united-states', 'canada', 'united-kingdom', 'united-arab-emirates', 'australia'].forEach(countrySlug => {
+        const countryLocs = allLocations.filter(l => l.country_slug === countrySlug).slice(0, 20);
+        locations.push(...countryLocs);
+    });
+
     const services = getServices();
 
     const paths: any[] = [];
     locations.forEach(loc => {
         services.forEach(srv => {
             if (loc.country_slug && loc.city_slug && srv.service_slug) {
+                // Map CSV country_slug to actual directory names if necessary
+                let mappedCountry = loc.country_slug;
+                if (mappedCountry === 'united-states') mappedCountry = 'usa';
+                if (mappedCountry === 'united-kingdom') mappedCountry = 'uk';
+
                 paths.push({
-                    country: loc.country_slug,
+                    country: mappedCountry,
                     city: loc.city_slug,
                     service: srv.service_slug
                 });
@@ -109,7 +122,12 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     const locations = getLocations();
     const services = getServices();
 
-    const loc = locations.find(l => l.country_slug === resolved.country && l.city_slug === resolved.city);
+    // Make sure we resolve the physical URL back to CSV data slugs
+    let searchCountry = resolved.country;
+    if (searchCountry === 'usa') searchCountry = 'united-states';
+    if (searchCountry === 'uk') searchCountry = 'united-kingdom';
+
+    const loc = locations.find(l => l.country_slug === searchCountry && l.city_slug === resolved.city);
     const srv = services.find(s => s.service_slug === resolved.service);
 
     if (!loc || !srv) {
@@ -136,7 +154,11 @@ export default async function LocalizedAgentPage({ params }: { params: Promise<{
     const locations = getLocations();
     const services = getServices();
 
-    const loc = locations.find(l => l.country_slug === resolved.country && l.city_slug === resolved.city);
+    let searchCountry = resolved.country;
+    if (searchCountry === 'usa') searchCountry = 'united-states';
+    if (searchCountry === 'uk') searchCountry = 'united-kingdom';
+
+    const loc = locations.find(l => l.country_slug === searchCountry && l.city_slug === resolved.city);
     const srv = services.find(s => s.service_slug === resolved.service);
 
     if (!loc || !srv) {

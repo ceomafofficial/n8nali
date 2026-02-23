@@ -13,15 +13,27 @@ import { ArrowRight, Code, MapPin, HelpCircle } from 'lucide-react';
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-    const locations = getLocations().slice(0, 100);
+    const allLocations = getLocations();
+
+    // Select top 20 cities per country to ensure balanced static generation within Cloudflare limits
+    const locations: any[] = [];
+    ['united-states', 'canada', 'united-kingdom', 'united-arab-emirates', 'australia'].forEach(countrySlug => {
+        const countryLocs = allLocations.filter(l => l.country_slug === countrySlug).slice(0, 20);
+        locations.push(...countryLocs);
+    });
+
     const skills = getSkills();
 
     const paths: any[] = [];
     locations.forEach(loc => {
         skills.forEach(skl => {
             if (loc.country_slug && loc.city_slug && skl.skill_slug) {
+                let mappedCountry = loc.country_slug;
+                if (mappedCountry === 'united-states') mappedCountry = 'usa';
+                if (mappedCountry === 'united-kingdom') mappedCountry = 'uk';
+
                 paths.push({
-                    country: loc.country_slug,
+                    country: mappedCountry,
                     city: loc.city_slug,
                     skill: skl.skill_slug
                 });
@@ -111,7 +123,11 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     const locations = getLocations();
     const skills = getSkills();
 
-    const loc = locations.find(l => l.country_slug === resolved.country && l.city_slug === resolved.city);
+    let searchCountry = resolved.country;
+    if (searchCountry === 'usa') searchCountry = 'united-states';
+    if (searchCountry === 'uk') searchCountry = 'united-kingdom';
+
+    const loc = locations.find(l => l.country_slug === searchCountry && l.city_slug === resolved.city);
     const skl = skills.find(s => s.skill_slug === resolved.skill);
 
     if (!loc || !skl) {
@@ -138,7 +154,11 @@ export default async function LocalizedSkillPage({ params }: { params: Promise<{
     const locations = getLocations();
     const skills = getSkills();
 
-    const loc = locations.find(l => l.country_slug === resolved.country && l.city_slug === resolved.city);
+    let searchCountry = resolved.country;
+    if (searchCountry === 'usa') searchCountry = 'united-states';
+    if (searchCountry === 'uk') searchCountry = 'united-kingdom';
+
+    const loc = locations.find(l => l.country_slug === searchCountry && l.city_slug === resolved.city);
     const skl = skills.find(s => s.skill_slug === resolved.skill);
 
     if (!loc || !skl) {
