@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" opacity="0.3"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">E-Commerce Order Automation — Shopify</text>
+  <text x="600" y="90" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">n8n Workflow Architecture</text>
+
+  <!-- Node 1: Shopify Trigger -->
+  <g filter="url(#shadow)" transform="translate(80,160)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#green)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">TRIGGER</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">🛒 Shopify</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">New Order Event</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="260" y1="210" x2="340" y2="210" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <defs><marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/></marker></defs>
+
+  <!-- Node 2: Payment Verify -->
+  <g filter="url(#shadow)" transform="translate(340,160)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#purple)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">VERIFY</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">💳 Payment</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Stripe / COD Check</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="520" y1="210" x2="600" y2="210" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <defs><marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#a855f7"/></marker></defs>
+
+  <!-- Node 3: Inventory Sync -->
+  <g filter="url(#shadow)" transform="translate(600,160)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#blue)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">UPDATE</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📦 Inventory</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Multi-Channel Sync</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="780" y1="210" x2="860" y2="210" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <defs><marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/></marker></defs>
+
+  <!-- Node 4: Shipping -->
+  <g filter="url(#shadow)" transform="translate(860,160)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#orange)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">SHIP</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">🚚 Aramex</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Label Generation</text>
+  </g>
+
+  <!-- Second row -->
+  <!-- Arrow down from Shipping -->
+  <line x1="950" y1="260" x2="950" y2="340" stroke="#f97316" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <defs><marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#f97316"/></marker></defs>
+
+  <!-- Node 5: WhatsApp Notification -->
+  <g filter="url(#shadow)" transform="translate(860,340)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#green)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">NOTIFY</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📱 WhatsApp</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Order Confirmation</text>
+  </g>
+
+  <!-- Arrow left -->
+  <line x1="860" y1="390" x2="780" y2="390" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowGreenL)"/>
+  <defs><marker id="arrowGreenL" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto-start-reverse"><polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/></marker></defs>
+
+  <!-- Node 6: Google Sheets -->
+  <g filter="url(#shadow)" transform="translate(600,340)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#blue)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">LOG</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📊 Sheets</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Transaction Log</text>
+  </g>
+
+  <!-- Arrow left -->
+  <line x1="600" y1="390" x2="520" y2="390" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Node 7: Cart Recovery -->
+  <g filter="url(#shadow)" transform="translate(340,340)">
+    <rect width="180" height="100" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#purple)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">RECOVER</text>
+    <text x="90" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">🛒 Abandoned</text>
+    <text x="90" y="80" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Cart Recovery</text>
+  </g>
+
+  <!-- Stats bar -->
+  <g transform="translate(80,510)">
+    <rect width="1040" height="80" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="130" y="35" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="24" font-weight="bold">95%</text>
+    <text x="130" y="55" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Manual Work Reduced</text>
+    <text x="390" y="35" text-anchor="middle" fill="#a855f7" font-family="Arial" font-size="24" font-weight="bold">0</text>
+    <text x="390" y="55" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Processing Errors</text>
+    <text x="650" y="35" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="24" font-weight="bold">22%</text>
+    <text x="650" y="55" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Cart Recovery Rate</text>
+    <text x="910" y="35" text-anchor="middle" fill="#f97316" font-family="Arial" font-size="24" font-weight="bold">$4,200</text>
+    <text x="910" y="55" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Monthly Savings</text>
+  </g>
+
+  <!-- n8nera branding -->
+  <text x="600" y="620" text-anchor="middle" fill="#475569" font-family="Arial" font-size="12">Powered by n8nera.com</text>
+</svg>

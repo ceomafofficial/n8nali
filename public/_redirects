@@ -1,0 +1,4 @@
+# Redirect www to non-www
+https://www.n8nera.tech/* https://n8nera.tech/:splat 301!
+
+# Redirect non-trailing slash to trailing slash (handled by Next.js config)

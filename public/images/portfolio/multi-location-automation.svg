@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="blueM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="greenM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="yellowM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eab308"/>
+      <stop offset="100%" style="stop-color:#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="purpleM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <filter id="shadowM">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgM)"/>
+  
+  <pattern id="gridM" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#312e81" stroke-width="0.5" opacity="0.25"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#gridM)"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Multi-Location Business Operations</text>
+  <text x="600" y="78" text-anchor="middle" fill="#c4b5fd" font-family="Arial, sans-serif" font-size="14">6 UAE Retail Locations — Centralized Automation</text>
+
+  <!-- 6 Store locations in arc -->
+  <g filter="url(#shadowM)" transform="translate(60,110)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+    <text x="75" y="28" text-anchor="middle" fill="#ef4444" font-family="Arial" font-size="12" font-weight="bold">📍 Dubai Mall</text>
+    <text x="75" y="48" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">POS System 1</text>
+  </g>
+  <g filter="url(#shadowM)" transform="translate(230,110)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="75" y="28" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="12" font-weight="bold">📍 JBR</text>
+    <text x="75" y="48" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">POS System 2</text>
+  </g>
+  <g filter="url(#shadowM)" transform="translate(400,110)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="75" y="28" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="12" font-weight="bold">📍 Marina</text>
+    <text x="75" y="48" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">POS System 3</text>
+  </g>
+  <g filter="url(#shadowM)" transform="translate(570,110)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+    <text x="75" y="28" text-anchor="middle" fill="#eab308" font-family="Arial" font-size="12" font-weight="bold">📍 Abu Dhabi</text>
+    <text x="75" y="48" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">POS System 4</text>
+  </g>
+  <g filter="url(#shadowM)" transform="translate(740,110)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="75" y="28" text-anchor="middle" fill="#a855f7" font-family="Arial" font-size="12" font-weight="bold">📍 Al Ain</text>
+    <text x="75" y="48" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">POS System 5</text>
+  </g>
+  <g filter="url(#shadowM)" transform="translate(910,110)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+    <text x="75" y="28" text-anchor="middle" fill="#ec4899" font-family="Arial" font-size="12" font-weight="bold">📍 Sharjah</text>
+    <text x="75" y="48" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">POS System 6</text>
+  </g>
+
+  <!-- Connection lines to hub -->
+  <line x1="135" y1="175" x2="530" y2="235" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <line x1="305" y1="175" x2="540" y2="235" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+  <line x1="475" y1="175" x2="560" y2="235" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <line x1="645" y1="175" x2="600" y2="235" stroke="#eab308" stroke-width="1" opacity="0.5"/>
+  <line x1="815" y1="175" x2="620" y2="235" stroke="#a855f7" stroke-width="1" opacity="0.5"/>
+  <line x1="985" y1="175" x2="640" y2="235" stroke="#ec4899" stroke-width="1" opacity="0.5"/>
+
+  <!-- Central Hub -->
+  <g filter="url(#shadowM)" transform="translate(440,225)">
+    <rect width="320" height="110" rx="16" fill="#1e1b4b" stroke="#a855f7" stroke-width="3"/>
+    <rect width="320" height="34" rx="16" fill="url(#purpleM)"/>
+    <text x="160" y="23" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14" font-weight="bold">⚡ n8n AUTOMATION HUB</text>
+    <text x="160" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="15" font-weight="bold">Centralized Operations</text>
+    <text x="160" y="82" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="12">Real-time Sync Across All Locations</text>
+    <text x="160" y="100" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">HTTP Request + Schedule Trigger</text>
+  </g>
+
+  <!-- Arrows down to features -->
+  <line x1="500" y1="335" x2="200" y2="400" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  <line x1="560" y1="335" x2="480" y2="400" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  <line x1="640" y1="335" x2="760" y2="400" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  <line x1="700" y1="335" x2="1020" y2="400" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Feature 1: Inventory -->
+  <g filter="url(#shadowM)" transform="translate(80,400)">
+    <rect width="230" height="90" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <rect width="230" height="28" rx="12" fill="url(#greenM)"/>
+    <text x="115" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">INVENTORY SYNC</text>
+    <text x="115" y="52" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">📦 Unified Stock View</text>
+    <text x="115" y="72" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Auto-transfer on low stock</text>
+  </g>
+
+  <!-- Feature 2: Reporting -->
+  <g filter="url(#shadowM)" transform="translate(340,400)">
+    <rect width="230" height="90" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="230" height="28" rx="12" fill="url(#blueM)"/>
+    <text x="115" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">DAILY REPORTS</text>
+    <text x="115" y="52" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">📊 Auto at 9 PM</text>
+    <text x="115" y="72" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Sales + Inventory + Staff</text>
+  </g>
+
+  <!-- Feature 3: Staff -->
+  <g filter="url(#shadowM)" transform="translate(600,400)">
+    <rect width="230" height="90" rx="12" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+    <rect width="230" height="28" rx="12" fill="url(#yellowM)"/>
+    <text x="115" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">SMART STAFFING</text>
+    <text x="115" y="52" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">👥 AI Scheduling</text>
+    <text x="115" y="72" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Historical sales data</text>
+  </g>
+
+  <!-- Feature 4: Transfers -->
+  <g filter="url(#shadowM)" transform="translate(860,400)">
+    <rect width="230" height="90" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+    <rect width="230" height="28" rx="12" fill="url(#red)"/>
+    <text x="115" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">STORE TRANSFERS</text>
+    <text x="115" y="52" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">🔄 Auto-Transfer</text>
+    <text x="115" y="72" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Low stock → Request → Ship</text>
+  </g>
+
+  <!-- Stats bar -->
+  <g transform="translate(80,530)">
+    <rect width="1040" height="65" rx="12" fill="#1e1b4b" stroke="#312e81" stroke-width="1"/>
+    <text x="130" y="28" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="20" font-weight="bold">40%</text>
+    <text x="130" y="48" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="10">Stock-Out Reduced</text>
+    <text x="390" y="28" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="20" font-weight="bold">3→0 days</text>
+    <text x="390" y="48" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="10">Reconciliation</text>
+    <text x="650" y="28" text-anchor="middle" fill="#eab308" font-family="Arial" font-size="20" font-weight="bold">AED 35K</text>
+    <text x="650" y="48" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="10">Monthly Savings</text>
+    <text x="910" y="28" text-anchor="middle" fill="#a855f7" font-family="Arial" font-size="20" font-weight="bold">Real-time</text>
+    <text x="910" y="48" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="10">Mgmt Visibility</text>
+  </g>
+
+  <text x="600" y="622" text-anchor="middle" fill="#312e81" font-family="Arial" font-size="12">Powered by n8nera.com</text>
+</svg>

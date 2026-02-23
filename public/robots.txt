@@ -1,0 +1,279 @@
+# =============================================================================
+# robots.txt — n8nera.tech
+# Last updated: 2026-02-12
+#
+# Policy summary
+#   • Search engines          → full crawl (indexing)
+#   • User-facing AI agents   → full crawl (RAG / browsing / citation)
+#   • AI training crawlers    → LLM documentation endpoints only
+#   • SEO tools & scrapers    → blocked
+#   • Archivers               → blocked
+#   • /api/ and /search/      → blocked for everyone
+#
+# AEO / AGO / GEO Optimization Notes:
+#   • .well-known/ai-context.json provided for AI entity discovery
+#   • llms.txt / llms-full.txt provided for LLM context consumption
+#   • llms-schema.json provides structured FAQ+Service data for RAG
+#   • SpeakableSpecification added to all page schemas for voice AEO
+# =============================================================================
+
+# ── Content-Signal (TDMRep-style) ───────────────────────────────────────────
+# Declares site-wide intent for automated consumers.
+#   search   = yes   → search-engine indexing allowed
+#   ai-input = yes   → real-time retrieval / RAG / browsing allowed
+#   ai-train = no    → model training and fine-tuning NOT allowed
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 1. GLOBAL DEFAULT
+#    Covers all well-behaved search engines (Googlebot, Bingbot, Applebot,
+#    DuckDuckBot, etc.) AND user-facing AI agents that browse on behalf of
+#    a user (ChatGPT-User, PerplexityBot, Claude-Web, Grokbot, KimiBot,
+#    YouBot, SearchGPT, etc.). No separate blocks needed — they inherit
+#    these rules.
+# ═══════════════════════════════════════════════════════════════════════════
+User-agent: *
+Allow: /
+Allow: /.well-known/
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Disallow: /api/
+Disallow: /search/
+Disallow: /_next/static/
+Disallow: /_next/data/
+
+# ── Explicit Allow: User-facing AI Agents (AEO / AGO targets) ──────────
+# These agents browse on behalf of users and should have FULL access.
+# Listing explicitly gives them priority signal over wildcard rules.
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Grokbot
+Allow: /
+
+User-agent: KimiBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: SearchGPT
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: BraveSearch
+Allow: /
+
+# ── 2026 New AI Agents ─────────────────────────────────────────────────
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: MistralBot
+Allow: /
+
+User-agent: CopilotBot
+Allow: /
+
+User-agent: GeminiBot
+Allow: /
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 2. AI TRAINING / DATA-INGESTION CRAWLERS — LLM docs only
+#    These bots collect content for model training or fine-tuning.
+#    They may access LLM documentation endpoints but nothing else.
+# ═══════════════════════════════════════════════════════════════════════════
+
+# OpenAI training crawler
+User-agent: GPTBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Google AI / Gemini training
+User-agent: Google-Extended
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Anthropic training crawlers
+User-agent: anthropic-ai
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+User-agent: ClaudeBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Common Crawl (training datasets)
+User-agent: CCBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Apple AI training (Apple Intelligence)
+User-agent: Applebot-Extended
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Cohere training crawler
+User-agent: cohere-ai
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Meta training crawlers
+User-agent: FacebookBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# ByteDance / TikTok training crawler
+User-agent: Bytespider
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Amazon AI crawler
+User-agent: Amazonbot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# AI2 (Ai2Bot)
+User-agent: Ai2Bot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Omgili / Webz.io data crawler
+User-agent: Omgilibot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# Diffbot scraper
+User-agent: Diffbot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-schema.json
+Allow: /.well-known/
+Disallow: /
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 3. SEO TOOLS & COMPETITIVE SCRAPERS — blocked entirely
+# ═══════════════════════════════════════════════════════════════════════════
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Majestic-12
+Disallow: /
+
+User-agent: Majestic-SEO
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 4. REGIONAL / LOW-VALUE CRAWLERS — blocked entirely
+# ═══════════════════════════════════════════════════════════════════════════
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 5. ARCHIVERS — blocked entirely
+# ═══════════════════════════════════════════════════════════════════════════
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 6. SITEMAP & AI DISCOVERY
+# ═══════════════════════════════════════════════════════════════════════════
+Sitemap: https://n8nera.tech/sitemap.xml
+
+# AI Discovery Endpoints (for AGO/AEO/GEO)
+# LLM Documentation: https://n8nera.tech/llms.txt
+# Full LLM Docs:     https://n8nera.tech/llms-full.txt
+# LLM Schema:        https://n8nera.tech/llms-schema.json
+# AI Plugin:         https://n8nera.tech/.well-known/ai-plugin.json
+# AI Context:        https://n8nera.tech/.well-known/ai-context.json

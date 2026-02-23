@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1220"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#e11d48"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  
+  <!-- Grid -->
+  <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" opacity="0.2"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Real Estate CRM &amp; Lead Automation</text>
+  <text x="600" y="85" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">Dubai Agency — AI-Powered Pipeline</text>
+
+  <!-- Lead Sources (Left column) -->
+  <g filter="url(#shadow2)" transform="translate(50,120)">
+    <rect width="160" height="70" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="13" font-weight="bold">🏠 Property Finder</text>
+    <text x="80" y="50" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Lead Source</text>
+  </g>
+  <g filter="url(#shadow2)" transform="translate(50,210)">
+    <rect width="160" height="70" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="13" font-weight="bold">🏗️ Bayut</text>
+    <text x="80" y="50" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Lead Source</text>
+  </g>
+  <g filter="url(#shadow2)" transform="translate(50,300)">
+    <rect width="160" height="70" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="13" font-weight="bold">🌐 Website</text>
+    <text x="80" y="50" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Contact Form</text>
+  </g>
+  <g filter="url(#shadow2)" transform="translate(50,390)">
+    <rect width="160" height="70" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="13" font-weight="bold">📱 WhatsApp</text>
+    <text x="80" y="50" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Direct Messages</text>
+  </g>
+
+  <!-- Arrows from sources to Webhook -->
+  <line x1="210" y1="155" x2="290" y2="250" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+  <line x1="210" y1="245" x2="290" y2="250" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+  <line x1="210" y1="335" x2="290" y2="270" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+  <line x1="210" y1="425" x2="290" y2="280" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Node: Webhook Capture -->
+  <g filter="url(#shadow2)" transform="translate(290,210)">
+    <rect width="180" height="110" rx="12" fill="#1e293b" stroke="#14b8a6" stroke-width="2"/>
+    <rect width="180" height="32" rx="12" fill="url(#teal)"/>
+    <text x="90" y="22" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">CAPTURE</text>
+    <text x="90" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">🔗 Webhook</text>
+    <text x="90" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Lead Deduplication</text>
+    <text x="90" y="95" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">150+ leads/day</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="470" y1="265" x2="540" y2="265" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrowTeal)"/>
+  <defs><marker id="arrowTeal" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#14b8a6"/></marker></defs>
+
+  <!-- Node: AI Scoring -->
+  <g filter="url(#shadow2)" transform="translate(540,210)">
+    <rect width="180" height="110" rx="12" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+    <rect width="180" height="32" rx="12" fill="url(#rose)"/>
+    <text x="90" y="22" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">AI SCORE</text>
+    <text x="90" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">🧠 GPT-4</text>
+    <text x="90" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Intent + Budget</text>
+    <text x="90" y="95" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Score 0-100</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="720" y1="265" x2="790" y2="265" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowRose)"/>
+  <defs><marker id="arrowRose" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#f43f5e"/></marker></defs>
+
+  <!-- Node: HubSpot CRM -->
+  <g filter="url(#shadow2)" transform="translate(790,210)">
+    <rect width="180" height="110" rx="12" fill="#1e293b" stroke="#0ea5e9" stroke-width="2"/>
+    <rect width="180" height="32" rx="12" fill="url(#sky)"/>
+    <text x="90" y="22" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">CRM</text>
+    <text x="90" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📋 HubSpot</text>
+    <text x="90" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Pipeline Mgmt</text>
+    <text x="90" y="95" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Agent Assignment</text>
+  </g>
+
+  <!-- Branch arrows down -->
+  <line x1="880" y1="320" x2="750" y2="400" stroke="#0ea5e9" stroke-width="1.5" opacity="0.7"/>
+  <line x1="880" y1="320" x2="1000" y2="400" stroke="#0ea5e9" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Node: Property Match -->
+  <g filter="url(#shadow2)" transform="translate(650,400)">
+    <rect width="180" height="90" rx="12" fill="#1e293b" stroke="#14b8a6" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#teal)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">MATCH</text>
+    <text x="90" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">🏢 Property Match</text>
+    <text x="90" y="75" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Listing Database</text>
+  </g>
+
+  <!-- Node: Follow-Up -->
+  <g filter="url(#shadow2)" transform="translate(900,400)">
+    <rect width="180" height="90" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="180" height="30" rx="12" fill="url(#gold)"/>
+    <text x="90" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">NURTURE</text>
+    <text x="90" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">📧 7-Touch Seq</text>
+    <text x="90" y="75" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">WhatsApp + Email</text>
+  </g>
+
+  <!-- Stats bar -->
+  <g transform="translate(80,520)">
+    <rect width="1040" height="75" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="130" y="32" text-anchor="middle" fill="#14b8a6" font-family="Arial" font-size="22" font-weight="bold">27s</text>
+    <text x="130" y="52" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Avg Response</text>
+    <text x="390" y="32" text-anchor="middle" fill="#f43f5e" font-family="Arial" font-size="22" font-weight="bold">3.5x</text>
+    <text x="390" y="52" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Conversion Up</text>
+    <text x="650" y="32" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="22" font-weight="bold">AED 8M</text>
+    <text x="650" y="52" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Revenue Added</text>
+    <text x="910" y="32" text-anchor="middle" fill="#0ea5e9" font-family="Arial" font-size="22" font-weight="bold">4hrs</text>
+    <text x="910" y="52" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Time Saved Daily</text>
+  </g>
+
+  <text x="600" y="622" text-anchor="middle" fill="#475569" font-family="Arial" font-size="12">Powered by n8nera.com</text>
+</svg>

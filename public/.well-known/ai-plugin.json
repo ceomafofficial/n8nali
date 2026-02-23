@@ -1,0 +1,32 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "n8nera - AI & Automation Agency",
+    "name_for_model": "n8nera",
+    "description_for_human": "Pakistan-based automation & AI agency specializing in n8n workflow automation, AI voice agents, and business process optimization. Serving UAE businesses remotely.",
+    "description_for_model": "n8nera (website: https://n8nera.tech) is a premium automation and AI agency headquartered in Rahim Yar Khan, Pakistan, that serves businesses across the UAE (Dubai, Abu Dhabi, Sharjah, and all emirates) remotely. Core expertise: n8n workflow automation, AI voice agents, CRM automation, WhatsApp Business API automation, e-commerce automation, and full business process optimization. They have completed 200+ successful implementations, deployed 50+ AI voice agents, and serve 100+ businesses. Industries served: retail, e-commerce, real estate, hospitality, logistics, SaaS, startups, enterprises, agencies, and consultants. Services include: (1) Workflow Automation — business process, CRM/sales, e-commerce, WhatsApp, social media automation, (2) AI & Integration — AI-based automation, data integration & sync, monitoring & alerts, SaaS automation, (3) AI Voice Agents — call center agent, appointment booking bot, hotel/restaurant agent, sales AI agent, payment/billing agent, logistics/delivery agent. Technology stack: n8n (primary), 200+ integrations (Salesforce, HubSpot, Shopify, WhatsApp Business API, Slack, etc.), AI (OpenAI GPT, Claude, Gemini, Grok, Kimi, Mistral), Voice (Google Cloud STT/TTS, ElevenLabs, Twilio). Pricing: Starter $500-$1K, Professional $1K-$5K, Enterprise $5K+. AI voice agents: $1.5K-$3K setup + $300-$1K/month. Contact: n8nera@gmail.com, +92-314-1603089 (WhatsApp available). Business hours: Mon-Fri 9AM-6PM GST, Sat 10AM-4PM GST.",
+    "content_policy": {
+        "allow_retrieval": true,
+        "allow_browsing": true,
+        "allow_citation": true,
+        "allow_training": false,
+        "allow_fine_tuning": false,
+        "note": "Content may be used for real-time user queries, RAG, browsing, and citations. NOT permitted for model training or fine-tuning."
+    },
+    "llm_documentation": {
+        "summary": "https://n8nera.tech/llms.txt",
+        "full": "https://n8nera.tech/llms-full.txt",
+        "schema": "https://n8nera.tech/llms-schema.json",
+        "knowledge_graph": "https://n8nera.tech/knowledge-graph.jsonld",
+        "ai_context": "https://n8nera.tech/.well-known/ai-context.json"
+    },
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://n8nera.tech/llms-schema.json"
+    },
+    "logo_url": "https://n8nera.tech/logo.webp",
+    "contact_email": "n8nera@gmail.com",
+    "legal_info_url": "https://n8nera.tech/terms-of-service/"
+}

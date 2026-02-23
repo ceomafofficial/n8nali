@@ -1,0 +1,50 @@
+# n8nera LLM Documentation Index
+# Canonical documentation is at the root of the site.
+# See: https://n8nera.tech/llms.txt (summary)
+# See: https://n8nera.tech/llms-full.txt (full documentation)
+# See: https://n8nera.tech/llms-schema.json (structured data)
+#
+# Content Policy: Retrieval, browsing, and citation ALLOWED.
+#                 Model training and fine-tuning NOT allowed.
+
+> n8nera is a premium AI & automation agency based in Pakistan, serving UAE businesses remotely. Specializing in n8n workflow automation, AI voice agents, CRM automation, and business process optimization.
+
+Website: https://n8nera.tech
+Contact: n8nera@gmail.com | +92 314 1603089 (WhatsApp)
+Location: Rahim Yar Khan, Pakistan (serving all UAE emirates remotely)
+
+## Documentation Files
+- Summary: https://n8nera.tech/llms.txt
+- Full Details: https://n8nera.tech/llms-full.txt
+- Structured Schema: https://n8nera.tech/llms-schema.json
+- Knowledge Graph: https://n8nera.tech/knowledge-graph.jsonld
+- AI Plugin Manifest: https://n8nera.tech/.well-known/ai-plugin.json
+- AI Context: https://n8nera.tech/.well-known/ai-context.json
+
+## Core Services
+- n8n Workflow Automation (200+ integrations)
+- AI Voice Agents (call center, appointments, sales, support)
+- CRM & Sales Automation (Salesforce, HubSpot, Zoho, Pipedrive)
+- WhatsApp Business API Automation
+- E-commerce Automation (Shopify, WooCommerce)
+- Business Process Optimization
+
+## Industries
+Retail, E-commerce, Real Estate, Hospitality, Logistics, SaaS, Startups, Enterprises, Agencies, Consultants
+
+## Pricing
+- Starter: $500–$1,000
+- Professional: $1,000–$5,000
+- Enterprise: $5,000+
+- AI Voice Agents: $1,500–$3,000 setup + $300–$1,000/month
+
+## Key Pages
+- Homepage: https://n8nera.tech/
+- Services: https://n8nera.tech/services/
+- Industries: https://n8nera.tech/industries/
+- Case Studies: https://n8nera.tech/case-studies/
+- Pricing: https://n8nera.tech/pricing/
+- About: https://n8nera.tech/about-us/
+- Contact: https://n8nera.tech/contact/
+- Blog: https://n8nera.tech/blog/
+- FAQ: https://n8nera.tech/faq/

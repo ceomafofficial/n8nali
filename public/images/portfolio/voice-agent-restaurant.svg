@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgV" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <filter id="shadowV">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgV)"/>
+  
+  <pattern id="gridV" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#312e81" stroke-width="0.5" opacity="0.3"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#gridV)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">AI Voice Agent — Restaurant Reservations</text>
+  <text x="600" y="85" text-anchor="middle" fill="#a5b4fc" font-family="Arial, sans-serif" font-size="14">Dubai Restaurant Chain — 4 Locations</text>
+
+  <!-- Central Voice Agent Hub -->
+  <g filter="url(#shadowV)" transform="translate(460,140)">
+    <rect width="280" height="130" rx="16" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="3"/>
+    <rect width="280" height="35" rx="16" fill="url(#violet)"/>
+    <text x="140" y="24" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14" font-weight="bold">🎙️ AI VOICE AGENT</text>
+    <text x="140" y="65" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="16" font-weight="bold">GPT-4 + ElevenLabs</text>
+    <text x="140" y="88" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="12">Natural English &amp; Arabic</text>
+    <text x="140" y="108" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="12">Handles 400+ calls/day</text>
+  </g>
+
+  <!-- Phone input (top left) -->
+  <g filter="url(#shadowV)" transform="translate(80,170)">
+    <rect width="170" height="80" rx="10" fill="#1e1b4b" stroke="#06b6d4" stroke-width="2"/>
+    <text x="85" y="35" text-anchor="middle" fill="#06b6d4" font-family="Arial" font-size="14" font-weight="bold">📞 Twilio</text>
+    <text x="85" y="55" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Inbound Calls</text>
+  </g>
+  <line x1="250" y1="210" x2="460" y2="210" stroke="#06b6d4" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Bottom row - workflow nodes -->
+  <!-- Check Availability -->
+  <g filter="url(#shadowV)" transform="translate(100,350)">
+    <rect width="200" height="100" rx="12" fill="#1e1b4b" stroke="#10b981" stroke-width="2"/>
+    <rect width="200" height="30" rx="12" fill="url(#emerald)"/>
+    <text x="100" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">CHECK</text>
+    <text x="100" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📅 Google Calendar</text>
+    <text x="100" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Real-time Table Avail</text>
+    <text x="100" y="94" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">4 Locations</text>
+  </g>
+
+  <!-- Book Table -->
+  <g filter="url(#shadowV)" transform="translate(350,350)">
+    <rect width="200" height="100" rx="12" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="200" height="30" rx="12" fill="url(#violet)"/>
+    <text x="100" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">BOOK</text>
+    <text x="100" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">🪑 Reserve Table</text>
+    <text x="100" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Party Size + Preferences</text>
+    <text x="100" y="94" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Special Requests</text>
+  </g>
+
+  <!-- WhatsApp Confirm -->
+  <g filter="url(#shadowV)" transform="translate(600,350)">
+    <rect width="200" height="100" rx="12" fill="#1e1b4b" stroke="#10b981" stroke-width="2"/>
+    <rect width="200" height="30" rx="12" fill="url(#emerald)"/>
+    <text x="100" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">CONFIRM</text>
+    <text x="100" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📱 WhatsApp</text>
+    <text x="100" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Booking Details</text>
+    <text x="100" y="94" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Instant Confirmation</text>
+  </g>
+
+  <!-- Reminders -->
+  <g filter="url(#shadowV)" transform="translate(850,350)">
+    <rect width="200" height="100" rx="12" fill="#1e1b4b" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="200" height="30" rx="12" fill="url(#amber)"/>
+    <text x="100" y="20" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">REMIND</text>
+    <text x="100" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">⏰ Auto Reminders</text>
+    <text x="100" y="78" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">24hr + 1hr before</text>
+    <text x="100" y="94" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">No-Show Prevention</text>
+  </g>
+
+  <!-- Arrows from center to bottom row -->
+  <line x1="500" y1="270" x2="200" y2="350" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="560" y1="270" x2="450" y2="350" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="640" y1="270" x2="700" y2="350" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="700" y1="270" x2="950" y2="350" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Arrows between bottom nodes -->
+  <line x1="300" y1="400" x2="350" y2="400" stroke="#10b981" stroke-width="1.5"/>
+  <line x1="550" y1="400" x2="600" y2="400" stroke="#8b5cf6" stroke-width="1.5"/>
+  <line x1="800" y1="400" x2="850" y2="400" stroke="#10b981" stroke-width="1.5"/>
+
+  <!-- Stats bar -->
+  <g transform="translate(80,510)">
+    <rect width="1040" height="75" rx="12" fill="#1e1b4b" stroke="#312e81" stroke-width="1"/>
+    <text x="130" y="32" text-anchor="middle" fill="#10b981" font-family="Arial" font-size="22" font-weight="bold">100%</text>
+    <text x="130" y="52" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="11">Calls Answered</text>
+    <text x="390" y="32" text-anchor="middle" fill="#8b5cf6" font-family="Arial" font-size="22" font-weight="bold">300+</text>
+    <text x="390" y="52" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="11">Calls/Day</text>
+    <text x="650" y="32" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="22" font-weight="bold">62%</text>
+    <text x="650" y="52" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="11">No-Show Reduction</text>
+    <text x="910" y="32" text-anchor="middle" fill="#06b6d4" font-family="Arial" font-size="22" font-weight="bold">AED 25K</text>
+    <text x="910" y="52" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="11">Monthly Savings</text>
+  </g>
+
+  <text x="600" y="622" text-anchor="middle" fill="#4c1d95" font-family="Arial" font-size="12">Powered by n8nera.com</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="waGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25d366"/>
+      <stop offset="100%" style="stop-color:#128c7e"/>
+    </linearGradient>
+    <linearGradient id="indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#db2777"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#84cc16"/>
+      <stop offset="100%" style="stop-color:#65a30d"/>
+    </linearGradient>
+    <filter id="shadowW">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgW)"/>
+  
+  <pattern id="gridW" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#166534" stroke-width="0.5" opacity="0.25"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#gridW)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">WhatsApp Customer Support Automation</text>
+  <text x="600" y="85" text-anchor="middle" fill="#86efac" font-family="Arial, sans-serif" font-size="14">AI-Powered Chatbot — E-Commerce</text>
+
+  <!-- Customer message bubble -->
+  <g filter="url(#shadowW)" transform="translate(60,130)">
+    <rect width="200" height="120" rx="14" fill="#1e293b" stroke="#25d366" stroke-width="2.5"/>
+    <text x="100" y="35" text-anchor="middle" fill="#25d366" font-family="Arial" font-size="20">💬</text>
+    <text x="100" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">Customer</text>
+    <text x="100" y="80" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">500+ msgs/day</text>
+    <text x="100" y="100" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Orders, Returns, FAQs</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="260" y1="190" x2="320" y2="190" stroke="#25d366" stroke-width="2"/>
+
+  <!-- WhatsApp API Node -->
+  <g filter="url(#shadowW)" transform="translate(320,130)">
+    <rect width="190" height="120" rx="14" fill="#1e293b" stroke="#25d366" stroke-width="2"/>
+    <rect width="190" height="32" rx="14" fill="url(#waGreen)"/>
+    <text x="95" y="22" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">RECEIVE</text>
+    <text x="95" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">📱 WhatsApp API</text>
+    <text x="95" y="80" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">Message Webhook</text>
+    <text x="95" y="100" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Media + Text</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="510" y1="190" x2="570" y2="190" stroke="#25d366" stroke-width="2"/>
+
+  <!-- AI Intent Classification -->
+  <g filter="url(#shadowW)" transform="translate(570,120)">
+    <rect width="220" height="140" rx="14" fill="#1e293b" stroke="#6366f1" stroke-width="2.5"/>
+    <rect width="220" height="32" rx="14" fill="url(#indigo)"/>
+    <text x="110" y="22" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">🧠 AI CLASSIFY</text>
+    <text x="110" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="14" font-weight="bold">GPT-4 Intent</text>
+    <text x="110" y="82" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="11">Understands meaning,</text>
+    <text x="110" y="98" text-anchor="middle" fill="#a5b4fc" font-family="Arial" font-size="11">not just keywords</text>
+    <text x="110" y="120" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">85% auto-resolved</text>
+  </g>
+
+  <!-- Branch arrows -->
+  <line x1="680" y1="260" x2="200" y2="350" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="680" y1="260" x2="500" y2="350" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="680" y1="260" x2="780" y2="350" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="680" y1="260" x2="1040" y2="350" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Branch 1: Order Status -->
+  <g filter="url(#shadowW)" transform="translate(100,350)">
+    <rect width="190" height="95" rx="12" fill="#1e293b" stroke="#25d366" stroke-width="2"/>
+    <rect width="190" height="28" rx="12" fill="url(#waGreen)"/>
+    <text x="95" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">ORDER STATUS</text>
+    <text x="95" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">🛒 Shopify Lookup</text>
+    <text x="95" y="75" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Order# → Tracking Link</text>
+  </g>
+
+  <!-- Branch 2: Returns -->
+  <g filter="url(#shadowW)" transform="translate(350,350)">
+    <rect width="190" height="95" rx="12" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+    <rect width="190" height="28" rx="12" fill="url(#pink)"/>
+    <text x="95" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">RETURNS</text>
+    <text x="95" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">📦 Auto Return</text>
+    <text x="95" y="75" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Guide + Label + Ticket</text>
+  </g>
+
+  <!-- Branch 3: Product FAQ -->
+  <g filter="url(#shadowW)" transform="translate(600,350)">
+    <rect width="190" height="95" rx="12" fill="#1e293b" stroke="#84cc16" stroke-width="2"/>
+    <rect width="190" height="28" rx="12" fill="url(#lime)"/>
+    <text x="95" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">PRODUCT FAQ</text>
+    <text x="95" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">❓ AI Answers</text>
+    <text x="95" y="75" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Knowledge Base RAG</text>
+  </g>
+
+  <!-- Branch 4: Human Handoff -->
+  <g filter="url(#shadowW)" transform="translate(850,350)">
+    <rect width="190" height="95" rx="12" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <rect width="190" height="28" rx="12" fill="url(#indigo)"/>
+    <text x="95" y="19" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">ESCALATE (15%)</text>
+    <text x="95" y="55" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="13" font-weight="bold">👤 Zendesk</text>
+    <text x="95" y="75" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Full Context Transfer</text>
+  </g>
+
+  <!-- Stats bar -->
+  <g transform="translate(80,510)">
+    <rect width="1040" height="75" rx="12" fill="#14532d" stroke="#166534" stroke-width="1"/>
+    <text x="130" y="32" text-anchor="middle" fill="#25d366" font-family="Arial" font-size="22" font-weight="bold">85%</text>
+    <text x="130" y="52" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">Auto-Resolution</text>
+    <text x="390" y="32" text-anchor="middle" fill="#6366f1" font-family="Arial" font-size="22" font-weight="bold">&lt;30s</text>
+    <text x="390" y="52" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">Response Time</text>
+    <text x="650" y="32" text-anchor="middle" fill="#ec4899" font-family="Arial" font-size="22" font-weight="bold">60%</text>
+    <text x="650" y="52" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">Cost Reduction</text>
+    <text x="910" y="32" text-anchor="middle" fill="#84cc16" font-family="Arial" font-size="22" font-weight="bold">4.7/5</text>
+    <text x="910" y="52" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">Satisfaction</text>
+  </g>
+
+  <text x="600" y="622" text-anchor="middle" fill="#166534" font-family="Arial" font-size="12">Powered by n8nera.com</text>
+</svg>

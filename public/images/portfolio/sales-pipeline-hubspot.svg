@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#172554"/>
+    </linearGradient>
+    <linearGradient id="blueS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="orangeS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#c2410c"/>
+    </linearGradient>
+    <linearGradient id="greenS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#15803d"/>
+    </linearGradient>
+    <linearGradient id="redS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <filter id="shadowS">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgS)"/>
+  
+  <pattern id="gridS" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e3a5f" stroke-width="0.5" opacity="0.3"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#gridS)"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Sales Pipeline &amp; Lead Nurturing</text>
+  <text x="600" y="78" text-anchor="middle" fill="#93c5fd" font-family="Arial, sans-serif" font-size="14">SaaS Startup — Full-Funnel Automation</text>
+
+  <!-- Funnel visualization -->
+  <!-- Top: Lead Capture -->
+  <g filter="url(#shadowS)" transform="translate(80,110)">
+    <polygon points="0,0 1040,0 980,80 60,80" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" rx="8"/>
+    <text x="520" y="30" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="13" font-weight="bold">STAGE 1: LEAD CAPTURE</text>
+    <text x="180" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">🌐 Website</text>
+    <text x="420" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">💼 LinkedIn</text>
+    <text x="660" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">🤝 Referrals</text>
+    <text x="880" y="60" text-anchor="middle" fill="#93c5fd" font-family="Arial" font-size="11">80+ leads/week</text>
+  </g>
+
+  <!-- AI Scoring -->
+  <g filter="url(#shadowS)" transform="translate(140,205)">
+    <polygon points="0,0 920,0 860,80 60,80" fill="#1e1b4b" stroke="#f97316" stroke-width="2"/>
+    <text x="460" y="28" text-anchor="middle" fill="#f97316" font-family="Arial" font-size="13" font-weight="bold">STAGE 2: AI LEAD SCORING (GPT-4)</text>
+    <text x="250" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">🔥 Hot (80+) → Senior Rep</text>
+    <text x="550" y="58" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="12">🟡 Warm → Nurture</text>
+    <text x="780" y="58" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="12">❄️ Cold → Newsletter</text>
+  </g>
+
+  <!-- Nurture -->
+  <g filter="url(#shadowS)" transform="translate(200,300)">
+    <polygon points="0,0 800,0 740,80 60,80" fill="#14532d" stroke="#22c55e" stroke-width="2"/>
+    <text x="400" y="28" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="13" font-weight="bold">STAGE 3: MULTI-CHANNEL NURTURE (21 DAYS)</text>
+    <text x="200" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">📧 Email Sequence</text>
+    <text x="450" y="60" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">📱 WhatsApp Touch</text>
+    <text x="680" y="60" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">Adaptive Content</text>
+  </g>
+
+  <!-- Pipeline Management -->
+  <g filter="url(#shadowS)" transform="translate(260,395)">
+    <polygon points="0,0 680,0 620,80 60,80" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="340" y="28" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="13" font-weight="bold">STAGE 4: HUBSPOT PIPELINE</text>
+    <text x="200" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">📋 Deal Tracking</text>
+    <text x="450" y="58" text-anchor="middle" fill="#e2e8f0" font-family="Arial" font-size="12">👥 Rep Performance</text>
+  </g>
+
+  <!-- Won -->
+  <g filter="url(#shadowS)" transform="translate(350,490)">
+    <rect width="500" height="55" rx="12" fill="#052e16" stroke="#22c55e" stroke-width="2.5"/>
+    <text x="250" y="25" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="16" font-weight="bold">✅ DEAL WON — 6.8% Conversion Rate</text>
+    <text x="250" y="44" text-anchor="middle" fill="#86efac" font-family="Arial" font-size="11">2x improvement from 3.2% baseline</text>
+  </g>
+
+  <!-- Right side stats -->
+  <g filter="url(#shadowS)" transform="translate(960,110)">
+    <rect width="200" height="430" rx="12" fill="#1e293b" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="100" y="30" text-anchor="middle" fill="#93c5fd" font-family="Arial" font-size="13" font-weight="bold">RESULTS</text>
+    <line x1="20" y1="45" x2="180" y2="45" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <text x="100" y="85" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="28" font-weight="bold">2x</text>
+    <text x="100" y="105" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Conversion Rate</text>
+    
+    <text x="100" y="165" text-anchor="middle" fill="#f97316" font-family="Arial" font-size="28" font-weight="bold">&lt;2min</text>
+    <text x="100" y="185" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Response Time</text>
+    
+    <text x="100" y="245" text-anchor="middle" fill="#22c55e" font-family="Arial" font-size="28" font-weight="bold">100%</text>
+    <text x="100" y="265" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Follow-Up Rate</text>
+    
+    <text x="100" y="325" text-anchor="middle" fill="#ef4444" font-family="Arial" font-size="28" font-weight="bold">$45K</text>
+    <text x="100" y="345" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="11">Additional MRR</text>
+
+    <text x="100" y="400" text-anchor="middle" fill="#93c5fd" font-family="Arial" font-size="10">in 60 Days</text>
+  </g>
+
+  <text x="480" y="622" text-anchor="middle" fill="#1e3a5f" font-family="Arial" font-size="12">Powered by n8nera.com</text>
+</svg>

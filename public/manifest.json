@@ -1,0 +1,27 @@
+{
+    "name": "n8nera — AI & Automation Agency",
+    "short_name": "n8nera",
+    "description": "Certified n8n automation agency. AI workflows that save 20+ hrs/week. WhatsApp bots, CRM automation & AI voice agents. Serving USA, UAE, Canada & Netherlands.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0d0d12",
+    "theme_color": "#0d0d12",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "dir": "ltr",
+    "categories": ["business", "productivity", "utilities"],
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "prefer_related_applications": false
+}

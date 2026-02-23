@@ -1,0 +1,14 @@
+# n8nera Security Policy
+# https://securitytxt.org/ — RFC 9116 compliant
+# Last updated: 2026-02-12
+#
+# This file signals organizational maturity and builds E-E-A-T trust.
+
+Contact: mailto:n8nera@gmail.com
+Contact: https://n8nera.tech/contact/
+Preferred-Languages: en, ar, ur
+Canonical: https://n8nera.tech/.well-known/security.txt
+Expires: 2027-02-12T00:00:00.000Z
+Policy: https://n8nera.tech/security-compliance/
+Hiring: https://n8nera.tech/careers/
+Acknowledgments: https://n8nera.tech/about-us/

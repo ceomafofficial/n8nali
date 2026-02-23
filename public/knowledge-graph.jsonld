@@ -1,0 +1,625 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": ["Organization", "ProfessionalService"],
+            "@id": "https://n8nera.tech/#organization",
+            "name": "n8nera",
+            "legalName": "n8nera Automation & AI Agency",
+            "url": "https://n8nera.tech",
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://n8nera.tech/#logo",
+                "url": "https://n8nera.tech/logo.webp",
+                "width": 512,
+                "height": 512,
+                "caption": "n8nera - AI & Automation Agency"
+            },
+            "image": "https://n8nera.tech/og-image.webp",
+            "description": "Global n8n automation & AI agency specializing in workflow automation, AI voice agents, and business process optimization. Serving USA, UAE, Canada & Netherlands. 200+ implementations across 50+ cities worldwide. 99.8% satisfaction rate.",
+            "slogan": "Transform your business with intelligent automation",
+            "foundingDate": "2021",
+            "email": "n8nera@gmail.com",
+            "telephone": "+92-314-1603089",
+            "brand": { "@id": "https://n8nera.tech/#brand" },
+            "founder": { "@id": "https://n8nera.tech/#founder" },
+            "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "minValue": 10,
+                "maxValue": 50
+            },
+            "knowsAbout": [
+                "n8n workflow automation",
+                "AI voice agents",
+                "CRM automation",
+                "Business process automation",
+                "WhatsApp automation",
+                "E-commerce automation",
+                "API integration",
+                "Generative AI integration",
+                "Robotic Process Automation",
+                "Business Intelligence automation",
+                "Agentic AI workflows",
+                "Multi-agent orchestration"
+            ],
+            "knowsLanguage": ["en", "ar", "ur", "nl"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Satellite Town",
+                "addressLocality": "Rahim Yar Khan",
+                "addressRegion": "Punjab",
+                "postalCode": "64200",
+                "addressCountry": "PK"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "28.4212",
+                "longitude": "70.2989"
+            },
+            "areaServed": [
+                {
+                    "@type": "Country",
+                    "name": "United States",
+                    "@id": "https://en.wikipedia.org/wiki/United_States"
+                },
+                {
+                    "@type": "Country",
+                    "name": "United Arab Emirates",
+                    "@id": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Canada",
+                    "@id": "https://en.wikipedia.org/wiki/Canada"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Netherlands",
+                    "@id": "https://en.wikipedia.org/wiki/Netherlands"
+                },
+                {
+                    "@type": "City",
+                    "name": "New York",
+                    "@id": "https://en.wikipedia.org/wiki/New_York_City"
+                },
+                {
+                    "@type": "City",
+                    "name": "Dubai",
+                    "@id": "https://en.wikipedia.org/wiki/Dubai"
+                },
+                {
+                    "@type": "City",
+                    "name": "Toronto",
+                    "@id": "https://en.wikipedia.org/wiki/Toronto"
+                },
+                {
+                    "@type": "City",
+                    "name": "Amsterdam",
+                    "@id": "https://en.wikipedia.org/wiki/Amsterdam"
+                },
+                {
+                    "@type": "City",
+                    "name": "Abu Dhabi",
+                    "@id": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+                },
+                {
+                    "@type": "City",
+                    "name": "San Francisco"
+                },
+                {
+                    "@type": "City",
+                    "name": "Vancouver"
+                },
+                {
+                    "@type": "City",
+                    "name": "Rotterdam"
+                },
+                {
+                    "@type": "City",
+                    "name": "Sharjah"
+                }
+            ],
+            "sameAs": [
+                "https://linkedin.com/company/n8nera",
+                "https://twitter.com/n8nera",
+                "https://instagram.com/n8nera",
+                "https://youtube.com/@n8nera",
+                "https://facebook.com/n8nera"
+            ],
+            "memberOf": [
+                {
+                    "@type": "ProgramMembership",
+                    "programName": "n8n Certified Partner Program",
+                    "hostingOrganization": {
+                        "@type": "Organization",
+                        "name": "n8n GmbH",
+                        "url": "https://n8n.io"
+                    }
+                },
+                {
+                    "@type": "ProgramMembership",
+                    "programName": "Google Cloud Partner Advantage",
+                    "hostingOrganization": {
+                        "@type": "Organization",
+                        "name": "Google Cloud"
+                    }
+                }
+            ],
+            "review": [
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-1",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Ahmed Al-Rashid",
+                        "address": { "@type": "PostalAddress", "addressLocality": "Dubai" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2025-09-15",
+                    "reviewBody": "n8nera completely transformed our operations. Our order processing went from hours to seconds. The AI voice agent handles 90% of calls autonomously."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-2",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sara Mohammed",
+                        "address": { "@type": "PostalAddress", "addressLocality": "Abu Dhabi" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2025-11-02",
+                    "reviewBody": "Best automation agency in UAE. n8nera built our entire CRM pipeline in 2 weeks. ROI was visible within the first month."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-3",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Khalid Hassan",
+                        "address": { "@type": "PostalAddress", "addressLocality": "Sharjah" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2026-01-10",
+                    "reviewBody": "Their n8n expertise is unmatched. Integrated 15 tools into a single automated pipeline. Support is excellent."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-4",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Michael Thompson",
+                        "address": { "@type": "PostalAddress", "addressLocality": "New York", "addressCountry": "US" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2025-12-20",
+                    "reviewBody": "n8nera automated our entire lead pipeline from HubSpot to Salesforce. Their n8n expertise saved us $120K annually in operational costs. Highly recommend for US businesses."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-5",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Jessica Williams",
+                        "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressCountry": "US" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2026-01-15",
+                    "reviewBody": "Outstanding n8n automation work. They integrated our Stripe billing with Slack, QuickBooks, and customer onboarding — all fully automated. SOC 2 compliant throughout."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-6",
+                    "author": {
+                        "@type": "Person",
+                        "name": "David Chen",
+                        "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressCountry": "CA" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2025-10-05",
+                    "reviewBody": "n8nera helped us automate our entire Shopify e-commerce operation. Order processing, inventory sync, returns — everything runs on n8n now. PIPEDA compliant and Canadian-hosted."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-7",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Jan de Vries",
+                        "address": { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2026-01-28",
+                    "reviewBody": "Uitstekende n8n automatisering. n8nera integrated our Exact Online accounting with Mollie payments and Bol.com marketplace. Fully GDPR compliant with EU-hosted deployment. Very professional team."
+                },
+                {
+                    "@type": "Review",
+                    "@id": "https://n8nera.tech/#review-8",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sophie van den Berg",
+                        "address": { "@type": "PostalAddress", "addressLocality": "Rotterdam", "addressCountry": "NL" }
+                    },
+                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                    "datePublished": "2025-11-18",
+                    "reviewBody": "n8nera built our logistics automation pipeline connecting our warehouse management system with shipping carriers and customer notifications. Reduced manual work by 90%. Perfect for Dutch logistics companies."
+                }
+            ],
+            "interactionStatistic": [
+                {
+                    "@type": "InteractionCounter",
+                    "interactionType": { "@type": "FollowAction" },
+                    "userInteractionCount": "5200",
+                    "interactionService": { "@type": "WebSite", "name": "LinkedIn" }
+                }
+            ],
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Professional Certification",
+                    "name": "n8n Certified Implementation Partner"
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Professional Certification",
+                    "name": "Google Cloud Technology Partner"
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Professional Certification",
+                    "name": "AWS Advanced Consulting Partner"
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "127",
+                "reviewCount": "98"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "n8nera Service Plans",
+                "itemListElement": [
+                    {
+                        "@type": "OfferCatalog",
+                        "name": "Workflow Automation Services",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Business Process Automation",
+                                    "url": "https://n8nera.tech/services/business-process-automation/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "CRM & Sales Automation",
+                                    "url": "https://n8nera.tech/services/crm-sales-automation/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "E-commerce Automation",
+                                    "url": "https://n8nera.tech/services/ecommerce-automation/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "WhatsApp Messaging Automation",
+                                    "url": "https://n8nera.tech/services/whatsapp-messaging-automation/"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "OfferCatalog",
+                        "name": "AI Voice Agent Services",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "AI Call Center Agent",
+                                    "url": "https://n8nera.tech/services/ai-call-center-agent/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Appointment Booking Voice Bot",
+                                    "url": "https://n8nera.tech/services/appointment-booking-bot/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Sales Voice AI Agent",
+                                    "url": "https://n8nera.tech/services/sales-voice-ai-agent/"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "OfferCatalog",
+                        "name": "n8n Core Services",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "n8n Automation Agency",
+                                    "url": "https://n8nera.tech/n8n-automation-agency/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "n8n Workflow Automation",
+                                    "url": "https://n8nera.tech/n8n-workflow-automation/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "n8n Integrations",
+                                    "url": "https://n8nera.tech/n8n-integrations/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "n8n AI Automation",
+                                    "url": "https://n8nera.tech/n8n-ai-automation/"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Hire n8n Developer",
+                                    "url": "https://n8nera.tech/hire-n8n-developer/"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+92-314-1603089",
+                    "contactType": "customer service",
+                    "email": "n8nera@gmail.com",
+                    "areaServed": "AE",
+                    "availableLanguage": ["English", "Arabic", "Urdu"],
+                    "hoursAvailable": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "09:00",
+                        "closes": "18:00"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://n8nera.tech/#website",
+            "url": "https://n8nera.tech",
+            "name": "n8nera",
+            "description": "AI & Automation Agency for UAE Businesses",
+            "publisher": {
+                "@id": "https://n8nera.tech/#organization"
+            },
+            "inLanguage": "en-AE",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://n8nera.tech/blog?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://n8nera.tech/#webpage",
+            "url": "https://n8nera.tech",
+            "name": "n8nera | AI & Automation Agency for UAE Businesses",
+            "isPartOf": {
+                "@id": "https://n8nera.tech/#website"
+            },
+            "about": {
+                "@id": "https://n8nera.tech/#organization"
+            },
+            "description": "Premium automation & AI agency specializing in n8n workflow automation, AI voice agents, and business process optimization. Pakistan-based, serving Dubai, Abu Dhabi & UAE.",
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": ["h1", "h2", "[data-speakable]", ".prose"]
+            },
+            "significantLink": [
+                "https://n8nera.tech/services/",
+                "https://n8nera.tech/n8n-automation-agency/",
+                "https://n8nera.tech/n8n-ai-automation/",
+                "https://n8nera.tech/pricing/",
+                "https://n8nera.tech/contact/",
+                "https://n8nera.tech/case-studies/",
+                "https://n8nera.tech/blog/"
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://n8nera.tech/#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is n8nera?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "n8nera is a Pakistan-based AI and automation agency serving UAE businesses remotely. They specialize in n8n workflow automation, AI voice agents, CRM automation, WhatsApp automation, and business process optimization. Founded in 2021, they've completed 200+ automation implementations with a 99.8% client satisfaction rate."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What services does n8nera provide?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "n8nera provides: (1) Workflow Automation — business process, CRM, e-commerce, WhatsApp, social media automation. (2) AI & Integration — AI-based automation, data sync, monitoring, SaaS automation. (3) AI Voice Agents — call center agents, appointment booking, hotel/restaurant agents, sales AI, payment agents, logistics agents. (4) n8n Core — automation agency, workflow automation, integrations, AI automation, dedicated developer hiring."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much does n8nera automation cost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Starter: $500–$1,000 (1-3 workflows). Professional: $1,000–$5,000 (5-10 workflows). Enterprise: $5,000+ (unlimited). AI Voice Agents: $1,500–$3,000 setup + $300–$1,000/month."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is n8n automation?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "n8n is an open-source workflow automation platform, similar to Zapier but more powerful and customizable. It offers self-hosting capability for data privacy, 400+ built-in integrations, a visual workflow builder, AI agent support, custom code nodes, and enterprise-grade scalability — all without vendor lock-in. n8nera is a certified n8n implementation partner."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does n8nera serve Dubai businesses?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. n8nera serves all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain, and Al Ain. All services are delivered remotely from Pakistan during UAE business hours (GST)."
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "HowTo",
+            "@id": "https://n8nera.tech/#howto",
+            "name": "How to Get Started with n8nera Automation",
+            "description": "Our proven 4-step process to automate your business operations.",
+            "totalTime": "P14D",
+            "step": [
+                {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Discovery & Audit",
+                    "text": "We analyze your current workflows, identify automation opportunities, and map out the ideal solution architecture."
+                },
+                {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Strategy & Design",
+                    "text": "Our team designs a custom automation strategy tailored to your business needs, tools, and goals."
+                },
+                {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Build & Test",
+                    "text": "We build and rigorously test your n8n workflows, integrations, and AI agents in a staging environment."
+                },
+                {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Deploy & Optimize",
+                    "text": "We deploy your automations to production, provide training, and continuously optimize for performance."
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://n8nera.tech/#founder",
+            "name": "Syed Ali",
+            "jobTitle": "Founder & Lead Automation Architect",
+            "url": "https://n8nera.tech/about-us",
+            "worksFor": { "@id": "https://n8nera.tech/#organization" },
+            "knowsAbout": [
+                "n8n workflow automation",
+                "AI agent orchestration",
+                "Enterprise integration architecture",
+                "Business process re-engineering",
+                "Voice AI systems"
+            ],
+            "sameAs": [
+                "https://linkedin.com/in/n8nera",
+                "https://twitter.com/n8nera"
+            ]
+        },
+        {
+            "@type": "Brand",
+            "@id": "https://n8nera.tech/#brand",
+            "name": "n8nera",
+            "logo": { "@id": "https://n8nera.tech/#logo" },
+            "slogan": "Transform your business with intelligent automation",
+            "description": "Premium AI & workflow automation brand specializing in n8n platform solutions for UAE businesses."
+        },
+        {
+            "@type": "DefinedTermSet",
+            "@id": "https://n8nera.tech/#topical-authority",
+            "name": "n8nera Expertise Domain Vocabulary",
+            "description": "Core concepts and topics in which n8nera has demonstrated topical authority through implementations, case studies, and published content.",
+            "hasDefinedTerm": [
+                {
+                    "@type": "DefinedTerm",
+                    "name": "n8n Workflow Automation",
+                    "description": "Design, build, and maintenance of automated workflows using n8n, an open-source low-code automation platform supporting 400+ integrations, webhook triggers, conditional logic, and AI agent orchestration.",
+                    "url": "https://n8nera.tech/n8n-workflow-automation/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "AI Voice Agent",
+                    "description": "Conversational AI systems that handle inbound and outbound phone calls autonomously using speech recognition, natural language understanding, and text-to-speech synthesis.",
+                    "url": "https://n8nera.tech/services/ai-call-center-agent/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "CRM Automation",
+                    "description": "Automated pipeline management, lead scoring, follow-up sequences, and data synchronization across CRM platforms using n8n workflows.",
+                    "url": "https://n8nera.tech/services/crm-sales-automation/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Business Process Automation",
+                    "description": "End-to-end digitization of manual business processes including data entry, approvals, notifications, document generation, and cross-system synchronization.",
+                    "url": "https://n8nera.tech/services/business-process-automation/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "WhatsApp Business API Automation",
+                    "description": "Automated messaging flows, customer support bots, order notifications, and marketing campaigns via WhatsApp Business API integrated with n8n.",
+                    "url": "https://n8nera.tech/services/whatsapp-messaging-automation/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Generative AI Integration",
+                    "description": "Embedding large language models (GPT-4, Claude, Gemini) into business workflows for intelligent document processing, content generation, data extraction, and conversational AI.",
+                    "url": "https://n8nera.tech/n8n-ai-automation/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Agentic AI Workflows",
+                    "description": "Multi-agent orchestration patterns where autonomous AI agents collaborate to complete complex business tasks — planning, tool use, memory, and inter-agent communication coordinated via n8n.",
+                    "url": "https://n8nera.tech/n8n-ai-automation/",
+                    "inDefinedTermSet": { "@id": "https://n8nera.tech/#topical-authority" }
+                }
+            ]
+        }
+    ]
+}
