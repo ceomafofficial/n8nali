@@ -211,6 +211,15 @@ export default function RootLayout({
             __html: JSON.stringify(homepageSchema),
           }}
         />
+
+        {/* ── Google AdSense ── */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9320947540115773"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QCSTG3JLGQ"
           strategy="afterInteractive"
