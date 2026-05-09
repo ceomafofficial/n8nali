@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import {
@@ -234,7 +234,7 @@ export default function SecurityPage() {
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -245,9 +245,9 @@ export default function SecurityPage() {
                             <Shield className="w-4 h-4 text-emerald-400" />
                             <span className="text-sm text-emerald-400 font-medium">Enterprise Security</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
                             Security & Compliance{" "}
-                            <span className="text-gradient">You Can Trust</span>
+                            <span className="text-[#4285F4]">You Can Trust</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
                             Your automation infrastructure deserves enterprise-grade protection.
@@ -269,7 +269,7 @@ export default function SecurityPage() {
 
             {/* Trust Badges */}
             <section className="relative py-12 border-y border-white/5 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-wrap items-center justify-center gap-12">
                         {[
@@ -296,10 +296,10 @@ export default function SecurityPage() {
                         <span className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4 block">
                             Security Architecture
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Built Secure From the Ground Up
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Every automation we build follows security-first principles.
                             Here&apos;s how we protect your data and operations.
                         </p>
@@ -312,10 +312,10 @@ export default function SecurityPage() {
                                     <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6">
                                         <feature.icon className="w-7 h-7 text-emerald-400" />
                                     </div>
-                                    <h3 className="text-xl font-semibold text-white mb-3">
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
                                         {feature.title}
                                     </h3>
-                                    <p className="text-gray-400 mb-6">
+                                    <p className="text-gray-600 mb-6">
                                         {feature.description}
                                     </p>
                                     <ul className="grid grid-cols-2 gap-2">
@@ -335,16 +335,16 @@ export default function SecurityPage() {
 
             {/* Compliance Standards */}
             <section id="compliance" className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-16">
                         <span className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4 block">
                             Compliance
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Standards We Follow
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Our automation solutions are designed to meet international
                             and regional compliance requirements.
                         </p>
@@ -381,7 +381,7 @@ export default function SecurityPage() {
                         <span className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4 block">
                             Our Practices
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             How We Keep You Secure
                         </h2>
                     </AnimatedSection>
@@ -393,7 +393,7 @@ export default function SecurityPage() {
                                     <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6">
                                         <practice.icon className="w-6 h-6 text-emerald-400" />
                                     </div>
-                                    <h3 className="text-xl font-semibold text-white mb-4">
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-4">
                                         {practice.title}
                                     </h3>
                                     <ul className="space-y-3">
@@ -413,13 +413,13 @@ export default function SecurityPage() {
 
             {/* FAQs */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
                         <span className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4 block">
                             FAQ
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Security Questions
                         </h2>
                     </AnimatedSection>
@@ -427,8 +427,8 @@ export default function SecurityPage() {
                     <div className="space-y-4">
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
-                                <div className="glass-card p-6">
-                                    <h3 className="text-lg font-semibold text-white mb-3">
+                                <div className="google-card p-6 bg-white">
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
                                         {faq.question}
                                     </h3>
                                     <p className="text-gray-400">
@@ -448,7 +448,7 @@ export default function SecurityPage() {
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
                         <Shield className="w-16 h-16 text-emerald-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Ready for Secure Automation?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">

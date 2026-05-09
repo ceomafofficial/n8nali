@@ -24,7 +24,7 @@ function BlogImage({ src, alt }: { src?: string; alt?: string }) {
                 height={675}
                 sizes="(min-width: 1024px) 896px, 100vw"
                 loading="lazy"
-                className="w-full h-auto rounded-xl border border-white/10"
+                className="w-full h-auto rounded-xl border border-gray-200"
                 onError={onError}
                 unoptimized
             />
@@ -37,57 +37,57 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         <ReactMarkdown
             components={{
                 h1: ({ children }) => (
-                    <h1 className="text-3xl font-display font-bold text-white mt-10 mb-6">
+                    <h1 className="text-3xl font-display font-bold text-gray-900 mt-10 mb-6">
                         {children}
                     </h1>
                 ),
                 h2: ({ children }) => (
-                    <h2 className="text-2xl font-display font-bold text-white mt-10 mb-4">
+                    <h2 className="text-2xl font-display font-bold text-gray-900 mt-10 mb-4">
                         {children}
                     </h2>
                 ),
                 h3: ({ children }) => (
-                    <h3 className="text-xl font-display font-semibold text-white mt-8 mb-3">
+                    <h3 className="text-xl font-display font-semibold text-gray-800 mt-8 mb-3">
                         {children}
                     </h3>
                 ),
                 h4: ({ children }) => (
-                    <h4 className="text-lg font-semibold text-white mt-6 mb-2">
+                    <h4 className="text-lg font-semibold text-gray-800 mt-6 mb-2">
                         {children}
                     </h4>
                 ),
                 p: ({ children }) => (
-                    <p className="text-gray-300 leading-relaxed mb-6">{children}</p>
+                    <p className="text-gray-700 leading-relaxed mb-6">{children}</p>
                 ),
                 strong: ({ children }) => (
-                    <strong className="text-white font-semibold">{children}</strong>
+                    <strong className="text-gray-900 font-semibold">{children}</strong>
                 ),
                 em: ({ children }) => (
-                    <em className="text-gray-200 italic">{children}</em>
+                    <em className="text-gray-700 italic">{children}</em>
                 ),
                 ul: ({ children }) => (
                     <ul className="list-none space-y-3 mb-6 pl-0">{children}</ul>
                 ),
                 ol: ({ children }) => (
-                    <ol className="list-decimal list-inside space-y-3 mb-6 text-gray-300">
+                    <ol className="list-decimal list-inside space-y-3 mb-6 text-gray-700">
                         {children}
                     </ol>
                 ),
                 li: ({ children }) => (
-                    <li className="flex items-start gap-3 text-gray-300">
-                        <span className="w-2 h-2 rounded-full bg-accent-500 mt-2 flex-shrink-0" />
+                    <li className="flex items-start gap-3 text-gray-700">
+                        <span className="w-2 h-2 rounded-full bg-[#4285F4] mt-2 flex-shrink-0" />
                         <span>{children}</span>
                     </li>
                 ),
                 blockquote: ({ children }) => (
-                    <blockquote className="border-l-4 border-accent-500 pl-6 py-2 my-6 bg-white/5 rounded-r-xl">
-                        <div className="text-gray-300 italic">{children}</div>
+                    <blockquote className="border-l-4 border-[#4285F4] pl-6 py-2 my-6 bg-blue-50 rounded-r-xl">
+                        <div className="text-gray-700 italic">{children}</div>
                     </blockquote>
                 ),
                 a: ({ href, children }) => (
                     <a
                         href={href}
-                        className="text-accent-400 hover:text-accent-300 underline underline-offset-2"
+                        className="text-[#4285F4] hover:text-blue-700 underline underline-offset-2"
                         target={href?.startsWith("http") ? "_blank" : undefined}
                         rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
                     >
@@ -95,40 +95,40 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
                     </a>
                 ),
                 code: ({ children }) => (
-                    <code className="bg-white/10 text-accent-300 px-2 py-1 rounded text-sm font-mono">
+                    <code className="bg-gray-100 text-[#4285F4] px-2 py-1 rounded text-sm font-mono border border-gray-200">
                         {children}
                     </code>
                 ),
                 pre: ({ children }) => (
-                    <pre className="bg-dark-800 border border-white/10 rounded-xl p-6 overflow-x-auto mb-6">
+                    <pre className="bg-gray-900 border border-gray-200 rounded-xl p-6 overflow-x-auto mb-6 text-gray-100">
                         {children}
                     </pre>
                 ),
                 img: ({ src, alt }) => <BlogImage src={src} alt={alt} />,
                 table: ({ children }) => (
-                    <div className="overflow-x-auto mb-6 rounded-xl border border-white/10">
-                        <table className="w-full text-sm text-left text-gray-300">
+                    <div className="overflow-x-auto mb-6 rounded-xl border border-gray-200">
+                        <table className="w-full text-sm text-left text-gray-700">
                             {children}
                         </table>
                     </div>
                 ),
                 thead: ({ children }) => (
-                    <thead className="text-xs uppercase text-gray-400 bg-white/5">
+                    <thead className="text-xs uppercase text-gray-600 bg-gray-50">
                         {children}
                     </thead>
                 ),
                 th: ({ children }) => (
-                    <th className="px-4 py-3 font-semibold text-white whitespace-nowrap">
+                    <th className="px-4 py-3 font-semibold text-gray-900 whitespace-nowrap">
                         {children}
                     </th>
                 ),
                 td: ({ children }) => (
-                    <td className="px-4 py-3 border-t border-white/5">{children}</td>
+                    <td className="px-4 py-3 border-t border-gray-100">{children}</td>
                 ),
                 tr: ({ children }) => (
-                    <tr className="hover:bg-white/5 transition-colors">{children}</tr>
+                    <tr className="hover:bg-gray-50 transition-colors">{children}</tr>
                 ),
-                hr: () => <hr className="border-white/10 my-10" />,
+                hr: () => <hr className="border-gray-200 my-10" />,
             }}
         >
             {content}

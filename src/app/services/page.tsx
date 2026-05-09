@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -103,7 +103,7 @@ export default function ServicesPage() {
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -113,9 +113,9 @@ export default function ServicesPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Our Services
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
                             Automation Solutions That{" "}
-                            <span className="text-gradient">Scale Your Business</span>
+                            <span className="text-[#4285F4]">Scale Your Business</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
                             From workflow automation to AI voice agents, discover the complete
@@ -128,7 +128,7 @@ export default function ServicesPage() {
 
             {/* SEO Content Section */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
@@ -164,7 +164,7 @@ export default function ServicesPage() {
                             {/* Category Header */}
                             <AnimatedSection className="flex items-center gap-4 mb-12">
                                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-500/20 to-primary-600/20 flex items-center justify-center">
-                                    <CategoryIcon className="w-7 h-7 text-accent-400" />
+                                    <CategoryIcon className="w-7 h-7 text-[#4285F4]" />
                                 </div>
                                 <div>
                                     <h2 className="text-2xl md:text-3xl font-display font-bold text-white">
@@ -181,14 +181,14 @@ export default function ServicesPage() {
                                     return (
                                         <AnimatedSection key={service.id} delay={index * 0.1}>
                                             <Link href={`/services/${service.id}`} className="group block h-full">
-                                                <div className="glass-card h-full p-6">
+                                                <div className="google-card h-full bg-white p-6">
                                                     {/* Icon */}
                                                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent-500/10 to-primary-600/10 flex items-center justify-center mb-4 group-hover:from-accent-500/20 group-hover:to-primary-600/20 transition-colors">
-                                                        <Icon className="w-6 h-6 text-accent-400" />
+                                                        <Icon className="w-6 h-6 text-[#4285F4]" />
                                                     </div>
 
                                                     {/* Content */}
-                                                    <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-accent-300 transition-colors">
+                                                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">
                                                         {service.title}
                                                     </h3>
                                                     <p className="text-sm text-gray-400 mb-4">
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                                                     </ul>
 
                                                     {/* CTA */}
-                                                    <div className="flex items-center gap-2 text-sm font-medium text-accent-400 group-hover:text-accent-300">
+                                                    <div className="flex items-center gap-2 text-sm font-medium text-accent-400 group-hover:text-[#4285F4]">
                                                         Learn more
                                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                                     </div>
@@ -223,11 +223,11 @@ export default function ServicesPage() {
 
             {/* CTA Section */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Not Sure Which Service You Need?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">

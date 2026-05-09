@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { ArrowLeft, Shield, Database, Eye, Lock, UserCheck, Globe, Mail } from "lucide-react";
@@ -55,16 +55,16 @@ export default function PrivacyPolicyPage() {
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                 </div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center">
-                        <Link href="/" className="inline-flex items-center text-sm text-accent-400 hover:text-accent-300 mb-6 transition-colors">
+                        <Link href="/" className="inline-flex items-center text-sm text-accent-400 hover:text-[#4285F4] mb-6 transition-colors">
                             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
                         </Link>
-                        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-                            Privacy <span className="text-gradient">Policy</span>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
+                            Privacy <span className="text-[#4285F4]">Policy</span>
                         </h1>
                         <p className="text-lg text-gray-400 mb-4">Your privacy is important to us.</p>
                         <p className="text-sm text-gray-500">Last Updated: {lastUpdated}</p>
@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
                     <AnimatedSection>
                         <div className="space-y-8">
                             {/* Introduction */}
-                            <div className="glass-card p-8">
+                            <div className="google-card p-8 bg-white">
                                 <p className="text-gray-400">
                                     n8nera (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your privacy.
                                     This Privacy Policy explains how we collect, use, disclose, and safeguard your information
@@ -89,12 +89,12 @@ export default function PrivacyPolicyPage() {
 
                             {/* Section 1 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Database className="w-6 h-6 mr-3 text-primary-400" />
                                     1. Information We Collect
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
-                                    <p><strong className="text-white">Personal Information You Provide:</strong></p>
+                                <div className="text-gray-600 space-y-4">
+                                    <p><strong className="text-gray-900">Personal Information You Provide:</strong></p>
                                     <ul className="list-disc pl-6 space-y-2">
                                         <li>Contact Information: Name, email, phone number, company name</li>
                                         <li>Account Information: Username, password, preferences</li>
@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
                                         <li>Payment Information: Billing details (processed by secure third-party processors)</li>
                                         <li>Project Data: Information for service delivery</li>
                                     </ul>
-                                    <p><strong className="text-white">Information Collected Automatically:</strong></p>
+                                    <p><strong className="text-gray-900">Information Collected Automatically:</strong></p>
                                     <ul className="list-disc pl-6 space-y-2">
                                         <li>Device Information: IP address, browser type, operating system</li>
                                         <li>Usage Data: Pages visited, time spent, click patterns</li>
@@ -113,87 +113,87 @@ export default function PrivacyPolicyPage() {
 
                             {/* Section 2 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Eye className="w-6 h-6 mr-3 text-primary-400" />
                                     2. How We Use Your Information
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Service Delivery:</strong> Provide and improve our automation services</li>
-                                        <li><strong className="text-white">Communication:</strong> Respond to inquiries and send project updates</li>
-                                        <li><strong className="text-white">Marketing:</strong> Send promotional materials (with your consent)</li>
-                                        <li><strong className="text-white">Analytics:</strong> Understand website usage and improve experience</li>
-                                        <li><strong className="text-white">Security:</strong> Detect and prevent fraud and security threats</li>
-                                        <li><strong className="text-white">Legal Compliance:</strong> Comply with applicable laws</li>
+                                        <li><strong className="text-gray-900">Service Delivery:</strong> Provide and improve our automation services</li>
+                                        <li><strong className="text-gray-900">Communication:</strong> Respond to inquiries and send project updates</li>
+                                        <li><strong className="text-gray-900">Marketing:</strong> Send promotional materials (with your consent)</li>
+                                        <li><strong className="text-gray-900">Analytics:</strong> Understand website usage and improve experience</li>
+                                        <li><strong className="text-gray-900">Security:</strong> Detect and prevent fraud and security threats</li>
+                                        <li><strong className="text-gray-900">Legal Compliance:</strong> Comply with applicable laws</li>
                                     </ul>
                                 </div>
                             </div>
 
                             {/* Section 3 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Globe className="w-6 h-6 mr-3 text-primary-400" />
                                     3. Data Sharing & Disclosure
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <p>We do not sell your personal information. We may share data with:</p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Service Providers:</strong> Third-party vendors for operations (hosting, analytics, payments)</li>
-                                        <li><strong className="text-white">Business Partners:</strong> When required for integrations</li>
-                                        <li><strong className="text-white">Legal Requirements:</strong> When required by law or to protect our rights</li>
-                                        <li><strong className="text-white">Business Transfers:</strong> In connection with mergers or acquisitions</li>
+                                        <li><strong className="text-gray-900">Service Providers:</strong> Third-party vendors for operations (hosting, analytics, payments)</li>
+                                        <li><strong className="text-gray-900">Business Partners:</strong> When required for integrations</li>
+                                        <li><strong className="text-gray-900">Legal Requirements:</strong> When required by law or to protect our rights</li>
+                                        <li><strong className="text-gray-900">Business Transfers:</strong> In connection with mergers or acquisitions</li>
                                     </ul>
                                 </div>
                             </div>
 
                             {/* Section 4 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Lock className="w-6 h-6 mr-3 text-primary-400" />
                                     4. Data Security
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Encryption:</strong> TLS 1.3 for data in transit, AES-256 for data at rest</li>
-                                        <li><strong className="text-white">Access Controls:</strong> Role-based access for authorized personnel only</li>
-                                        <li><strong className="text-white">Infrastructure:</strong> Enterprise-grade cloud platforms with SOC 2 compliance</li>
-                                        <li><strong className="text-white">Monitoring:</strong> Continuous security monitoring and logging</li>
+                                        <li><strong className="text-gray-900">Encryption:</strong> TLS 1.3 for data in transit, AES-256 for data at rest</li>
+                                        <li><strong className="text-gray-900">Access Controls:</strong> Role-based access for authorized personnel only</li>
+                                        <li><strong className="text-gray-900">Infrastructure:</strong> Enterprise-grade cloud platforms with SOC 2 compliance</li>
+                                        <li><strong className="text-gray-900">Monitoring:</strong> Continuous security monitoring and logging</li>
                                     </ul>
                                 </div>
                             </div>
 
                             {/* Section 5 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Database className="w-6 h-6 mr-3 text-primary-400" />
                                     5. Data Retention
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Active Client Data:</strong> Retained for business relationship plus 3 years</li>
-                                        <li><strong className="text-white">Project Deliverables:</strong> Retained for 2 years after completion</li>
-                                        <li><strong className="text-white">Marketing Data:</strong> Until you unsubscribe or request deletion</li>
-                                        <li><strong className="text-white">Legal Records:</strong> As required by law (typically 7 years)</li>
+                                        <li><strong className="text-gray-900">Active Client Data:</strong> Retained for business relationship plus 3 years</li>
+                                        <li><strong className="text-gray-900">Project Deliverables:</strong> Retained for 2 years after completion</li>
+                                        <li><strong className="text-gray-900">Marketing Data:</strong> Until you unsubscribe or request deletion</li>
+                                        <li><strong className="text-gray-900">Legal Records:</strong> As required by law (typically 7 years)</li>
                                     </ul>
                                 </div>
                             </div>
 
                             {/* Section 6 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <UserCheck className="w-6 h-6 mr-3 text-primary-400" />
                                     6. Your Rights
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <p>You may have the following rights regarding your personal data:</p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Access:</strong> Request a copy of your personal information</li>
-                                        <li><strong className="text-white">Rectification:</strong> Request correction of inaccurate data</li>
-                                        <li><strong className="text-white">Erasure:</strong> Request deletion (&quot;right to be forgotten&quot;)</li>
-                                        <li><strong className="text-white">Restrict Processing:</strong> Limit how we use your data</li>
-                                        <li><strong className="text-white">Data Portability:</strong> Receive data in a machine-readable format</li>
-                                        <li><strong className="text-white">Object:</strong> Object to processing for marketing purposes</li>
-                                        <li><strong className="text-white">Withdraw Consent:</strong> Withdraw consent at any time</li>
+                                        <li><strong className="text-gray-900">Access:</strong> Request a copy of your personal information</li>
+                                        <li><strong className="text-gray-900">Rectification:</strong> Request correction of inaccurate data</li>
+                                        <li><strong className="text-gray-900">Erasure:</strong> Request deletion (&quot;right to be forgotten&quot;)</li>
+                                        <li><strong className="text-gray-900">Restrict Processing:</strong> Limit how we use your data</li>
+                                        <li><strong className="text-gray-900">Data Portability:</strong> Receive data in a machine-readable format</li>
+                                        <li><strong className="text-gray-900">Object:</strong> Object to processing for marketing purposes</li>
+                                        <li><strong className="text-gray-900">Withdraw Consent:</strong> Withdraw consent at any time</li>
                                     </ul>
                                     <p>To exercise these rights, contact us at n8nera@gmail.com.</p>
                                 </div>
@@ -201,62 +201,62 @@ export default function PrivacyPolicyPage() {
 
                             {/* Section 7 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Eye className="w-6 h-6 mr-3 text-primary-400" />
                                     7. Cookies & Tracking
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <p>We use cookies and similar technologies:</p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Essential Cookies:</strong> Required for website functionality</li>
-                                        <li><strong className="text-white">Analytics Cookies:</strong> Understand how visitors use our website</li>
-                                        <li><strong className="text-white">Marketing Cookies:</strong> Deliver relevant advertisements</li>
+                                        <li><strong className="text-gray-900">Essential Cookies:</strong> Required for website functionality</li>
+                                        <li><strong className="text-gray-900">Analytics Cookies:</strong> Understand how visitors use our website</li>
+                                        <li><strong className="text-gray-900">Marketing Cookies:</strong> Deliver relevant advertisements</li>
                                     </ul>
-                                    <p>See our <Link href="/cookie-policy" className="text-accent-400 hover:text-accent-300">Cookie Policy</Link> for details.</p>
+                                    <p>See our <Link href="/cookie-policy" className="text-[#4285F4] hover:text-[#4285F4]">Cookie Policy</Link> for details.</p>
                                 </div>
                             </div>
 
                             {/* Section 8 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Globe className="w-6 h-6 mr-3 text-primary-400" />
                                     8. International Transfers
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <p>Your information may be transferred to countries other than your country of residence. We ensure appropriate safeguards are in place for international transfers including data processing agreements and encryption.</p>
                                 </div>
                             </div>
 
                             {/* Section 9 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Shield className="w-6 h-6 mr-3 text-primary-400" />
                                     9. Children&apos;s Privacy
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <p>Our services are not directed to individuals under 18. We do not knowingly collect personal information from children. If you believe a child has provided us with information, please contact us immediately.</p>
                                 </div>
                             </div>
 
                             {/* Section 10 */}
                             <div className="glass-card p-8 scroll-mt-24">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
                                     <Mail className="w-6 h-6 mr-3 text-primary-400" />
                                     10. Changes to This Policy
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
+                                <div className="text-gray-600 space-y-4">
                                     <p>We may update this Privacy Policy from time to time. Material changes will be posted on our website with an updated effective date. Your continued use of our services constitutes acceptance of the updated policy.</p>
                                 </div>
                             </div>
 
                             {/* Contact */}
                             <div className="glass-card p-8 border-primary-500/30">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Contact Us</h2>
-                                <div className="text-gray-400 space-y-2">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Contact Us</h2>
+                                <div className="text-gray-600 space-y-2">
                                     <p>Questions about this Privacy Policy? Contact us:</p>
-                                    <p><strong className="text-white">Email:</strong> n8nera@gmail.com</p>
-                                    <p><strong className="text-white">Phone:</strong> +92-314-160-3089</p>
-                                    <p><strong className="text-white">Address:</strong> Satellite Town, Rahim Yar Khan, Pakistan</p>
+                                    <p><strong className="text-gray-900">Email:</strong> n8nera@gmail.com</p>
+                                    <p><strong className="text-gray-900">Phone:</strong> +92-314-160-3089</p>
+                                    <p><strong className="text-gray-900">Address:</strong> Satellite Town, Rahim Yar Khan, Pakistan</p>
                                 </div>
                             </div>
                         </div>
@@ -266,11 +266,11 @@ export default function PrivacyPolicyPage() {
 
             {/* Related Links */}
             <section className="relative py-12 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4">
                     <AnimatedSection>
                         <div className="glass-card p-8 text-center">
-                            <h3 className="text-xl font-semibold text-white mb-4">Related Legal Documents</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">Related Legal Documents</h3>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/terms-of-service" className="btn-secondary text-sm">Terms of Service</Link>
                                 <Link href="/cookie-policy" className="btn-secondary text-sm">Cookie Policy</Link>

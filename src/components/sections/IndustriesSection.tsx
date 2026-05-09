@@ -12,6 +12,7 @@ import {
     Rocket,
     ArrowRight,
 } from "lucide-react";
+import React from "react";
 
 const iconMap: Record<string, React.ElementType> = {
     Store,
@@ -41,22 +42,18 @@ const industries = [
 
 export default function IndustriesSection() {
     return (
-        <section className="relative py-24 md:py-32 overflow-hidden">
-            {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark-950 via-dark-900/50 to-dark-950" />
-            <div className="absolute inset-0 bg-premium-pattern" />
-
+        <section className="relative py-24 md:py-32 overflow-hidden bg-[#f8f9fa]">
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
+                    <span className="inline-block text-sm font-semibold text-[#4285F4] uppercase tracking-wider mb-4">
                         Industries We Serve
                     </span>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6">
                         Automation Solutions for{" "}
-                        <span className="text-gradient">Every Industry</span>
+                        <span className="text-gradient-blue italic-accent">Every Industry</span>
                     </h2>
-                    <p className="text-lg text-gray-400">
+                    <p className="text-lg text-gray-700">
                         From local businesses to global enterprises, we&apos;ve built automation systems across diverse industries worldwide.
                     </p>
                 </div>
@@ -69,12 +66,12 @@ export default function IndustriesSection() {
                             <div key={industry.id}>
                                 <Link href={`/industries/${industry.id}`}>
                                     <div
-                                        className="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-accent-500/30 hover:bg-white/[0.04] hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
+                                        className="group google-card flex flex-col items-center gap-4 p-6 bg-white cursor-pointer"
                                     >
-                                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-500/10 to-primary-600/10 flex items-center justify-center group-hover:from-accent-500/20 group-hover:to-primary-600/20 transition-colors">
-                                            <Icon className="w-7 h-7 text-accent-400" />
+                                        <div className="w-14 h-14 rounded-2xl bg-[#4285F4]/10 flex items-center justify-center group-hover:bg-[#4285F4] transition-colors duration-300">
+                                            <Icon className="w-7 h-7 text-[#4285F4] group-hover:text-white transition-colors duration-300" />
                                         </div>
-                                        <span className="text-sm font-medium text-white text-center group-hover:text-accent-300 transition-colors">
+                                        <span className="text-sm font-semibold text-gray-800 text-center group-hover:text-[#4285F4] transition-colors">
                                             {industry.name}
                                         </span>
                                     </div>
@@ -88,7 +85,7 @@ export default function IndustriesSection() {
                 <div className="text-center mt-10">
                     <Link
                         href="/industries"
-                        className="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 font-medium animated-underline"
+                        className="inline-flex items-center gap-2 text-[#4285F4] hover:text-[#174ea6] font-semibold"
                     >
                         See all industries we serve
                         <ArrowRight className="w-4 h-4" />

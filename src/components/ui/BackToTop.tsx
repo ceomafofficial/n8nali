@@ -22,10 +22,12 @@ export default function BackToTop() {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-8 right-8 z-50 p-3 rounded-full bg-accent-500 text-white shadow-lg hover:bg-accent-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-dark-950 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}`}
+            className={`fixed bottom-20 right-4 sm:bottom-8 sm:right-[5.5rem] z-40 p-2.5 sm:p-3 rounded-full bg-[#4285F4] text-white shadow-lg hover:bg-[#2b6ada] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#4285F4] focus:ring-offset-2 ${
+                isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"
+            }`}
             aria-label="Back to top"
         >
-            <ArrowUp className="w-6 h-6" />
+            <ArrowUp className="w-5 h-5 sm:w-6 sm:h-6" />
         </button>
     );
 }

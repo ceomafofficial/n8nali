@@ -5,12 +5,12 @@ import { Check, ArrowRight, HelpCircle } from "lucide-react";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-    title: "Pricing — n8n Automation from $500/Project [Transparent]",
-    description: "Transparent n8n automation pricing. Starter from $500, Growth from $2,000, Enterprise custom. No hidden fees. See exactly what you get at each tier. 200+ projects delivered. Compare plans →",
+    title: "n8n Automation Pricing — Avg Client Saves $8,400/mo. Investment Starts $500",
+    description: "See exactly what our automation costs before you commit. Clients save avg $8,400/mo after going live. Starter from $500, Professional from $2K, Enterprise custom. No hidden fees. Free audit shows your exact ROI first.",
     keywords: ["n8n automation pricing", "automation costs", "AI voice agent pricing", "n8n pricing", "workflow automation cost", "n8n agency rates", "automation ROI"],
     openGraph: {
-        title: "n8n Automation Pricing — Plans from $500 | n8nera",
-        description: "Transparent pricing. Starter $500, Growth $2,000, Enterprise custom. No hidden fees. 200+ projects delivered.",
+        title: "What Does Automation Actually Cost? (And What Does It Save You?)",
+        description: "Avg client saves $8,400/mo. Investment starts at $500. Transparent pricing, zero hidden fees. Free audit tells you the ROI before you spend a dollar.",
         url: "https://n8nera.tech/pricing/",
         type: "website",
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         site: "@n8nera",
         creator: "@n8nera",
-        title: "n8n Automation Pricing — From $500/Project [Transparent] | n8nera",
-        description: "Starter $500, Growth $2,000, Enterprise custom. No hidden fees. 200+ projects delivered.",
+        title: "n8n Automation from $500 — Avg Client Saves $8,400/mo | n8nera",
+        description: "Transparent pricing. No hidden fees. Free audit shows your exact ROI before you invest. Starter $500 → see full breakdown.",
     },
     alternates: {
         canonical: "https://n8nera.tech/pricing/",
@@ -183,15 +183,15 @@ export default function PricingPage() {
             {/* Hero */}
             <section className="relative py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Pricing
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                            Transparent, Value-Based <span className="text-gradient">Pricing</span>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
+                            Transparent, Value-Based <span className="text-[#4285F4]">Pricing</span>
                         </h1>
                         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
                             No hidden fees. No surprises. Just clear pricing for automation solutions that deliver measurable ROI.
@@ -202,7 +202,7 @@ export default function PricingPage() {
 
             {/* Pricing Cards */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {pricingTiers.map((tier, index) => (
@@ -250,7 +250,7 @@ export default function PricingPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">Add-On Services</h2>
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Add-On Services</h2>
                         <p className="text-gray-400">Extend your automation with additional services</p>
                     </AnimatedSection>
 
@@ -259,10 +259,10 @@ export default function PricingPage() {
                             <AnimatedSection key={addon.name} delay={index * 0.1}>
                                 <div className="flex items-start justify-between p-6 rounded-xl bg-white/[0.02] border border-white/5">
                                     <div>
-                                        <h3 className="font-semibold text-white mb-1">{addon.name}</h3>
+                                        <h3 className="font-semibold text-gray-900 mb-1">{addon.name}</h3>
                                         <p className="text-sm text-gray-400">{addon.description}</p>
                                     </div>
-                                    <span className="text-accent-400 font-semibold whitespace-nowrap ml-4">{addon.price}</span>
+                                    <span className="text-[#4285F4] font-semibold whitespace-nowrap ml-4">{addon.price}</span>
                                 </div>
                             </AnimatedSection>
                         ))}
@@ -272,10 +272,10 @@ export default function PricingPage() {
 
             {/* FAQ */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">Pricing Questions</h2>
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Pricing Questions</h2>
                     </AnimatedSection>
 
                     <div className="space-y-4">
@@ -286,7 +286,7 @@ export default function PricingPage() {
                             { q: "Is there a money-back guarantee?", a: "We work closely with you throughout the project. If we can't deliver what we promised, we'll make it right or refund your investment." },
                         ].map((item, i) => (
                             <AnimatedSection key={i} delay={i * 0.1}>
-                                <div className="glass-card p-6">
+                                <div className="google-card p-6 bg-white">
                                     <h3 className="flex items-start gap-3 text-white font-medium mb-2">
                                         <HelpCircle className="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" />
                                         {item.q}
@@ -301,10 +301,10 @@ export default function PricingPage() {
 
             {/* CTA */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Not Sure Which Plan Fits?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">

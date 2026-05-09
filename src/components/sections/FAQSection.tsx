@@ -28,35 +28,32 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="relative py-24 md:py-32 overflow-hidden">
-            {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950" />
-
+        <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-[#f8f9fa]">
             <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
+                    <span className="inline-block text-sm font-semibold text-[#4285F4] uppercase tracking-wider mb-4">
                         FAQ
                     </span>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6">
                         Frequently Asked{" "}
-                        <span className="text-gradient">Questions</span>
+                        <span className="text-gradient-blue italic-accent">Questions</span>
                     </h2>
-                    <p className="text-lg text-gray-400">
+                    <p className="text-lg text-gray-700">
                         Everything you need to know about n8nera&apos;s automation services.
                     </p>
                 </div>
 
                 {/* Category Filters */}
-                <div className="mb-10">
-                    <div className="flex flex-wrap justify-center gap-2">
+                <div className="mb-8 md:mb-10">
+                    <div className="flex overflow-x-auto pb-2 gap-2 no-scrollbar justify-start md:justify-center md:flex-wrap">
                         {categories.map((category) => (
                             <button
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
-                                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category.id
-                                        ? "bg-accent-500 text-white"
-                                        : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
+                                className={`px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-all whitespace-nowrap flex-shrink-0 ${activeCategory === category.id
+                                        ? "bg-[#4285F4] text-white shadow-sm"
+                                        : "bg-white text-gray-700 border border-gray-200 hover:border-[#4285F4] hover:text-[#4285F4]"
                                     }`}
                             >
                                 {category.label}
@@ -71,20 +68,20 @@ export default function FAQSection() {
                         {filteredFAQs.map((faq) => (
                             <div
                                 key={faq.id}
-                                className="glass-card overflow-hidden"
+                                className="google-card overflow-hidden bg-white"
                             >
                                     <button
                                         onClick={() => toggleItem(faq.id)}
                                         className="w-full flex items-center justify-between gap-4 p-6 text-left"
                                         aria-expanded={openItems.includes(faq.id)}
                                     >
-                                        <span className="text-base md:text-lg font-medium text-white pr-8">
+                                        <span className="text-base md:text-lg font-semibold text-gray-900 pr-8">
                                             {faq.question}
                                         </span>
                                         <div
                                             className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${openItems.includes(faq.id)
-                                                    ? "bg-accent-500 text-white"
-                                                    : "bg-white/10 text-gray-400"
+                                                    ? "bg-[#4285F4] text-white"
+                                                    : "bg-gray-100 text-gray-700"
                                                 }`}
                                         >
                                             {openItems.includes(faq.id) ? (
@@ -101,8 +98,8 @@ export default function FAQSection() {
                                     >
                                         <div className="overflow-hidden">
                                             <div className="px-6 pb-6 pt-0">
-                                                <div className="h-px bg-white/5 mb-4" />
-                                                <p className="text-gray-400 leading-relaxed">
+                                                <div className="h-px bg-gray-100 mb-4" />
+                                                <p className="text-gray-700 leading-relaxed">
                                                     {faq.answer}
                                                 </p>
                                             </div>
@@ -115,10 +112,10 @@ export default function FAQSection() {
 
                 {/* Still Have Questions */}
                 <div className="mt-12 text-center">
-                    <div className="glass-card inline-block px-8 py-4">
-                        <p className="text-gray-400">
+                    <div className="google-card inline-block px-8 py-4 bg-white">
+                        <p className="text-gray-800 font-medium">
                             Still have questions?{" "}
-                            <a href="/contact" className="text-accent-400 hover:text-accent-300 font-medium animated-underline">
+                            <a href="/contact" className="text-[#4285F4] hover:text-[#174ea6] font-semibold underline underline-offset-2">
                                 Talk to an automation expert
                             </a>
                         </p>

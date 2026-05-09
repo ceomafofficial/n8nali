@@ -42,3 +42,12 @@ next-env.d.ts
 
 # data (user submissions)
 next-env.d.ts
+
+# debug & temp scripts (not part of source)
+bad_urls.json
+clean_bad_urls.json
+check_dupes.js
+debug_excel.js
+extract_404.js
+filter_urls.js
+knip_output.txt

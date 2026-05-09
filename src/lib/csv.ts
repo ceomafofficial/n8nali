@@ -37,7 +37,7 @@ function parseCSV<T>(filePath: string): T[] {
         const line = lines[i] || '';
         const cols = line.split(',').map(col => col.trim());
         if (cols.length === headers.length) {
-            const obj: any = {};
+            const obj: Record<string, string> = {};
             for (let j = 0; j < headers.length; j++) {
                 const header = headers[j];
                 if (!header) continue;

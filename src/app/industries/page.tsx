@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { industries } from "@/lib/data/industries";
@@ -65,7 +65,7 @@ export default function IndustriesPage() {
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -75,9 +75,9 @@ export default function IndustriesPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Industries We Serve
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
                             Automation Solutions for{" "}
-                            <span className="text-gradient">Every Industry</span>
+                            <span className="text-[#4285F4]">Every Industry</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
                             From local shops to global enterprises, we&apos;ve built automation
@@ -90,7 +90,7 @@ export default function IndustriesPage() {
 
             {/* SEO Content Section */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
@@ -111,7 +111,7 @@ export default function IndustriesPage() {
 
             {/* Industries Grid */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -123,14 +123,14 @@ export default function IndustriesPage() {
 
                             return (
                                 <AnimatedSection key={industry.id} delay={index * 0.1}>
-                                    <div className="glass-card h-full p-6 group hover:border-accent-500/30 transition-all">
+                                    <div className="google-card h-full bg-white p-6 group hover:border-[#4285F4]/30 transition-all">
                                         {/* Header */}
                                         <div className="flex items-start gap-4 mb-4">
                                             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-500/10 to-primary-600/10 flex items-center justify-center flex-shrink-0 group-hover:from-accent-500/20 group-hover:to-primary-600/20 transition-colors">
-                                                <Icon className="w-7 h-7 text-accent-400" />
+                                                <Icon className="w-7 h-7 text-[#4285F4]" />
                                             </div>
                                             <div>
-                                                <h2 className="text-xl font-semibold text-white group-hover:text-accent-300 transition-colors">
+                                                <h2 className="text-xl font-semibold text-gray-900 group-hover:text-[#4285F4] transition-colors">
                                                     {industry.name}
                                                 </h2>
                                                 <p className="text-sm text-gray-500">{industry.useCases.length} use cases</p>
@@ -138,7 +138,7 @@ export default function IndustriesPage() {
                                         </div>
 
                                         {/* Description */}
-                                        <p className="text-gray-400 text-sm mb-4">
+                                        <p className="text-gray-600 text-sm mb-4">
                                             {industry.description}
                                         </p>
 
@@ -167,7 +167,7 @@ export default function IndustriesPage() {
                                                     <Link
                                                         key={service.id}
                                                         href={`/services/${service.id}`}
-                                                        className="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-400 hover:bg-accent-500/20 hover:text-accent-300 transition-colors"
+                                                        className="text-xs px-3 py-1 rounded-full bg-gray-50 text-gray-400 hover:bg-accent-500/20 hover:text-[#4285F4] transition-colors"
                                                     >
                                                         {service.shortTitle}
                                                     </Link>
@@ -178,7 +178,7 @@ export default function IndustriesPage() {
                                         {/* CTA */}
                                         <Link
                                             href={`/industries/${industry.id}`}
-                                            className="flex items-center gap-2 mt-4 text-sm font-medium text-accent-400 group-hover:text-accent-300"
+                                            className="flex items-center gap-2 mt-4 text-sm font-medium text-accent-400 group-hover:text-[#4285F4]"
                                         >
                                             Learn more
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -193,11 +193,11 @@ export default function IndustriesPage() {
 
             {/* CTA Section */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Don&apos;t See Your Industry?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">

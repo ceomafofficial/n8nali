@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { ArrowLeft, Cookie, Settings, BarChart3, Target, Shield, ToggleLeft } from "lucide-react";
@@ -90,19 +90,19 @@ export default function CookiePolicyPage() {
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center">
-                        <Link href="/" className="inline-flex items-center text-sm text-accent-400 hover:text-accent-300 mb-6 transition-colors">
+                        <Link href="/" className="inline-flex items-center text-sm text-accent-400 hover:text-[#4285F4] mb-6 transition-colors">
                             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
                         </Link>
-                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent-500/10 mb-6">
-                            <Cookie className="w-8 h-8 text-accent-400" />
+                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#4285F4]/10 mb-6">
+                            <Cookie className="w-8 h-8 text-[#4285F4]" />
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-                            Cookie <span className="text-gradient">Policy</span>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
+                            Cookie <span className="text-[#4285F4]">Policy</span>
                         </h1>
                         <p className="text-lg text-gray-400 mb-4">
                             Understanding how we use cookies and your choices.
@@ -119,9 +119,9 @@ export default function CookiePolicyPage() {
                     <AnimatedSection>
                         <div className="space-y-8">
                             {/* Introduction */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">What Are Cookies?</h2>
-                                <div className="text-gray-400 space-y-4">
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">What Are Cookies?</h2>
+                                <div className="text-gray-600 space-y-4">
                                     <p>
                                         Cookies are small text files that are stored on your device (computer, tablet, or mobile)
                                         when you visit a website. They are widely used to make websites work more efficiently,
@@ -136,29 +136,29 @@ export default function CookiePolicyPage() {
                             </div>
 
                             {/* Why We Use Cookies */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Why We Use Cookies</h2>
-                                <div className="text-gray-400 space-y-4">
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Why We Use Cookies</h2>
+                                <div className="text-gray-600 space-y-4">
                                     <p>We use cookies and similar technologies for several purposes:</p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Essential Operations:</strong> To ensure our website functions correctly and securely</li>
-                                        <li><strong className="text-white">Performance Analysis:</strong> To understand how visitors use our website and identify areas for improvement</li>
-                                        <li><strong className="text-white">Personalization:</strong> To remember your preferences and provide a tailored experience</li>
-                                        <li><strong className="text-white">Marketing:</strong> To deliver relevant content and measure the effectiveness of our campaigns</li>
-                                        <li><strong className="text-white">Security:</strong> To protect against fraud and ensure safe browsing</li>
+                                        <li><strong className="text-gray-900">Essential Operations:</strong> To ensure our website functions correctly and securely</li>
+                                        <li><strong className="text-gray-900">Performance Analysis:</strong> To understand how visitors use our website and identify areas for improvement</li>
+                                        <li><strong className="text-gray-900">Personalization:</strong> To remember your preferences and provide a tailored experience</li>
+                                        <li><strong className="text-gray-900">Marketing:</strong> To deliver relevant content and measure the effectiveness of our campaigns</li>
+                                        <li><strong className="text-gray-900">Security:</strong> To protect against fraud and ensure safe browsing</li>
                                     </ul>
                                 </div>
                             </div>
 
                             {/* Types of Cookies */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-6">Types of Cookies We Use</h2>
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">Types of Cookies We Use</h2>
                                 <div className="grid gap-6">
                                     {cookieTypes.map((cookie, index) => (
                                         <div key={index} className="p-6 rounded-xl bg-white/[0.02] border border-white/5">
                                             <div className="flex items-start gap-4">
-                                                <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center flex-shrink-0">
-                                                    <cookie.icon className="w-6 h-6 text-accent-400" />
+                                                <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center flex-shrink-0">
+                                                    <cookie.icon className="w-6 h-6 text-[#4285F4]" />
                                                 </div>
                                                 <div className="flex-1">
                                                     <div className="flex items-center justify-between mb-2">
@@ -167,10 +167,10 @@ export default function CookiePolicyPage() {
                                                             {cookie.canDisable ? 'Can Disable' : 'Required'}
                                                         </span>
                                                     </div>
-                                                    <p className="text-gray-400 text-sm mb-3">{cookie.description}</p>
+                                                    <p className="text-gray-600 text-sm mb-3">{cookie.description}</p>
                                                     <div className="flex flex-wrap gap-2 mb-2">
                                                         {cookie.examples.map((example, i) => (
-                                                            <span key={i} className="text-xs px-2 py-1 rounded bg-white/5 text-gray-500">
+                                                            <span key={i} className="text-xs px-2 py-1 rounded bg-gray-50 text-gray-500">
                                                                 {example}
                                                             </span>
                                                         ))}
@@ -184,8 +184,8 @@ export default function CookiePolicyPage() {
                             </div>
 
                             {/* Specific Cookies */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Specific Cookies We Use</h2>
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Specific Cookies We Use</h2>
                                 <div className="overflow-x-auto">
                                     <table className="w-full text-sm">
                                         <thead>
@@ -233,43 +233,43 @@ export default function CookiePolicyPage() {
                             </div>
 
                             {/* Third-Party Cookies */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Third-Party Cookies</h2>
-                                <div className="text-gray-400 space-y-4">
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Third-Party Cookies</h2>
+                                <div className="text-gray-600 space-y-4">
                                     <p>
                                         Some cookies on our website are set by third-party services we use. These services
                                         have their own privacy policies governing the use of cookies:
                                     </p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Google Analytics:</strong> Web analytics service - <a href="https://policies.google.com/privacy" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
-                                        <li><strong className="text-white">Google Tag Manager:</strong> Tag management - <a href="https://policies.google.com/privacy" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
-                                        <li><strong className="text-white">LinkedIn:</strong> Social sharing and tracking - <a href="https://www.linkedin.com/legal/cookie-policy" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
-                                        <li><strong className="text-white">Facebook/Meta:</strong> Social plugins and analytics - <a href="https://www.facebook.com/policies/cookies/" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
+                                        <li><strong className="text-gray-900">Google Analytics:</strong> Web analytics service - <a href="https://policies.google.com/privacy" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                                        <li><strong className="text-gray-900">Google Tag Manager:</strong> Tag management - <a href="https://policies.google.com/privacy" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                                        <li><strong className="text-gray-900">LinkedIn:</strong> Social sharing and tracking - <a href="https://www.linkedin.com/legal/cookie-policy" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
+                                        <li><strong className="text-gray-900">Facebook/Meta:</strong> Social plugins and analytics - <a href="https://www.facebook.com/policies/cookies/" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
                                     </ul>
                                 </div>
                             </div>
 
                             {/* Managing Cookies */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4 flex items-center">
-                                    <ToggleLeft className="w-6 h-6 mr-3 text-accent-400" />
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4 flex items-center">
+                                    <ToggleLeft className="w-6 h-6 mr-3 text-[#4285F4]" />
                                     Managing Your Cookie Preferences
                                 </h2>
-                                <div className="text-gray-400 space-y-4">
-                                    <p><strong className="text-white">Browser Settings:</strong></p>
+                                <div className="text-gray-600 space-y-4">
+                                    <p><strong className="text-gray-900">Browser Settings:</strong></p>
                                     <p>Most web browsers allow you to control cookies through their settings. Here&apos;s how to manage cookies in popular browsers:</p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
-                                        <li><strong className="text-white">Firefox:</strong> Settings → Privacy & Security → Cookies and Site Data</li>
-                                        <li><strong className="text-white">Safari:</strong> Preferences → Privacy → Manage Website Data</li>
-                                        <li><strong className="text-white">Edge:</strong> Settings → Cookies and site permissions → Manage and delete cookies</li>
+                                        <li><strong className="text-gray-900">Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
+                                        <li><strong className="text-gray-900">Firefox:</strong> Settings → Privacy & Security → Cookies and Site Data</li>
+                                        <li><strong className="text-gray-900">Safari:</strong> Preferences → Privacy → Manage Website Data</li>
+                                        <li><strong className="text-gray-900">Edge:</strong> Settings → Cookies and site permissions → Manage and delete cookies</li>
                                     </ul>
 
-                                    <p><strong className="text-white">Opt-Out Links:</strong></p>
+                                    <p><strong className="text-gray-900">Opt-Out Links:</strong></p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li>Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a></li>
-                                        <li>Network Advertising Initiative: <a href="https://optout.networkadvertising.org/" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">NAI Opt-out</a></li>
-                                        <li>Digital Advertising Alliance: <a href="https://optout.aboutads.info/" className="text-accent-400 hover:text-accent-300" target="_blank" rel="noopener noreferrer">DAA Opt-out</a></li>
+                                        <li>Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a></li>
+                                        <li>Network Advertising Initiative: <a href="https://optout.networkadvertising.org/" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">NAI Opt-out</a></li>
+                                        <li>Digital Advertising Alliance: <a href="https://optout.aboutads.info/" className="text-[#4285F4] hover:text-[#4285F4]" target="_blank" rel="noopener noreferrer">DAA Opt-out</a></li>
                                     </ul>
 
                                     <div className="p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/20 mt-4">
@@ -281,9 +281,9 @@ export default function CookiePolicyPage() {
                             </div>
 
                             {/* Do Not Track */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Do Not Track Signals</h2>
-                                <div className="text-gray-400 space-y-4">
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Do Not Track Signals</h2>
+                                <div className="text-gray-600 space-y-4">
                                     <p>
                                         Some browsers have a &quot;Do Not Track&quot; (DNT) feature that lets you tell websites you don&apos;t want
                                         your online activities tracked. Currently, there is no uniform standard for how websites should
@@ -294,9 +294,9 @@ export default function CookiePolicyPage() {
                             </div>
 
                             {/* Updates */}
-                            <div className="glass-card p-8">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Updates to This Policy</h2>
-                                <div className="text-gray-400 space-y-4">
+                            <div className="google-card p-8 bg-white">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Updates to This Policy</h2>
+                                <div className="text-gray-600 space-y-4">
                                     <p>
                                         We may update this Cookie Policy from time to time to reflect changes in technology,
                                         legislation, or our data practices. When we make changes, we will update the &quot;Last Updated&quot;
@@ -306,12 +306,12 @@ export default function CookiePolicyPage() {
                             </div>
 
                             {/* Contact */}
-                            <div className="glass-card p-8 border-accent-500/30">
-                                <h2 className="text-2xl font-display font-bold text-white mb-4">Questions?</h2>
-                                <div className="text-gray-400 space-y-2">
+                            <div className="glass-card p-8 border-[#4285F4]/30">
+                                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">Questions?</h2>
+                                <div className="text-gray-600 space-y-2">
                                     <p>If you have any questions about our use of cookies, please contact us:</p>
-                                    <p><strong className="text-white">Email:</strong> n8nera@gmail.com</p>
-                                    <p><strong className="text-white">Phone:</strong> +92-314-160-3089</p>
+                                    <p><strong className="text-gray-900">Email:</strong> n8nera@gmail.com</p>
+                                    <p><strong className="text-gray-900">Phone:</strong> +92-314-160-3089</p>
                                 </div>
                             </div>
                         </div>
@@ -321,11 +321,11 @@ export default function CookiePolicyPage() {
 
             {/* Related Links */}
             <section className="relative py-12 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4">
                     <AnimatedSection>
                         <div className="glass-card p-8 text-center">
-                            <h3 className="text-xl font-semibold text-white mb-4">Related Legal Documents</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">Related Legal Documents</h3>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/terms-of-service" className="btn-secondary text-sm">Terms of Service</Link>
                                 <Link href="/privacy-policy" className="btn-secondary text-sm">Privacy Policy</Link>

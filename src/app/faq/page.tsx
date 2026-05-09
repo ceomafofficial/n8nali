@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import FAQSection from "@/components/sections/FAQSection";
 import Link from "next/link";
@@ -51,15 +51,15 @@ export default function FAQPage() {
             {/* Hero */}
             <section className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Help Center
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                            Frequently Asked <span className="text-gradient">Questions</span>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
+                            Frequently Asked <span className="text-[#4285F4]">Questions</span>
                         </h1>
                         <p className="text-lg text-gray-400 max-w-2xl mx-auto">
                             Everything you need to know about n8nera&apos;s automation services. Can&apos;t find what you&apos;re looking for? Contact us directly.
@@ -73,10 +73,10 @@ export default function FAQPage() {
 
             {/* Still Need Help */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Still Have Questions?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">

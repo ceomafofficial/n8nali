@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { usaCities, getCountryById } from "@/lib/data/countries";
@@ -130,8 +130,8 @@ export default function USAPage() {
 
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                <div className="absolute inset-0 bg-white">
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-red-600/5 rounded-full blur-[120px]" />
                 </div>
@@ -141,11 +141,11 @@ export default function USAPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             🇺🇸 Serving the United States
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
                             #1 n8n Automation Agency{" "}
-                            <span className="text-gradient">for US Businesses</span>
+                            <span className="text-[#4285F4]">for US Businesses</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8" data-speakable="true">
+                        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8" data-speakable="true">
                             Enterprise-grade n8n workflow automation, AI voice agents, CRM automation, and intelligent
                             business process optimization for companies across all 50 states. 200+ implementations.
                             99.8% satisfaction rate.
@@ -165,7 +165,7 @@ export default function USAPage() {
             </section>
 
             {/* Trust Signals */}
-            <section className="relative py-12 overflow-hidden border-y border-white/5">
+            <section className="relative py-12 overflow-hidden border-y border-gray-100">
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         {[
@@ -177,7 +177,7 @@ export default function USAPage() {
                             <AnimatedSection key={i} delay={i * 0.1}>
                                 <div className="flex flex-col items-center">
                                     <stat.icon className="w-6 h-6 text-accent-400 mb-2" />
-                                    <span className="text-2xl font-bold text-gradient-purple">{stat.value}</span>
+                                    <span className="text-2xl font-bold text-[#4285F4]">{stat.value}</span>
                                     <span className="text-sm text-gray-400 mt-1">{stat.label}</span>
                                 </div>
                             </AnimatedSection>
@@ -188,14 +188,14 @@ export default function USAPage() {
 
             {/* Cities Grid */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             n8n Automation Services Across the USA
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             From coast to coast, we deliver premium automation solutions to businesses in every major US city.
                         </p>
                     </AnimatedSection>
@@ -204,9 +204,9 @@ export default function USAPage() {
                         {usaCities.map((city, index) => (
                             <AnimatedSection key={city.id} delay={index * 0.05}>
                                 <Link href={`/usa/${city.id}`} className="group block">
-                                    <div className="glass-card h-full p-5 text-center hover:border-accent-500/30 transition-all">
+                                    <div className="google-card h-full bg-white p-5 text-center hover:border-[#4285F4]/30 transition-all">
                                         <MapPin className="w-6 h-6 text-accent-400 mx-auto mb-2" />
-                                        <h3 className="text-base font-semibold text-white group-hover:text-accent-300 transition-colors">
+                                        <h3 className="text-base font-semibold text-gray-900 group-hover:text-[#4285F4] transition-colors">
                                             {city.name}
                                         </h3>
                                         <p className="text-xs text-gray-500 mt-1">{city.state}</p>
@@ -223,13 +223,13 @@ export default function USAPage() {
 
             {/* Services Overview */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950" />
+                <div className="absolute inset-0 bg-white" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             n8n Automation Services for American Companies
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Comprehensive automation and AI solutions tailored for the US market.
                         </p>
                     </AnimatedSection>
@@ -238,17 +238,17 @@ export default function USAPage() {
                         {topServices.map((service, index) => (
                             <AnimatedSection key={service.id} delay={index * 0.05}>
                                 <Link href={`/services/${service.id}`} className="group block">
-                                    <div className="glass-card h-full p-6">
-                                        <div className="w-10 h-10 rounded-lg bg-accent-500/10 flex items-center justify-center mb-4">
-                                            <Zap className="w-5 h-5 text-accent-400" />
+                                    <div className="google-card h-full p-6 bg-white">
+                                        <div className="w-10 h-10 rounded-lg bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                            <Zap className="w-5 h-5 text-[#4285F4]" />
                                         </div>
-                                        <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-accent-300 transition-colors">
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">
                                             {service.shortTitle} for US Businesses
                                         </h3>
                                         <p className="text-sm text-gray-400 mb-3 line-clamp-3">
                                             {service.description}
                                         </p>
-                                        <div className="flex items-center gap-1 text-sm text-accent-400">
+                                        <div className="flex items-center gap-1 text-sm text-[#4285F4]">
                                             Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </div>
                                     </div>
@@ -261,16 +261,16 @@ export default function USAPage() {
 
             {/* Why US Companies Choose n8nera */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <div className="text-center mb-10">
-                            <h2 className="text-3xl font-display font-bold text-white mb-4">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                                 Why US Companies Choose n8nera for n8n Automation
                             </h2>
                         </div>
                         <div className="prose prose-invert max-w-none" data-speakable="true">
-                            <h3 className="text-xl font-semibold text-white mb-4">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
                                 Enterprise-Grade n8n Automation for American Businesses
                             </h3>
                             <p className="text-gray-300 leading-relaxed mb-6">
@@ -278,7 +278,7 @@ export default function USAPage() {
                                 n8nera helps American companies — from Silicon Valley startups to Fortune 500 enterprises — deploy intelligent automation that reduces operational costs by up to 85% while maintaining SOC 2 compliance.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-white mb-4">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
                                 US Market Expertise
                             </h3>
                             <ul className="space-y-3 mb-8 list-none pl-0">
@@ -297,7 +297,7 @@ export default function USAPage() {
                                 ))}
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-white mb-4">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
                                 Industries We Automate in the USA
                             </h3>
                             <p className="text-gray-300 leading-relaxed mb-4">
@@ -306,7 +306,7 @@ export default function USAPage() {
                                 industry-specific compliance requirements including HIPAA, SOX, and PCI DSS where applicable.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-white mb-4">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
                                 Data Privacy & Compliance
                             </h3>
                             <p className="text-gray-300 leading-relaxed">
@@ -319,10 +319,10 @@ export default function USAPage() {
 
             {/* Other Countries */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950" />
+                <div className="absolute inset-0 bg-white" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-8">
-                        <h2 className="text-2xl font-display font-bold text-white mb-4">
+                        <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">
                             We Also Serve
                         </h2>
                     </AnimatedSection>
@@ -333,7 +333,7 @@ export default function USAPage() {
                             { href: "/netherlands/", label: "🇳🇱 Netherlands" },
                         ].map(loc => (
                             <Link key={loc.href} href={loc.href}
-                                className="flex items-center gap-2 px-5 py-3 rounded-full bg-white/5 border border-white/10 hover:border-accent-500/30 hover:bg-white/10 transition-all text-white">
+                                className="flex items-center gap-2 px-5 py-3 rounded-full bg-gray-50 border border-gray-200 hover:border-[#4285F4]/30 hover:bg-[#4285F4]/5 transition-all text-white">
                                 {loc.label}
                             </Link>
                         ))}
@@ -343,10 +343,10 @@ export default function USAPage() {
 
             {/* CTA */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Ready to Automate Your US Business?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">
@@ -367,3 +367,4 @@ export default function USAPage() {
         </div>
     );
 }
+

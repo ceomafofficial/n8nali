@@ -36,18 +36,20 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     }
 
     return {
-        title: `n8n Automation & AI Agency in ${city.name} UAE`,
-        description: `n8nera provides premium n8n workflow automation, AI voice agents, CRM automation, and business process optimization services in ${city.name}, UAE. Book a free automation audit today.`,
+        title: `${city.name} Businesses Are Cutting Costs 85% With n8n — See How | n8nera`,
+        description: `WhatsApp bots that sell at 3am. AI agents that never miss a ${city.name} lead. CRM that updates itself. Free 30-min audit shows your exact ROI — zero risk, zero commitment.`,
         keywords: [
             `automation agency ${city.name}`,
             `n8n automation ${city.name}`,
             `AI voice agents ${city.name}`,
             `CRM automation ${city.name}`,
             `workflow automation ${city.name} UAE`,
+            `WhatsApp automation ${city.name}`,
+            `hire n8n developer ${city.name}`,
         ],
         openGraph: {
-            title: `n8n Automation & AI Agency in ${city.name} | n8nera`,
-            description: `Premium automation solutions for businesses in ${city.name}, UAE. Workflow automation, AI voice agents, and more.`,
+            title: `Is Your ${city.name} Business Still Running on Manual Work? Fix It Free.`,
+            description: `Avg ${city.name} client saves $3,200/mo & 40hrs/week after going live. WhatsApp bots, AI agents, CRM automation. Free audit → exact numbers, zero sales pitch.`,
             url: `https://n8nera.tech/uae/${cityId}/`,
             type: "website",
         },

@@ -21,34 +21,64 @@ const parseCSV = (filePath) => {
     });
 };
 
+const getBadUrls = () => {
+    try {
+        const badUrlsPath = path.join(process.cwd(), 'clean_bad_urls.json');
+        if (fs.existsSync(badUrlsPath)) {
+            const arr = JSON.parse(fs.readFileSync(badUrlsPath, 'utf8'));
+            return new Set(arr.map(u => u.replace(/\/$/, ''))); 
+        }
+    } catch (e) {
+        console.error("Could not load clean_bad_urls.json", e);
+    }
+    return new Set();
+};
+
 const generateSitemapString = () => {
     let urls = [];
+    const badUrls = getBadUrls();
+    
+    const addUrl = (urlPath, priority, changefreq) => {
+        const normalizedPath = urlPath.replace(/\/$/, '');
+        if (!badUrls.has(normalizedPath) && !badUrls.has(normalizedPath + '/')) {
+            urls.push(`<url><loc>${BASE}${urlPath}</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`);
+        }
+    };
 
     // Core Pages
-    urls.push(`<url><loc>${BASE}/</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>`);
-    urls.push(`<url><loc>${BASE}/services/</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>`);
-    urls.push(`<url><loc>${BASE}/about-us/</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`);
-    urls.push(`<url><loc>${BASE}/contact/</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>`);
+    addUrl('/', '1.0', 'weekly');
+    addUrl('/services/', '0.9', 'weekly');
+    addUrl('/about-us/', '0.8', 'monthly');
+    addUrl('/contact/', '0.9', 'monthly');
 
-    // PSEO Pages (Capped for standard Cloudflare deployment size)
-    const locations = parseCSV(path.join(process.cwd(), 'data/csv/locations.csv'));
+    const allLocations = parseCSV(path.join(process.cwd(), 'data/csv/locations.csv'));
     const services = parseCSV(path.join(process.cwd(), 'data/csv/services.csv'));
     const skills = parseCSV(path.join(process.cwd(), 'data/csv/skills.csv'));
 
-    // Cloudflare limits SSG outputs to 20,000 files total per fast build. 
-    // We limit local generation here to 100 top cities * 160 skills/services = ~16,000 URLs to perfectly fit limits.
-    const exportLocations = locations.slice(0, 100);
+    // STRICT MATCH WITH page.tsx `generateStaticParams()`
+    // We must only generate sitemap URLs for exactly the top 20 cities of these 5 countries
+    const targetCountries = ['united-states', 'canada', 'united-kingdom', 'united-arab-emirates', 'australia'];
+    const exportLocations = [];
+
+    targetCountries.forEach(countrySlug => {
+        const countryLocs = allLocations.filter(l => l.country_slug === countrySlug).slice(0, 20);
+        exportLocations.push(...countryLocs);
+    });
 
     exportLocations.forEach(loc => {
+        let mappedCountry = loc.country_slug;
+        if (mappedCountry === 'united-states') mappedCountry = 'usa';
+        if (mappedCountry === 'united-kingdom') mappedCountry = 'uk';
+
         services.forEach(srv => {
             if (loc.country_slug && loc.city_slug && srv.service_slug) {
-                urls.push(`<url><loc>${BASE}/${loc.country_slug}/${loc.city_slug}/${srv.service_slug}/</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`);
+                addUrl(`/${mappedCountry}/${loc.city_slug}/${srv.service_slug}/`, '0.7', 'monthly');
             }
         });
 
         skills.forEach(skl => {
             if (loc.country_slug && loc.city_slug && skl.skill_slug) {
-                urls.push(`<url><loc>${BASE}/${loc.country_slug}/${loc.city_slug}/skills/${skl.skill_slug}/</loc><lastmod>${CONTENT_UPDATED}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>`);
+                addUrl(`/${mappedCountry}/${loc.city_slug}/skills/${skl.skill_slug}/`, '0.6', 'monthly');
             }
         });
     });

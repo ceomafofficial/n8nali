@@ -20,9 +20,9 @@ import {
 import { getServiceSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-    title: "Hire n8n Developer — Vetted Experts, Ready in 48hrs",
+    title: "Hire n8n Developer — Stop Gambling on Upwork. Get a Vetted Expert in 48hrs",
     description:
-        "Hire pre-vetted n8n developers who've built 200+ production workflows. Hourly ($25/hr), monthly, or project-based. 48-hour matching. Custom nodes, AI agents, API integrations & enterprise automation. Satisfaction guaranteed or money back.",
+        "Every n8n dev we hire has built 50+ production workflows. You get someone who's already solved your exact problem. Hourly ($25/hr), monthly, or per project. Not happy in week 1? Full refund. Zero risk.",
     keywords: [
         "hire n8n developer",
         "n8n developer for hire",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
         "certified n8n developer",
     ],
     openGraph: {
-        title: "Hire n8n Developer — 48hr Match, 200+ Workflows Built | n8nera",
+        title: "Tired of Upwork Randos Calling Themselves n8n Experts? Hire a Real One.",
         description:
-            "Pre-vetted n8n developers ready in 48 hours. Hourly, monthly, or project-based. 200+ production workflows delivered. Satisfaction guaranteed.",
+            "Our devs have built 50+ production workflows each. Matched to your project in 48hrs. Money-back guarantee if not satisfied in week 1. No long contracts.",
         url: "https://n8nera.tech/hire-n8n-developer/",
         type: "website",
     },
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         site: "@n8nera",
         creator: "@n8nera",
-        title: "Hire n8n Developer — Vetted Experts, Ready in 48hrs | n8nera",
-        description: "Pre-vetted n8n developers ready in 48 hours. 200+ production workflows delivered. Satisfaction guaranteed.",
+        title: "Hire n8n Developer — Vetted, 48hr Match, Money-Back Guarantee | n8nera",
+        description: "50+ workflows built per dev. Hourly, monthly, or per project. Not happy in week 1? Full refund. Message us →",
     },
     alternates: {
         canonical: "https://n8nera.tech/hire-n8n-developer/",
@@ -226,7 +226,7 @@ export default function HireN8nDeveloperPage() {
             {/* Hero */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -235,8 +235,8 @@ export default function HireN8nDeveloperPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Hire n8n Developer
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                            Get a Dedicated n8n Expert <span className="text-gradient">On Your Team</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+                            Get a Dedicated n8n Expert <span className="text-[#4285F4]">On Your Team</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
                             Stop searching for unicorn automation developers. Hire a pre-vetted n8n specialist who&apos;s already built what you need — available hourly, monthly, or per project.
@@ -255,11 +255,11 @@ export default function HireN8nDeveloperPage() {
 
             {/* The Problem */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <article className="prose prose-invert prose-lg max-w-none">
-                            <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                                 Finding an n8n Developer Is Harder Than It Should Be
                             </h2>
                             <div className="glass-card p-8 space-y-5 text-gray-300 leading-relaxed">
@@ -270,7 +270,7 @@ export default function HireN8nDeveloperPage() {
                                     The problem? n8n is still relatively niche. Most freelance platforms are flooded with people who list &ldquo;n8n&rdquo; as a skill but have never built anything beyond a basic Slack notification. You don&apos;t have time to interview 20 people, run test projects, and hope for the best.
                                 </p>
                                 <p>
-                                    <strong className="text-white">That&apos;s why we exist.</strong> n8nera gives you instant access to developers who live and breathe n8n. Every developer on our team has built 50+ workflows, handled enterprise-grade integrations, and knows exactly how to turn your ideas into working systems.
+                                    <strong className="text-gray-900">That&apos;s why we exist.</strong> n8nera gives you instant access to developers who live and breathe n8n. Every developer on our team has built 50+ workflows, handled enterprise-grade integrations, and knows exactly how to turn your ideas into working systems.
                                 </p>
                             </div>
                         </article>
@@ -283,15 +283,15 @@ export default function HireN8nDeveloperPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             What Our n8n Developers Can Do
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Not just workflow builders. Full-stack automation engineers.
                         </p>
                     </AnimatedSection>
                     <AnimatedSection>
-                        <div className="glass-card p-8">
+                        <div className="google-card p-8 bg-white">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {skills.map((skill, index) => (
                                     <div key={index} className="flex items-center gap-3">
@@ -307,13 +307,13 @@ export default function HireN8nDeveloperPage() {
 
             {/* Hiring Models */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Flexible Hiring Models
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Choose what works for your budget and timeline. Scale up or down anytime.
                         </p>
                     </AnimatedSection>
@@ -321,10 +321,10 @@ export default function HireN8nDeveloperPage() {
                         {hiringModels.map((model, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
                                 <div className="glass-card p-6 h-full flex flex-col text-center">
-                                    <div className="w-14 h-14 rounded-xl bg-accent-500/10 flex items-center justify-center mx-auto mb-4">
-                                        <model.icon className="w-7 h-7 text-accent-400" />
+                                    <div className="w-14 h-14 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mx-auto mb-4">
+                                        <model.icon className="w-7 h-7 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-xl font-semibold text-white mb-1">{model.title}</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-1">{model.title}</h3>
                                     <span className="text-sm text-accent-300 mb-3">{model.subtitle}</span>
                                     <p className="text-sm text-gray-400 leading-relaxed mb-4 flex-grow">{model.description}</p>
                                     <div className="pt-3 border-t border-white/5">
@@ -348,10 +348,10 @@ export default function HireN8nDeveloperPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             How Hiring Works
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             From first message to working developer in under 48 hours.
                         </p>
                     </AnimatedSection>
@@ -363,7 +363,7 @@ export default function HireN8nDeveloperPage() {
                                         {step.step}
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
                                         <p className="text-sm text-gray-400 leading-relaxed">{step.description}</p>
                                     </div>
                                 </div>
@@ -375,10 +375,10 @@ export default function HireN8nDeveloperPage() {
 
             {/* Why Us */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Why Hire Through n8nera?
                         </h2>
                     </AnimatedSection>
@@ -386,10 +386,10 @@ export default function HireN8nDeveloperPage() {
                         {whyUs.map((item, index) => (
                             <AnimatedSection key={index} delay={index * 0.08}>
                                 <div className="glass-card p-6 h-full">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <item.icon className="w-6 h-6 text-accent-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <item.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                                 </div>
                             </AnimatedSection>
@@ -421,10 +421,10 @@ export default function HireN8nDeveloperPage() {
 
             {/* FAQ */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Hiring Questions Answered
                         </h2>
                     </AnimatedSection>
@@ -432,7 +432,7 @@ export default function HireN8nDeveloperPage() {
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
                                 <details className="group glass-card overflow-hidden">
-                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-accent-300 transition-colors">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-[#4285F4] transition-colors">
                                         {faq.question}
                                         <ArrowRight className="w-5 h-5 text-accent-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-4" />
                                     </summary>
@@ -450,8 +450,8 @@ export default function HireN8nDeveloperPage() {
                 <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
                         <div className="glass-card p-6 border border-accent-500/20">
-                            <p className="text-gray-400 text-sm mb-2">Looking for more information?</p>
-                            <Link href="/looking-for-n8n-developer" className="text-accent-400 hover:underline font-semibold text-lg">
+                            <p className="text-gray-600 text-sm mb-2">Looking for more information?</p>
+                            <Link href="/looking-for-n8n-developer" className="text-[#4285F4] hover:underline font-semibold text-lg">
                                 Read Our Complete Guide: Looking for an n8n Developer →
                             </Link>
                             <p className="text-gray-500 text-sm mt-2">
@@ -464,11 +464,11 @@ export default function HireN8nDeveloperPage() {
 
             {/* CTA */}
             <section className="relative py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <Code2 className="w-12 h-12 text-accent-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Your n8n Developer Is One Message Away
                         </h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">

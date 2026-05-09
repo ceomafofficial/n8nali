@@ -65,7 +65,7 @@ const socialLinks = [
 
 export default function Footer() {
     return (
-        <footer className="relative bg-dark-950 border-t border-white/5">
+        <footer className="relative bg-[#0D0D0D] border-t border-white/5">
             {/* Gradient Overlay */}
             <div
                 className="absolute inset-0 opacity-40"
@@ -79,7 +79,7 @@ export default function Footer() {
                 {/* CTA Section - Hidden on careers pages */}
                 <FooterCTAWrapper>
                     <div className="py-10 md:py-16 border-b border-white/5">
-                        <div className="glass-card p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+                        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
                             <div className="text-center md:text-left">
                                 <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2">
                                     Ready to Transform Your Business?
@@ -131,7 +131,7 @@ export default function Footer() {
                                     href="mailto:n8nera@gmail.com"
                                     className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors"
                                 >
-                                    <Mail className="w-4 h-4 text-accent-400" />
+                                    <Mail className="w-4 h-4 text-[#4285F4]" />
                                     n8nera@gmail.com
                                 </a>
                                 <a
@@ -140,11 +140,11 @@ export default function Footer() {
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors"
                                 >
-                                    <Phone className="w-4 h-4 text-accent-400" />
+                                    <Phone className="w-4 h-4 text-[#34A853]" />
                                     +92 314 160 3089
                                 </a>
                                 <div className="flex items-start gap-3 text-sm text-gray-400">
-                                    <MapPin className="w-4 h-4 text-accent-400 mt-0.5 flex-shrink-0" />
+                                    <MapPin className="w-4 h-4 text-[#EA4335] mt-0.5 flex-shrink-0" />
                                     <span>Rahim Yar Khan, Pakistan<br /><span className="text-xs text-gray-500">Serving clients in USA, UAE, Canada & Netherlands</span></span>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ export default function Footer() {
                                     href={social.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-accent-500/50 transition-all"
+                                    className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#4285F4]/10 hover:border-[#4285F4]/50 transition-all"
                                     aria-label={social.name}
                                 >
                                     <social.icon className="w-4 h-4" />
@@ -262,7 +262,7 @@ export default function Footer() {
                             </div>
                             <div className="flex justify-between text-sm pt-2 border-t border-white/5">
                                 <span className="text-gray-400">Emergency Support</span>
-                                <span className="text-accent-400">24/7 Available</span>
+                                <span className="text-[#34A853]">24/7 Available</span>
                             </div>
                         </div>
 

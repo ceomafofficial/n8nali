@@ -4,18 +4,18 @@ import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 export default function CTASection() {
     return (
-        <section className="relative py-24 md:py-32 overflow-hidden">
-            {/* Background with Animated Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-accent-950 via-dark-950 to-primary-950" />
+        <section className="relative py-24 md:py-32 overflow-hidden dark-cta-section">
+            {/* Dark Background */}
+            <div className="absolute inset-0 bg-[#0D0D0D]" />
 
-            {/* Static Orbs - no animation */}
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent-500/20 rounded-full blur-[120px]" />
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-[120px]" />
+            {/* Subtle Blue Glow */}
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#4285F4]/10 rounded-full blur-[120px]" />
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#34A853]/10 rounded-full blur-[120px]" />
 
             <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
-                        Ready to <span className="text-gradient">Automate</span> Your Business?
+                        Ready to <span className="text-gradient-blue">Automate</span> Your Business?
                     </h2>
                     <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
                         Book a free automation audit with our experts. We&apos;ll analyze your processes,

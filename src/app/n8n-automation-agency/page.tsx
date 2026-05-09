@@ -18,9 +18,9 @@ import {
 import { getServiceSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-    title: "#1 n8n Automation Agency — Save 20+ Hrs/Week [Free Audit]",
+    title: "n8n Automation Agency — 40hrs/Week Recovered. 60% Costs Cut. Free Audit.",
     description:
-        "Top-rated n8n automation agency. We build workflows that save 20+ hrs/week & cut costs 60%. CRM, WhatsApp bots, AI voice agents. 200+ workflows delivered for 100+ businesses. Get your free automation audit today →",
+        "127 businesses run on autopilot with our n8n workflows. Leads auto-qualify. CRM updates itself. WhatsApp bots sell overnight. Free audit shows your exact savings before you spend a cent.",
     keywords: [
         "n8n automation agency",
         "n8n automation agency USA",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
         "automation agency Amsterdam",
     ],
     openGraph: {
-        title: "#1 n8n Automation Agency — 200+ Workflows, 60% Cost Savings | n8nera",
+        title: "We Closed 30% More Deals For This Client By Automating 4hrs of Daily Manual Work",
         description:
-            "Workflows that save 20+ hrs/week. CRM, WhatsApp, AI voice agents. 200+ implementations for 100+ businesses. Book your free audit →",
+            "That's one client. 127 businesses automated. Your leads auto-qualify, CRM updates, proposals send. Free audit → we find your 4 hours and show you the money.",
         url: "https://n8nera.tech/n8n-automation-agency/",
         type: "website",
     },
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         site: "@n8nera",
         creator: "@n8nera",
-        title: "#1 n8n Automation Agency — Save 20+ Hrs/Week | n8nera",
-        description: "200+ workflows, 60% cost savings. CRM, WhatsApp, AI voice agents. Free audit available.",
+        title: "n8n Automation Agency — 127 Businesses Automated, 40hrs/Week Saved | n8nera",
+        description: "Free audit maps every task you can automate & shows exact ROI. Zero pitch, zero pressure. Book now →",
     },
     alternates: {
         canonical: "https://n8nera.tech/n8n-automation-agency/",
@@ -209,7 +209,7 @@ export default function N8nAutomationAgencyPage() {
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -219,8 +219,8 @@ export default function N8nAutomationAgencyPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             n8n Automation Agency
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                            Stop Doing <span className="text-gradient">Busywork.</span>{" "}
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+                            Stop Doing <span className="text-[#4285F4]">Busywork.</span>{" "}
                             Start Growing.
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
@@ -246,7 +246,7 @@ export default function N8nAutomationAgencyPage() {
 
             {/* Results Bar */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-5xl mx-auto px-4">
                     <AnimatedSection>
                         <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -269,7 +269,7 @@ export default function N8nAutomationAgencyPage() {
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <article className="prose prose-invert prose-lg max-w-none">
-                            <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                                 What Does an n8n Automation Agency Actually Do?
                             </h2>
                             <div className="glass-card p-8 space-y-5 text-gray-300 leading-relaxed">
@@ -277,13 +277,13 @@ export default function N8nAutomationAgencyPage() {
                                     Let&apos;s be honest — most businesses run on a messy mix of spreadsheets, copy-pasting between apps, and manual follow-ups that eat up half the day. Sound familiar?
                                 </p>
                                 <p>
-                                    That&apos;s exactly what we fix. As an <strong className="text-white">n8n automation agency</strong>, we take those time-wasting tasks and turn them into automated workflows that run 24/7 without anyone touching them.
+                                    That&apos;s exactly what we fix. As an <strong className="text-gray-900">n8n automation agency</strong>, we take those time-wasting tasks and turn them into automated workflows that run 24/7 without anyone touching them.
                                 </p>
                                 <p>
                                     New lead comes in through your website? It goes straight into your CRM, gets a welcome email, and your sales rep gets a WhatsApp notification — all within seconds. Order placed on Shopify? Inventory updates, invoice generates, shipping label prints. Automatically.
                                 </p>
                                 <p>
-                                    We use <strong className="text-white">n8n</strong> because it&apos;s the most flexible automation platform out there. Unlike Zapier or Make, n8n gives us full control over your data, runs on your own server if you want, and handles complex logic that other tools simply can&apos;t.
+                                    We use <strong className="text-gray-900">n8n</strong> because it&apos;s the most flexible automation platform out there. Unlike Zapier or Make, n8n gives us full control over your data, runs on your own server if you want, and handles complex logic that other tools simply can&apos;t.
                                 </p>
                             </div>
                         </article>
@@ -293,13 +293,13 @@ export default function N8nAutomationAgencyPage() {
 
             {/* Services List */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             What We Automate for You
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             From lead generation to order fulfillment — if it&apos;s repetitive, we can automate it.
                         </p>
                     </AnimatedSection>
@@ -307,9 +307,9 @@ export default function N8nAutomationAgencyPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
                         {services.map((service, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
-                                <div className="flex items-center gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-accent-500/30 transition-colors">
+                                <div className="flex items-center gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#4285F4]/30 transition-colors">
                                     <CheckCircle className="w-5 h-5 text-accent-400 flex-shrink-0" />
-                                    <span className="text-gray-300">{service}</span>
+                                    <span className="text-gray-700">{service}</span>
                                 </div>
                             </AnimatedSection>
                         ))}
@@ -328,10 +328,10 @@ export default function N8nAutomationAgencyPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
-                            Why Businesses Choose <span className="text-gradient">n8nera</span>
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
+                            Why Businesses Choose <span className="text-[#4285F4]">n8nera</span>
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             We&apos;re not a generalist agency that does a bit of everything. We&apos;re n8n specialists who do one thing really well.
                         </p>
                     </AnimatedSection>
@@ -340,10 +340,10 @@ export default function N8nAutomationAgencyPage() {
                         {whyUs.map((item, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
                                 <div className="glass-card p-6 h-full">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <item.icon className="w-6 h-6 text-accent-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <item.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                                     <p className="text-sm text-gray-400">{item.description}</p>
                                 </div>
                             </AnimatedSection>
@@ -354,13 +354,13 @@ export default function N8nAutomationAgencyPage() {
 
             {/* Process */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             How It Works
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             From first call to live automation — here&apos;s the exact process.
                         </p>
                     </AnimatedSection>
@@ -370,10 +370,10 @@ export default function N8nAutomationAgencyPage() {
                             <AnimatedSection key={index} delay={index * 0.1}>
                                 <div className="glass-card p-6 flex gap-6 items-start">
                                     <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-500/20 to-primary-600/20 flex items-center justify-center">
-                                        <span className="text-xl font-display font-bold text-accent-400">{item.step}</span>
+                                        <span className="text-xl font-display font-bold text-[#4285F4]">{item.step}</span>
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                                         <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                                     </div>
                                 </div>
@@ -388,12 +388,12 @@ export default function N8nAutomationAgencyPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
-                        <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                             Industries We Serve
                         </h2>
                         <div className="glass-card p-8 text-gray-300 leading-relaxed space-y-4">
                             <p>
-                                We&apos;ve built automations for nearly every industry you can think of — <Link href="/industries/retail-shops" className="text-accent-400 hover:text-accent-300">retail shops</Link>, <Link href="/industries/ecommerce" className="text-accent-400 hover:text-accent-300">e-commerce brands</Link>, <Link href="/industries/real-estate" className="text-accent-400 hover:text-accent-300">real estate agencies</Link>, <Link href="/industries/healthcare" className="text-accent-400 hover:text-accent-300">healthcare clinics</Link>, <Link href="/industries/logistics" className="text-accent-400 hover:text-accent-300">logistics companies</Link>, and more.
+                                We&apos;ve built automations for nearly every industry you can think of — <Link href="/industries/retail-shops" className="text-[#4285F4] hover:text-[#4285F4]">retail shops</Link>, <Link href="/industries/ecommerce" className="text-[#4285F4] hover:text-[#4285F4]">e-commerce brands</Link>, <Link href="/industries/real-estate" className="text-[#4285F4] hover:text-[#4285F4]">real estate agencies</Link>, <Link href="/industries/healthcare" className="text-[#4285F4] hover:text-[#4285F4]">healthcare clinics</Link>, <Link href="/industries/logistics" className="text-[#4285F4] hover:text-[#4285F4]">logistics companies</Link>, and more.
                             </p>
                             <p>
                                 Whether you&apos;re a startup with 5 employees or an enterprise with 500, the principle is the same: find the bottleneck, automate it, measure the results.
@@ -410,15 +410,15 @@ export default function N8nAutomationAgencyPage() {
 
             {/* Social Proof */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Trusted by Growing Businesses
                         </h2>
                     </AnimatedSection>
                     <AnimatedSection>
-                        <div className="glass-card p-8">
+                        <div className="google-card p-8 bg-white">
                             <div className="flex items-center gap-1 mb-4">
                                 {[...Array(5)].map((_, i) => (
                                     <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
@@ -441,7 +441,7 @@ export default function N8nAutomationAgencyPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Frequently Asked Questions
                         </h2>
                         <p className="text-gray-400">Quick answers about working with an n8n automation agency.</p>
@@ -451,7 +451,7 @@ export default function N8nAutomationAgencyPage() {
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
                                 <details className="group glass-card overflow-hidden">
-                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-accent-300 transition-colors">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-[#4285F4] transition-colors">
                                         {faq.question}
                                         <ArrowRight className="w-5 h-5 text-accent-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-4" />
                                     </summary>
@@ -467,11 +467,11 @@ export default function N8nAutomationAgencyPage() {
 
             {/* Final CTA */}
             <section className="relative py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <BarChart3 className="w-12 h-12 text-accent-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Ready to Put Your Business on Autopilot?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">

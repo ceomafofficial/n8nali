@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -54,7 +54,7 @@ export default function CaseStudiesPage() {
             {/* Hero Section */}
             <section className="relative py-20 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-0 right-0 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
 
@@ -63,8 +63,8 @@ export default function CaseStudiesPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Our Work
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                            Automation <span className="text-gradient">Success Stories</span>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
+                            Automation <span className="text-[#4285F4]">Success Stories</span>
                         </h1>
                         <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
                             Browse our portfolio of enterprise-grade n8n workflows and AI agents.
@@ -82,9 +82,9 @@ export default function CaseStudiesPage() {
                         {caseStudies.map((study, index) => (
                             <AnimatedSection key={study.id} delay={index * 0.1}>
                                 <Link href={`/case-studies/${study.id}`} className="group block h-full">
-                                    <div className="glass-card h-full overflow-hidden hover:border-accent-500/30 transition-all duration-300 flex flex-col">
+                                    <div className="google-card h-full bg-white overflow-hidden hover:border-[#4285F4]/30 transition-all duration-300 flex flex-col">
                                         {/* Image Container */}
-                                        <div className="relative h-48 w-full overflow-hidden border-b border-white/5 bg-dark-900/50">
+                                        <div className="relative h-48 w-full overflow-hidden border-b border-white/5 bg-gray-50">
                                             <Image
                                                 src={study.image}
                                                 alt={study.title}
@@ -101,14 +101,14 @@ export default function CaseStudiesPage() {
 
                                         {/* Content */}
                                         <div className="p-6 flex flex-col flex-grow">
-                                            <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-accent-400 transition-colors">
+                                            <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors">
                                                 {study.title}
                                             </h3>
                                             <p className="text-sm text-gray-400 mb-6 flex-grow line-clamp-3">
                                                 {study.shortDescription}
                                             </p>
 
-                                            <div className="flex items-center text-sm font-medium text-white group-hover:text-accent-400 transition-colors pt-4 border-t border-white/5">
+                                            <div className="flex items-center text-sm font-medium text-white group-hover:text-[#4285F4] transition-colors pt-4 border-t border-white/5">
                                                 View Solution
                                                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                             </div>

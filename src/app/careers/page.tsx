@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { benefits, values, getPositionSummaries } from "@/lib/data/careers";
@@ -74,7 +74,7 @@ export default function CareersPage() {
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-accent-600/10 rounded-full blur-[80px] md:blur-[120px]" />
                     <div className="absolute bottom-1/4 left-1/4 w-48 md:w-96 h-48 md:h-96 bg-primary-600/10 rounded-full blur-[80px] md:blur-[120px]" />
                 </div>
@@ -84,9 +84,9 @@ export default function CareersPage() {
                         <span className="inline-block text-xs md:text-sm font-semibold text-accent-400 uppercase tracking-wider mb-3 md:mb-4">
                             Join Our Team
                         </span>
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-white mb-4 md:mb-6">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-gray-900 mb-4 md:mb-6">
                             Build the Future of{" "}
-                            <span className="text-gradient">Automation</span>
+                            <span className="text-[#4285F4]">Automation</span>
                         </h1>
                         <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto mb-8 px-4 md:px-0">
                             Join a team of passionate engineers, designers, and problem-solvers
@@ -131,15 +131,15 @@ export default function CareersPage() {
 
             {/* Our Values */}
             <section className="relative py-16 md:py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-10 md:mb-12">
                         <span className="inline-block text-xs md:text-sm font-semibold text-accent-400 uppercase tracking-wider mb-3">
                             Our Culture
                         </span>
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4">
-                            What We <span className="text-gradient">Stand For</span>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-gray-900 mb-4">
+                            What We <span className="text-[#4285F4]">Stand For</span>
                         </h2>
                         <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
                             Our values guide everything we do, from how we build products to
@@ -150,11 +150,11 @@ export default function CareersPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         {values.map((value, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
-                                <div className="glass-card h-full p-5 md:p-6 text-center">
+                                <div className="google-card h-full bg-white p-5 md:p-6 text-center">
                                     <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-br from-accent-500 to-primary-600 flex items-center justify-center mx-auto mb-4">
                                         <value.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
                                     </div>
-                                    <h3 className="text-base md:text-lg font-semibold text-white mb-2">
+                                    <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">
                                         {value.title}
                                     </h3>
                                     <p className="text-xs md:text-sm text-gray-400">
@@ -176,8 +176,8 @@ export default function CareersPage() {
                         <span className="inline-block text-xs md:text-sm font-semibold text-accent-400 uppercase tracking-wider mb-3">
                             Benefits & Perks
                         </span>
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4">
-                            Why You&apos;ll <span className="text-gradient">Love</span> Working Here
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-gray-900 mb-4">
+                            Why You&apos;ll <span className="text-[#4285F4]">Love</span> Working Here
                         </h2>
                         <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
                             We invest in our team because great people build great products.
@@ -187,12 +187,12 @@ export default function CareersPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                         {benefits.map((benefit, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
-                                <div className="glass-card h-full p-5 md:p-6 flex items-start gap-4">
-                                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-accent-500/10 flex items-center justify-center flex-shrink-0">
-                                        <benefit.icon className="w-5 h-5 md:w-6 md:h-6 text-accent-400" />
+                                <div className="google-card h-full bg-white p-5 md:p-6 flex items-start gap-4">
+                                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-[#4285F4]/10 flex items-center justify-center flex-shrink-0">
+                                        <benefit.icon className="w-5 h-5 md:w-6 md:h-6 text-[#4285F4]" />
                                     </div>
                                     <div>
-                                        <h3 className="text-base md:text-lg font-semibold text-white mb-1">
+                                        <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1">
                                             {benefit.title}
                                         </h3>
                                         <p className="text-xs md:text-sm text-gray-400">
@@ -208,15 +208,15 @@ export default function CareersPage() {
 
             {/* Open Positions */}
             <section id="positions" className="relative py-16 md:py-20 overflow-hidden scroll-mt-20">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-10 md:mb-12">
                         <span className="inline-block text-xs md:text-sm font-semibold text-accent-400 uppercase tracking-wider mb-3">
                             Open Positions
                         </span>
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4">
-                            Find Your <span className="text-gradient">Role</span>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-gray-900 mb-4">
+                            Find Your <span className="text-[#4285F4]">Role</span>
                         </h2>
                         <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
                             We&apos;re always looking for talented individuals to join our growing team.
@@ -226,14 +226,14 @@ export default function CareersPage() {
                     <div className="space-y-4 md:space-y-6">
                         {openPositions.map((position, index) => (
                             <AnimatedSection key={position.id} delay={index * 0.1}>
-                                <div className="glass-card p-5 md:p-6 hover:border-accent-500/30 transition-all">
+                                <div className="glass-card p-5 md:p-6 hover:border-[#4285F4]/30 transition-all">
                                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                                         <div className="flex-1">
                                             <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-2">
                                                 <h3 className="text-lg md:text-xl font-semibold text-white">
                                                     {position.title}
                                                 </h3>
-                                                <span className="px-2 py-0.5 rounded-full bg-accent-500/10 text-accent-400 text-xs font-medium">
+                                                <span className="px-2 py-0.5 rounded-full bg-[#4285F4]/10 text-accent-400 text-xs font-medium">
                                                     {position.department}
                                                 </span>
                                             </div>
@@ -295,7 +295,7 @@ export default function CareersPage() {
 
             {/* Don't See Your Role */}
             <section className="relative py-16 md:py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
@@ -331,8 +331,8 @@ export default function CareersPage() {
                         <span className="inline-block text-xs md:text-sm font-semibold text-accent-400 uppercase tracking-wider mb-3">
                             Our Process
                         </span>
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4">
-                            What to <span className="text-gradient">Expect</span>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-gray-900 mb-4">
+                            What to <span className="text-[#4285F4]">Expect</span>
                         </h2>
                         <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
                             Our hiring process is designed to be respectful of your time while
@@ -364,16 +364,16 @@ export default function CareersPage() {
                             },
                         ].map((item, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
-                                <div className="glass-card h-full p-5 md:p-6 relative">
+                                <div className="google-card h-full bg-white p-5 md:p-6 relative">
                                     <div className="text-4xl md:text-5xl font-bold text-white/5 absolute top-4 right-4">
                                         {item.step}
                                     </div>
-                                    <div className="w-10 h-10 rounded-lg bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <span className="text-sm font-bold text-accent-400">
+                                    <div className="w-10 h-10 rounded-lg bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <span className="text-sm font-bold text-[#4285F4]">
                                             {item.step}
                                         </span>
                                     </div>
-                                    <h3 className="text-base md:text-lg font-semibold text-white mb-2">
+                                    <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">
                                         {item.title}
                                     </h3>
                                     <p className="text-xs md:text-sm text-gray-400">

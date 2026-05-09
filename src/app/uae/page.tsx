@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { uaeCities } from "@/lib/data/industries";
@@ -80,8 +80,8 @@ export default function LocationsPage() {
             />
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                <div className="absolute inset-0 bg-white">
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
 
@@ -90,11 +90,11 @@ export default function LocationsPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             Our Locations
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
                             Serving Businesses{" "}
-                            <span className="text-gradient">Across the UAE</span>
+                            <span className="text-[#4285F4]">Across the UAE</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                             From Dubai to Abu Dhabi, Sharjah to Ras Al Khaimah, we provide
                             premium automation and AI services to businesses in every emirate.
                         </p>
@@ -104,22 +104,22 @@ export default function LocationsPage() {
 
             {/* Cities Grid */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {uaeCities.map((city, index) => (
                             <AnimatedSection key={city.id} delay={index * 0.1}>
                                 <Link href={`/uae/${city.id}`} className="group block">
-                                    <div className="glass-card h-full p-6 text-center">
+                                    <div className="google-card h-full bg-white p-6 text-center">
                                         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-500/10 to-primary-600/10 flex items-center justify-center mx-auto mb-4 group-hover:from-accent-500/20 group-hover:to-primary-600/20 transition-colors">
-                                            <MapPin className="w-8 h-8 text-accent-400" />
+                                            <MapPin className="w-8 h-8 text-[#4285F4]" />
                                         </div>
-                                        <h2 className="text-xl font-semibold text-white mb-2 group-hover:text-accent-300 transition-colors">
+                                        <h2 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">
                                             {city.name}
                                         </h2>
                                         <p className="text-sm text-gray-500 mb-4">{city.nameAr}</p>
-                                        <div className="flex items-center justify-center gap-2 text-sm text-accent-400">
+                                        <div className="flex items-center justify-center gap-2 text-sm text-[#4285F4]">
                                             View services
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </div>
@@ -133,14 +133,14 @@ export default function LocationsPage() {
 
             {/* Services in All Locations */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950" />
+                <div className="absolute inset-0 bg-white" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Services Available in All Locations
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             All our automation and AI services are available across every UAE
                             emirate with local support.
                         </p>
@@ -151,7 +151,7 @@ export default function LocationsPage() {
                             <AnimatedSection key={service.id} delay={index * 0.05}>
                                 <Link
                                     href={`/services/${service.id}`}
-                                    className="block p-4 rounded-lg bg-white/[0.02] border border-white/5 hover:border-accent-500/30 transition-colors text-center"
+                                    className="block p-4 rounded-lg bg-white/[0.02] border border-white/5 hover:border-[#4285F4]/30 transition-colors text-center"
                                 >
                                     <span className="text-sm text-gray-300 hover:text-white transition-colors">
                                         {service.shortTitle}
@@ -172,13 +172,13 @@ export default function LocationsPage() {
 
             {/* Other Locations */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-10">
                         <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-3">
                             We Also Serve
                         </h2>
-                        <p className="text-gray-400">Explore our n8n automation services in other countries</p>
+                        <p className="text-gray-600">Explore our n8n automation services in other countries</p>
                     </AnimatedSection>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
@@ -190,7 +190,7 @@ export default function LocationsPage() {
                                 <Link href={country.href} className="group block">
                                     <div className="glass-card p-6 text-center h-full">
                                         <span className="text-4xl mb-3 block">{country.flag}</span>
-                                        <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-accent-300 transition-colors">
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">
                                             {country.name}
                                         </h3>
                                         <p className="text-sm text-gray-500 mb-3">{country.cities}</p>
@@ -207,11 +207,11 @@ export default function LocationsPage() {
 
             {/* CTA Section */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Which City Are You In?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">
@@ -234,3 +234,4 @@ export default function LocationsPage() {
         </div>
     );
 }
+

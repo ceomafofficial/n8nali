@@ -22,11 +22,11 @@ export default function BreadcrumbNav({ items, className = "" }: BreadcrumbNavPr
     return (
         <nav
             aria-label="Breadcrumb"
-            className={`flex items-center text-xs sm:text-sm text-gray-400 flex-wrap gap-y-1 ${className}`}
+            className={`flex items-center text-xs sm:text-sm text-gray-700 flex-wrap gap-y-1 ${className}`}
         >
             <Link
                 href="/"
-                className="flex items-center hover:text-accent-400 transition-colors"
+                className="flex items-center hover:text-[#4285F4] transition-colors"
                 aria-label="Home"
             >
                 <Home className="w-3.5 h-3.5" />
@@ -34,16 +34,16 @@ export default function BreadcrumbNav({ items, className = "" }: BreadcrumbNavPr
 
             {items.map((item, idx) => (
                 <span key={idx} className="flex items-center">
-                    <ChevronRight className="w-3.5 h-3.5 mx-1.5 text-gray-600" aria-hidden="true" />
+                    <ChevronRight className="w-3.5 h-3.5 mx-1.5 text-gray-400" aria-hidden="true" />
                     {item.href && idx < items.length - 1 ? (
                         <Link
                             href={item.href}
-                            className="hover:text-accent-400 transition-colors"
+                            className="hover:text-[#4285F4] transition-colors"
                         >
                             {item.label}
                         </Link>
                     ) : (
-                        <span className="text-gray-300 font-medium" aria-current="page">
+                        <span className="text-gray-900 font-semibold" aria-current="page">
                             {item.label}
                         </span>
                     )}

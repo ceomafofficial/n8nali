@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     ]);
 
     return (
-        <div className="pt-20">
+        <div className="pt-20 bg-white">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -113,33 +113,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             />
 
             {/* Header */}
-            <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
-                </div>
+            <section className="relative py-16 overflow-hidden bg-[#f8f9fa] border-b border-gray-100">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-[#4285F4]/8 rounded-full blur-[80px]" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
-                        <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
-                            <Link href="/" className="hover:text-white">Home</Link>
+                        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+                            <Link href="/" className="hover:text-[#4285F4] transition-colors">Home</Link>
                             <span>/</span>
-                            <Link href="/blog" className="hover:text-white">Blog</Link>
+                            <Link href="/blog" className="hover:text-[#4285F4] transition-colors">Blog</Link>
                             <span>/</span>
-                            <span className="text-white truncate">{post.title.slice(0, 30)}...</span>
+                            <span className="text-gray-800 truncate">{post.title.slice(0, 30)}...</span>
                         </nav>
 
-                        <span className="inline-block px-3 py-1 rounded-full bg-accent-500/20 text-accent-400 text-sm font-medium mb-4">
+                        <span className="inline-block px-3 py-1 rounded-full bg-[#4285F4]/10 text-[#4285F4] text-sm font-medium mb-4">
                             {post.category}
                         </span>
 
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6">
                             {post.title}
                         </h1>
 
-                        <p className="text-xl text-gray-400 mb-8">{post.excerpt}</p>
+                        <p className="text-xl text-gray-700 mb-8">{post.excerpt}</p>
 
                         {/* Featured Image */}
                         {post.featuredImage && (
-                            <div className="relative mt-8 aspect-video w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl shadow-accent-500/10">
+                            <div className="relative mt-8 aspect-video w-full max-w-4xl rounded-2xl overflow-hidden shadow-lg">
                                 <Image
                                     src={post.featuredImage}
                                     alt={post.title}
@@ -151,14 +149,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                             </div>
                         )}
 
-                        <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500 mt-8">
+                        <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 mt-8">
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-full bg-accent-500/30 flex items-center justify-center text-white font-bold">
+                                <div className="w-10 h-10 rounded-full bg-[#4285F4]/20 flex items-center justify-center text-[#4285F4] font-bold">
                                     {post.author.name.charAt(0)}
                                 </div>
                                 <div>
-                                    <div className="text-white font-medium">{post.author.name}</div>
-                                    <div className="text-gray-500">{post.author.role}</div>
+                                    <div className="text-gray-900 font-medium">{post.author.name}</div>
+                                    <div className="text-gray-500 text-xs">{post.author.role}</div>
                                 </div>
                             </div>
                             <span className="flex items-center gap-1">
@@ -175,21 +173,20 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </section>
 
             {/* Content */}
-            <section className="relative py-12 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+            <section className="relative py-12 overflow-hidden bg-white">
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
-                        <article className="prose prose-invert prose-lg max-w-none">
+                        <article className="prose prose-lg max-w-none">
                             <MarkdownRenderer content={post.content} />
                         </article>
                     </AnimatedSection>
 
                     {/* Tags */}
-                    <AnimatedSection delay={0.2} className="mt-12 pt-8 border-t border-white/10">
+                    <AnimatedSection delay={0.2} className="mt-12 pt-8 border-t border-gray-100">
                         <div className="flex flex-wrap items-center gap-2">
-                            <span className="text-sm text-gray-500">Tags:</span>
+                            <span className="text-sm text-gray-600">Tags:</span>
                             {post.tags.map((tag) => (
-                                <span key={tag} className="px-3 py-1 rounded-full bg-white/5 text-sm text-gray-400">
+                                <span key={tag} className="px-3 py-1 rounded-full bg-gray-100 text-sm text-gray-700 border border-gray-200">
                                     {tag}
                                 </span>
                             ))}
@@ -199,13 +196,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     {/* Share */}
                     <AnimatedSection delay={0.3} className="mt-8">
                         <div className="flex items-center gap-4">
-                            <span className="text-sm text-gray-500">Share:</span>
+                            <span className="text-sm text-gray-600">Share:</span>
                             <a
                                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://n8nera.tech/blog/${slug}/`)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Share on Twitter"
-                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-accent-400 hover:bg-accent-500/20 transition-colors"
+                                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-[#4285F4] hover:bg-[#4285F4]/10 transition-colors border border-gray-200"
                             >
                                 <Twitter className="w-5 h-5" aria-hidden="true" />
                             </a>
@@ -214,7 +211,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Share on LinkedIn"
-                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-accent-400 hover:bg-accent-500/20 transition-colors"
+                                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-[#4285F4] hover:bg-[#4285F4]/10 transition-colors border border-gray-200"
                             >
                                 <Linkedin className="w-5 h-5" aria-hidden="true" />
                             </a>
@@ -224,26 +221,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </section>
 
             {/* Navigation */}
-            <section className="relative py-12 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950" />
+            <section className="relative py-12 overflow-hidden bg-[#f8f9fa] border-t border-gray-100">
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {prevPost && (
-                            <Link href={`/blog/${prevPost.slug}`} className="group glass-card p-6">
+                            <Link href={`/blog/${prevPost.slug}`} className="group google-card p-6 bg-white">
                                 <span className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                                     <ArrowLeft className="w-4 h-4" /> Previous
                                 </span>
-                                <span className="text-white group-hover:text-accent-300 transition-colors line-clamp-2">
+                                <span className="text-gray-900 group-hover:text-[#4285F4] transition-colors line-clamp-2 font-medium">
                                     {prevPost.title}
                                 </span>
                             </Link>
                         )}
                         {nextPost && (
-                            <Link href={`/blog/${nextPost.slug}`} className="group glass-card p-6 md:text-right md:ml-auto">
+                            <Link href={`/blog/${nextPost.slug}`} className="group google-card p-6 bg-white md:text-right md:ml-auto">
                                 <span className="flex items-center justify-end gap-2 text-sm text-gray-500 mb-2">
                                     Next <ArrowRight className="w-4 h-4" />
                                 </span>
-                                <span className="text-white group-hover:text-accent-300 transition-colors line-clamp-2">
+                                <span className="text-gray-900 group-hover:text-[#4285F4] transition-colors line-clamp-2 font-medium">
                                     {nextPost.title}
                                 </span>
                             </Link>
@@ -254,18 +250,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
             {/* Related Posts */}
             {relatedPosts.length > 0 && (
-                <section className="relative py-16 overflow-hidden">
-                    <div className="absolute inset-0 bg-dark-900/50" />
+                <section className="relative py-16 overflow-hidden bg-white">
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <AnimatedSection className="text-center mb-12">
-                            <h2 className="text-2xl font-display font-bold text-white">Related Articles</h2>
+                            <h2 className="text-2xl font-display font-bold text-gray-900">Related Articles</h2>
                         </AnimatedSection>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {relatedPosts.map((related, index) => (
                                 <AnimatedSection key={related.id} delay={index * 0.1}>
-                                    <Link href={`/blog/${related.slug}`} className="group block glass-card overflow-hidden">
+                                    <Link href={`/blog/${related.slug}`} className="group block google-card overflow-hidden bg-white">
                                         {related.featuredImage && (
-                                            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-accent-500/10 to-primary-600/10">
+                                            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10">
                                                 <Image
                                                     src={related.featuredImage}
                                                     alt={related.title}
@@ -276,11 +271,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                             </div>
                                         )}
                                         <div className="p-6">
-                                            <span className="text-xs text-accent-400">{related.category}</span>
-                                            <h3 className="text-lg font-semibold text-white mt-2 group-hover:text-accent-300 transition-colors line-clamp-2">
+                                            <span className="text-xs text-[#4285F4] font-medium">{related.category}</span>
+                                            <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-[#4285F4] transition-colors line-clamp-2">
                                                 {related.title}
                                             </h3>
-                                            <p className="text-sm text-gray-400 mt-2 line-clamp-2">{related.excerpt}</p>
+                                            <p className="text-sm text-gray-700 mt-2 line-clamp-2">{related.excerpt}</p>
                                         </div>
                                     </Link>
                                 </AnimatedSection>
@@ -291,8 +286,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             )}
 
             {/* CTA */}
-            <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+            <section className="relative py-20 overflow-hidden bg-[#0D0D0D] dark-cta-section">
+                <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#4285F4]/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#34A853]/10 rounded-full blur-[120px]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <h2 className="text-3xl font-display font-bold text-white mb-4">

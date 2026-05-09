@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Plus_Jakarta_Sans, Instrument_Serif } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -7,14 +7,15 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import { getHomepageSchema } from "@/lib/schema";
 
-const inter = Inter({
-  variable: "--font-inter",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const instrument = Instrument_Serif({
+  weight: "400",
+  variable: "--font-instrument",
   subsets: ["latin"],
   display: "swap",
 });
@@ -22,11 +23,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://n8nera.tech"),
   title: {
-    default: "n8nera — #1 n8n Automation Agency | Save 20+ Hrs/Week ✓ Free Audit",
+    default: "Stop Doing It Manually — We Automate 85% of Your Ops in 14 Days | n8nera",
     template: "%s | n8nera",
   },
   description:
-    "Certified n8n automation agency trusted by 100+ businesses. We build AI workflows that save 20+ hrs/week & cut costs 60%. WhatsApp bots, CRM automation, AI voice agents & 400+ integrations. Serving USA, UAE, Canada & Netherlands. Book your free automation audit →",
+    "127 businesses already automated their ops with us. Avg result: 40hrs saved/week, $8,400/mo recovered. n8n workflows, AI agents, CRM & WhatsApp automation. Free audit shows your exact ROI — zero commitment.",
   keywords: [
     // Primary high-intent cluster
     "n8n automation agency",
@@ -83,9 +84,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://n8nera.tech/",
     siteName: "n8nera",
-    title: "n8nera — #1 n8n Automation Agency | 200+ Workflows Delivered",
+    title: "Your Competitors Are Already Automated — Are You? | n8nera",
     description:
-      "Certified n8n agency. AI workflows that save 20+ hrs/week. WhatsApp bots, CRM automation & AI voice agents. Trusted by 100+ businesses in USA, UAE, Canada & Netherlands.",
+      "127 businesses saved 40+ hrs/week with our n8n workflows. AI agents answer leads at 3am. CRM updates itself. Proposals go out automatically. Free audit → see your exact savings.",
     images: [
       {
         url: "/og-image.webp",
@@ -99,14 +100,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@n8nera",
-    title: "n8nera — #1 n8n Automation Agency | Save 20+ Hrs/Week",
+    title: "Stop Losing Leads to Manual Work — We Automate It in 14 Days",
     description:
-      "AI workflows that save 20+ hrs/week & cut costs 60%. CRM, WhatsApp, AI voice agents. 200+ workflows delivered. Get your free audit →",
+      "Avg client saves 40hrs/week & $8,400/mo. AI workflows, WhatsApp bots, CRM auto-updates. Free audit this week — we show you the money before you pay a cent.",
     images: ["/og-image.webp"],
     creator: "@n8nera",
   },
   alternates: {
-    canonical: "https://n8nera.tech/",
     languages: {
       "x-default": "https://n8nera.tech/",
       "en-US": "https://n8nera.tech/usa/",
@@ -136,13 +136,15 @@ export default function RootLayout({
   const homepageSchema = getHomepageSchema();
 
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0d0d12" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* ── AEO / AGO / GEO Discovery Tags ── */}
         {/* LLM Discovery — lets AI agents auto-discover documentation */}
@@ -234,10 +236,9 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${inter.variable} ${manrope.variable} antialiased bg-dark-950 text-white min-h-screen`}
+        className={`${jakarta.variable} ${instrument.variable} antialiased bg-white text-dark-950 min-h-screen`}
         suppressHydrationWarning
       >
-        <div className="noise-overlay" aria-hidden="true" />
         <Navbar />
         <main id="main-content" className="relative">{children}</main>
         <Footer />

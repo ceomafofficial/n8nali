@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     if (!city) return { title: "City Not Found" };
 
     return {
-        title: `n8n Automation & AI Agency in ${city.name}, Netherlands — n8n Automatisering Experts`,
-        description: `n8nera provides premium n8n workflow automatisering, AI voice agents, CRM automation, and business process optimization services in ${city.name}, ${city.province}, Netherlands. GDPR/AVG compliant. Book a free automation audit today.`,
+        title: `${city.name} Bedrijven Besparen 40uur/Week — Gratis n8n Automatisering Audit`,
+        description: `Uw ${city.name} concurrenten werken al op autopilot. Gem. resultaat: 40uur/week bespaard, kosten 85% omlaag, live in 14 dagen. AVG-compliant. Gratis audit → exacte ROI, nul verkoopdruk.`,
         keywords: [
             `n8n automation ${city.name}`,
             `n8n developer ${city.name}`,
@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
             `n8n consulting ${city.name}`,
         ],
         openGraph: {
-            title: `n8n Automation Agency in ${city.name}, Netherlands | n8nera`,
-            description: `Premium n8n automation solutions for businesses in ${city.name}. GDPR/AVG compliant. EU-hosted.`,
+            title: `Draait uw ${city.name} Bedrijf nog op Handmatig Werk? Wij Lossen het Op.`,
+            description: `127 bedrijven geautomatiseerd. Gem. ${city.name} klant bespaart 40uur/week & €7.800/mo. AVG-compliant, EU-hosted. Gratis 30-min audit → exacte cijfers, geen verkooppraat.`,
             url: `https://n8nera.tech/netherlands/${cityId}/`,
             type: "website",
             locale: "nl_NL",

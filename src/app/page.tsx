@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import HeroSection from "@/components/sections/HeroSection";
+import BeforeAfterSection from "@/components/sections/BeforeAfterSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import WhyN8neraSection from "@/components/sections/WhyN8neraSection";
 import ProcessSection from "@/components/sections/ProcessSection";
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <BeforeAfterSection />
       <ServicesSection />
       <WhyN8neraSection />
       <ProcessSection />

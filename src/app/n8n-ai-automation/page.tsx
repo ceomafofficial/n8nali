@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
@@ -194,7 +194,7 @@ export default function N8nAiAutomationPage() {
             {/* Hero */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -203,8 +203,8 @@ export default function N8nAiAutomationPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             n8n AI Automation
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                            AI That Actually <span className="text-gradient-purple">Works for You</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+                            AI That Actually <span className="text-[#4285F4]">Works for You</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
                             Not just hype. Real AI workflows that read emails, qualify leads, answer customers, process documents, and make decisions — running 24/7 inside your business.
@@ -223,11 +223,11 @@ export default function N8nAiAutomationPage() {
 
             {/* What AI Automation Is */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <article className="prose prose-invert prose-lg max-w-none">
-                            <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                                 Automation Was Good. AI Makes It Brilliant.
                             </h2>
                             <div className="glass-card p-8 space-y-5 text-gray-300 leading-relaxed">
@@ -235,10 +235,10 @@ export default function N8nAiAutomationPage() {
                                     Traditional automation follows rules: <em>&ldquo;When X happens, do Y.&rdquo;</em> It&apos;s great for predictable tasks. But what about the messy stuff? Emails that need to be understood. Customer questions that don&apos;t fit a template. Documents with different formats.
                                 </p>
                                 <p>
-                                    <strong className="text-white">That&apos;s where AI comes in.</strong> By adding AI models — GPT-4, Claude, Gemini — to your n8n workflows, your automation can now <em>think</em>. It can read a customer email and understand the intent. It can look at an invoice and extract every line item. It can have a natural conversation on WhatsApp that feels human.
+                                    <strong className="text-gray-900">That&apos;s where AI comes in.</strong> By adding AI models — GPT-4, Claude, Gemini — to your n8n workflows, your automation can now <em>think</em>. It can read a customer email and understand the intent. It can look at an invoice and extract every line item. It can have a natural conversation on WhatsApp that feels human.
                                 </p>
                                 <p>
-                                    We&apos;re not talking about science fiction. These are production-ready AI systems running right now for businesses worldwide. And we build them on <Link href="/n8n-automation-agency" className="text-accent-400 hover:text-accent-300">n8n</Link> — the only platform that gives you full control, self-hosting, and zero per-task fees.
+                                    We&apos;re not talking about science fiction. These are production-ready AI systems running right now for businesses worldwide. And we build them on <Link href="/n8n-automation-agency" className="text-[#4285F4] hover:text-[#4285F4]">n8n</Link> — the only platform that gives you full control, self-hosting, and zero per-task fees.
                                 </p>
                             </div>
                         </article>
@@ -251,10 +251,10 @@ export default function N8nAiAutomationPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             What AI Can Do Inside Your n8n Workflows
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             These aren&apos;t buzzwords. These are things we build every week for real businesses.
                         </p>
                     </AnimatedSection>
@@ -265,7 +265,7 @@ export default function N8nAiAutomationPage() {
                                     <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4">
                                         <capability.icon className="w-6 h-6 text-purple-400" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">{capability.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{capability.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed">{capability.description}</p>
                                 </div>
                             </AnimatedSection>
@@ -276,13 +276,13 @@ export default function N8nAiAutomationPage() {
 
             {/* AI Models */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             AI Models We Work With
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             We&apos;re model-agnostic. We pick the right AI for the job — not just the most popular one.
                         </p>
                     </AnimatedSection>
@@ -294,7 +294,7 @@ export default function N8nAiAutomationPage() {
                                         <Cpu className="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <div className="text-white font-medium text-sm">{model.name}</div>
-                                            <div className="text-gray-400 text-xs">{model.use}</div>
+                                            <div className="text-gray-600 text-xs">{model.use}</div>
                                         </div>
                                     </div>
                                 ))}
@@ -309,7 +309,7 @@ export default function N8nAiAutomationPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Real AI Automation Projects We&apos;ve Built
                         </h2>
                     </AnimatedSection>
@@ -317,7 +317,7 @@ export default function N8nAiAutomationPage() {
                         {useCases.map((useCase, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
                                 <div className="glass-card p-6 h-full flex flex-col">
-                                    <h3 className="text-lg font-semibold text-white mb-3">{useCase.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-3">{useCase.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed mb-4 flex-grow">{useCase.description}</p>
                                     <div className="flex items-center gap-2 pt-3 border-t border-white/5">
                                         <Sparkles className="w-4 h-4 text-accent-400 flex-shrink-0" />
@@ -337,10 +337,10 @@ export default function N8nAiAutomationPage() {
 
             {/* Why AI + n8n */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Why Build AI on n8n?
                         </h2>
                     </AnimatedSection>
@@ -368,7 +368,7 @@ export default function N8nAiAutomationPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             AI Automation Questions Answered
                         </h2>
                     </AnimatedSection>
@@ -376,7 +376,7 @@ export default function N8nAiAutomationPage() {
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
                                 <details className="group glass-card overflow-hidden">
-                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-accent-300 transition-colors">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-[#4285F4] transition-colors">
                                         {faq.question}
                                         <ArrowRight className="w-5 h-5 text-accent-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-4" />
                                     </summary>
@@ -394,7 +394,7 @@ export default function N8nAiAutomationPage() {
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <Brain className="w-12 h-12 text-purple-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Give Your Business an AI Brain
                         </h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">

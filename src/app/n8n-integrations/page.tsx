@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
@@ -204,7 +204,7 @@ export default function N8nIntegrationsPage() {
             {/* Hero */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -213,8 +213,8 @@ export default function N8nIntegrationsPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             n8n Integrations
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                            Connect Every App Your Business <span className="text-gradient">Relies On</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+                            Connect Every App Your Business <span className="text-[#4285F4]">Relies On</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
                             Your tools shouldn&apos;t work in silos. We integrate CRMs, e-commerce platforms, messaging apps, payment gateways, and 400+ more tools into one connected system using n8n.
@@ -233,11 +233,11 @@ export default function N8nIntegrationsPage() {
 
             {/* Why Integrations Matter */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <article className="prose prose-invert prose-lg max-w-none">
-                            <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                                 Why App Integration Matters More Than You Think
                             </h2>
                             <div className="glass-card p-8 space-y-5 text-gray-300 leading-relaxed">
@@ -245,13 +245,13 @@ export default function N8nIntegrationsPage() {
                                     How much time does your team spend copying data between apps? Moving contacts from a Google Form to your CRM. Updating inventory in one place, then another. Sending the same report by email every Monday morning.
                                 </p>
                                 <p>
-                                    It adds up. Fast. A single employee might waste <strong className="text-white">5-10 hours per week</strong> on manual data transfer. That&apos;s not productive work — it&apos;s duct tape.
+                                    It adds up. Fast. A single employee might waste <strong className="text-gray-900">5-10 hours per week</strong> on manual data transfer. That&apos;s not productive work — it&apos;s duct tape.
                                 </p>
                                 <p>
-                                    <strong className="text-white">App integration fixes this.</strong> When your tools talk to each other automatically, data flows in real-time, errors drop to zero, and your team actually does the work they were hired to do.
+                                    <strong className="text-gray-900">App integration fixes this.</strong> When your tools talk to each other automatically, data flows in real-time, errors drop to zero, and your team actually does the work they were hired to do.
                                 </p>
                                 <p>
-                                    We use <Link href="/n8n-automation-agency" className="text-accent-400 hover:text-accent-300">n8n</Link> as our integration engine because it&apos;s open-source, self-hosted, and handles complex logic that tools like Zapier simply can&apos;t. And because your data stays on your servers — not someone else&apos;s.
+                                    We use <Link href="/n8n-automation-agency" className="text-[#4285F4] hover:text-[#4285F4]">n8n</Link> as our integration engine because it&apos;s open-source, self-hosted, and handles complex logic that tools like Zapier simply can&apos;t. And because your data stays on your servers — not someone else&apos;s.
                                 </p>
                             </div>
                         </article>
@@ -264,10 +264,10 @@ export default function N8nIntegrationsPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Popular n8n Integrations We Build
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             We&apos;ve integrated hundreds of tools. Here are the categories our clients ask about most.
                         </p>
                     </AnimatedSection>
@@ -275,10 +275,10 @@ export default function N8nIntegrationsPage() {
                         {popularIntegrations.map((integration, index) => (
                             <AnimatedSection key={index} delay={index * 0.08}>
                                 <div className="glass-card p-6 h-full flex flex-col">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <integration.icon className="w-6 h-6 text-accent-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <integration.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">{integration.category}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{integration.category}</h3>
                                     <p className="text-sm text-gray-400 mb-4 flex-grow">{integration.description}</p>
                                     <div className="flex flex-wrap gap-1.5">
                                         {integration.tools.map((tool) => (
@@ -296,13 +296,13 @@ export default function N8nIntegrationsPage() {
 
             {/* How We Integrate */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Four Ways We Connect Your Apps
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Different apps need different approaches. Here&apos;s how we make connections that are fast, reliable, and secure.
                         </p>
                     </AnimatedSection>
@@ -314,7 +314,7 @@ export default function N8nIntegrationsPage() {
                                         <method.icon className="w-6 h-6 text-primary-400" />
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-semibold text-white mb-2">{method.title}</h3>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{method.title}</h3>
                                         <p className="text-sm text-gray-400 leading-relaxed">{method.description}</p>
                                     </div>
                                 </div>
@@ -326,7 +326,7 @@ export default function N8nIntegrationsPage() {
 
             {/* Stats Bar */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-r [#4285F4]" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -351,7 +351,7 @@ export default function N8nIntegrationsPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Frequently Asked Questions About n8n Integrations
                         </h2>
                     </AnimatedSection>
@@ -359,7 +359,7 @@ export default function N8nIntegrationsPage() {
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
                                 <details className="group glass-card overflow-hidden">
-                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-accent-300 transition-colors">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-[#4285F4] transition-colors">
                                         {faq.question}
                                         <ArrowRight className="w-5 h-5 text-accent-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-4" />
                                     </summary>
@@ -373,11 +373,11 @@ export default function N8nIntegrationsPage() {
 
             {/* CTA */}
             <section className="relative py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <Plug className="w-12 h-12 text-accent-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Ready to Connect Your Apps?
                         </h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">

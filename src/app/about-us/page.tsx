@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { ArrowRight, Zap, Target, Users, Award, Globe, Shield } from "lucide-react";
@@ -82,14 +82,14 @@ export default function AboutPage() {
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center max-w-4xl mx-auto">
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">About n8nera</span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                            We Build Systems That <span className="text-gradient">Run Your Business</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+                            We Build Systems That <span className="text-[#4285F4]">Run Your Business</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 mb-8">
                             n8nera is a premium automation and AI agency helping businesses across the USA, UAE, Canada & Netherlands eliminate manual work,
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
             {/* Stats */}
             <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-5xl mx-auto px-4">
                     <AnimatedSection>
                         <div className="glass-card p-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -143,20 +143,20 @@ export default function AboutPage() {
 
             {/* Our Values */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">Our Values</h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">The principles that guide everything we do.</p>
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Our Values</h2>
+                        <p className="text-gray-600 max-w-2xl mx-auto">The principles that guide everything we do.</p>
                     </AnimatedSection>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {values.map((value, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
-                                <div className="p-6 rounded-xl bg-white/[0.02] border border-white/5 hover:border-accent-500/30 transition-colors">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <value.icon className="w-6 h-6 text-accent-400" />
+                                <div className="p-6 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#4285F4]/30 transition-colors">
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <value.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">{value.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h3>
                                     <p className="text-sm text-gray-400">{value.description}</p>
                                 </div>
                             </AnimatedSection>
@@ -167,10 +167,10 @@ export default function AboutPage() {
 
             {/* CTA */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">Ready to Work Together?</h2>
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Ready to Work Together?</h2>
                         <p className="text-lg text-gray-400 mb-8">Let&apos;s discuss how n8nera can transform your business operations.</p>
                         <Link href="/contact" className="btn-primary">
                             Book Free Consultation <ArrowRight className="w-5 h-5" />

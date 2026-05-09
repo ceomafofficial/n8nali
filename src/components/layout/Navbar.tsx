@@ -276,8 +276,8 @@ export default function Navbar() {
             </a>
             <header
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-                    ? "bg-dark-950/95 backdrop-blur-xl border-b border-white/5 shadow-premium"
-                    : "bg-dark-950/80 backdrop-blur-md"
+                    ? "bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-sm"
+                    : "bg-white/80 backdrop-blur-md"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -312,7 +312,7 @@ export default function Navbar() {
                                         <Link
                                             id={`nav-trigger-${link.name}`}
                                             href={link.href}
-                                            className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-white/5"
+                                            className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors rounded-lg hover:bg-gray-100"
                                             {...(hasSubmenu && {
                                                 "aria-haspopup": "true" as const,
                                                 "aria-expanded": isOpen,
@@ -338,14 +338,14 @@ export default function Navbar() {
                                                 className="absolute top-full left-1/2 -translate-x-1/2 pt-4 animate-fade-in"
                                                 onKeyDown={(e) => handleMegaMenuKeyDown(e, link.name)}
                                             >
-                                                <div className="glass-premium rounded-2xl p-6 min-w-[720px] grid grid-cols-3 gap-6">
+                                                <div className="bg-white shadow-xl rounded-2xl p-6 min-w-[720px] grid grid-cols-3 gap-6 border border-gray-100">
                                                     {link.submenu.map((category) => (
                                                         <div key={category.category} role="group" aria-label={category.category}>
                                                             <div className="flex items-center gap-2 mb-4">
-                                                                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-500/20 to-primary-600/20 flex items-center justify-center">
-                                                                    <category.icon className="w-4 h-4 text-accent-400" aria-hidden="true" />
+                                                                <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                                                                    <category.icon className="w-4 h-4 text-[#4285F4]" aria-hidden="true" />
                                                                 </div>
-                                                                <span className="text-sm font-semibold text-white">
+                                                                <span className="text-sm font-semibold text-gray-900">
                                                                     {category.category}
                                                                 </span>
                                                             </div>
@@ -355,7 +355,7 @@ export default function Navbar() {
                                                                         <Link
                                                                             href={item.href}
                                                                             role="menuitem"
-                                                                            className="group flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors py-1.5"
+                                                                            className="group flex items-center gap-2 text-sm text-gray-600 hover:text-[#4285F4] transition-colors py-1.5"
                                                                         >
                                                                             <ArrowRight className="w-3 h-3 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" aria-hidden="true" />
                                                                             {item.name}
@@ -377,7 +377,7 @@ export default function Navbar() {
                         <div className="flex items-center gap-4">
                             <button
                                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                                className="p-2 text-gray-400 hover:text-white transition-colors"
+                                className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
                                 aria-label={isSearchOpen ? "Close search" : "Open search"}
                                 aria-expanded={isSearchOpen}
                             >
@@ -387,7 +387,7 @@ export default function Navbar() {
                             <button
                                 ref={mobileToggleRef}
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                                className="lg:hidden p-2 text-gray-400 hover:text-white transition-colors"
+                                className="lg:hidden p-2 text-gray-700 hover:text-gray-900 transition-colors"
                                 aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                                 aria-expanded={isMobileMenuOpen}
                                 aria-controls="mobile-menu"
@@ -408,7 +408,7 @@ export default function Navbar() {
                 <div
                     ref={searchContainerRef}
                     role="search"
-                    className="fixed top-20 left-0 right-0 z-40 bg-dark-950/95 backdrop-blur-xl border-b border-white/10 p-4 animate-fade-in"
+                    className="fixed top-20 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200 p-4 animate-fade-in"
                 >
                     <div className="max-w-3xl mx-auto">
                         <form
@@ -431,7 +431,7 @@ export default function Navbar() {
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="Search articles, services, industries..."
-                                className="w-full bg-white/5 border border-white/10 rounded-lg py-3 pl-12 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-accent-500 transition-colors"
+                                className="w-full bg-gray-50 border border-gray-200 rounded-lg py-3 pl-12 pr-4 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[#4285F4] transition-colors"
                                 autoFocus
                                 autoComplete="off"
                                 aria-autocomplete="list"
@@ -458,11 +458,11 @@ export default function Navbar() {
                                             <Link
                                                 href={result.href}
                                                 onClick={() => setIsSearchOpen(false)}
-                                                className="flex items-start gap-3 px-4 py-3 rounded-lg hover:bg-white/5 transition-colors group"
+                                                className="flex items-start gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors group"
                                             >
                                                 <span className="mt-0.5 flex-shrink-0">{categoryIcon(result.category)}</span>
                                                 <div className="min-w-0">
-                                                    <p className="text-sm font-medium text-white group-hover:text-accent-300 transition-colors truncate">
+                                                    <p className="text-sm font-medium text-gray-900 group-hover:text-[#4285F4] transition-colors truncate">
                                                         {result.title}
                                                     </p>
                                                     <p className="text-xs text-gray-500 line-clamp-1">
@@ -490,7 +490,7 @@ export default function Navbar() {
             >
                 {/* Backdrop */}
                 <div
-                    className="absolute inset-0 bg-dark-950/95 backdrop-blur-xl"
+                    className="absolute inset-0 bg-white/95 backdrop-blur-xl"
                     onClick={() => setIsMobileMenuOpen(false)}
                 />
 
@@ -498,19 +498,17 @@ export default function Navbar() {
                 <nav
                     ref={mobileMenuRef}
                     aria-label="Mobile navigation"
-                    className={`absolute right-0 top-0 bottom-0 w-80 bg-dark-900 border-l border-white/10 overflow-y-auto transition-transform duration-300 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+                    className={`absolute right-0 top-0 bottom-0 w-full sm:w-80 max-w-full bg-white border-l border-gray-200 overflow-y-auto transition-transform duration-300 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
                 >
                     {/* Close button inside panel for screen readers */}
-                    <div className="p-4 pt-6 flex justify-end">
+                    <div className="flex justify-end p-4">
                         <button
-                            onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                mobileToggleRef.current?.focus();
-                            }}
-                            className="p-2 text-gray-400 hover:text-white transition-colors"
+                            type="button"
+                            className="p-2"
+                            onClick={() => setIsMobileMenuOpen(false)}
                             aria-label="Close menu"
                         >
-                            <X className="w-6 h-6" aria-hidden="true" />
+                            <X className="w-6 h-6 text-gray-500 hover:text-gray-900" aria-hidden="true" />
                         </button>
                     </div>
 
@@ -520,15 +518,15 @@ export default function Navbar() {
                                 <Link
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="block text-lg font-medium text-white hover:text-accent-400 transition-colors"
+                                    className="block text-lg font-medium text-gray-900 hover:text-[#4285F4] transition-colors"
                                 >
                                     {link.name}
                                 </Link>
                                 {link.submenu && (
-                                    <div className="mt-4 pl-4 space-y-4 border-l border-white/10">
+                                    <div className="mt-4 pl-4 space-y-4 border-l border-gray-200">
                                         {link.submenu.map((category) => (
                                             <div key={category.category}>
-                                                <p className="text-sm font-medium text-gray-500 mb-2">
+                                                <p className="text-sm font-medium text-gray-600 mb-2">
                                                     {category.category}
                                                 </p>
                                                 <ul className="space-y-2">
@@ -537,7 +535,7 @@ export default function Navbar() {
                                                             <Link
                                                                 href={item.href}
                                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                                className="text-sm text-gray-400 hover:text-white transition-colors"
+                                                                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                                                             >
                                                                 {item.name}
                                                             </Link>

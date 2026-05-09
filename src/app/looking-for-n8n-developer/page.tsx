@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
@@ -626,7 +626,7 @@ export default function LookingForN8nDeveloperPage() {
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-24 md:py-32 overflow-hidden" aria-label="Hero">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                     <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-emerald-600/5 rounded-full blur-[100px]" />
@@ -637,21 +637,21 @@ export default function LookingForN8nDeveloperPage() {
                         <nav aria-label="Breadcrumb" className="mb-6">
                             <ol className="flex items-center justify-center gap-2 text-sm text-gray-500" itemScope itemType="https://schema.org/BreadcrumbList">
                                 <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-                                    <Link href="/" itemProp="item" className="hover:text-accent-400 transition-colors">
+                                    <Link href="/" itemProp="item" className="hover:text-[#4285F4] transition-colors">
                                         <span itemProp="name">Home</span>
                                     </Link>
                                     <meta itemProp="position" content="1" />
                                 </li>
                                 <li className="text-gray-600">/</li>
                                 <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-                                    <Link href="/services" itemProp="item" className="hover:text-accent-400 transition-colors">
+                                    <Link href="/services" itemProp="item" className="hover:text-[#4285F4] transition-colors">
                                         <span itemProp="name">Services</span>
                                     </Link>
                                     <meta itemProp="position" content="2" />
                                 </li>
                                 <li className="text-gray-600">/</li>
                                 <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-                                    <span itemProp="name" className="text-accent-400">Looking for n8n Developer</span>
+                                    <span itemProp="name" className="text-[#4285F4]">Looking for n8n Developer</span>
                                     <meta itemProp="position" content="3" />
                                 </li>
                             </ol>
@@ -662,9 +662,9 @@ export default function LookingForN8nDeveloperPage() {
                         </span>
 
                         {/* H1 — Primary keyword targeted, AEO voice search optimized */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight">
                             Looking for an n8n Developer? <br className="hidden md:block" />
-                            <span className="text-gradient">Hire Certified Experts in 48 Hours</span>
+                            <span className="text-[#4285F4]">Hire Certified Experts in 48 Hours</span>
                         </h1>
 
                         {/* AEO Speakable paragraph — direct answer to user intent */}
@@ -706,13 +706,13 @@ export default function LookingForN8nDeveloperPage() {
                 PROBLEM SECTION — Agitate pain points, build empathy
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-20 overflow-hidden" aria-label="Common struggles finding n8n developers">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Why Finding a Good n8n Developer Is So Hard
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg" data-speakable="true">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg" data-speakable="true">
                             n8n is powerful but still niche. The talent pool is small, and most &ldquo;n8n developers&rdquo; on freelance platforms have surface-level experience at best. Here&apos;s what businesses like yours struggle with:
                         </p>
                     </AnimatedSection>
@@ -726,7 +726,7 @@ export default function LookingForN8nDeveloperPage() {
                                             <item.icon className="w-5 h-5 text-red-400" />
                                         </div>
                                         <div>
-                                            <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                                            <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                                             <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                                         </div>
                                     </div>
@@ -741,7 +741,7 @@ export default function LookingForN8nDeveloperPage() {
                                 Sound familiar? There&apos;s a better way.
                             </p>
                             <p className="text-gray-400">
-                                n8nera eliminates these problems entirely. We give you instant access to developers who <strong className="text-white">live and breathe n8n</strong> — pre-vetted, proven, and ready to ship production-grade automations from day one.
+                                n8nera eliminates these problems entirely. We give you instant access to developers who <strong className="text-gray-900">live and breathe n8n</strong> — pre-vetted, proven, and ready to ship production-grade automations from day one.
                             </p>
                         </div>
                     </AnimatedSection>
@@ -755,10 +755,10 @@ export default function LookingForN8nDeveloperPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             What Our n8n Developers Bring to the Table
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                             Not just workflow builders — full-stack automation engineers with deep expertise across the entire n8n ecosystem.
                         </p>
                     </AnimatedSection>
@@ -767,10 +767,10 @@ export default function LookingForN8nDeveloperPage() {
                         {coreSkills.map((skill, index) => (
                             <AnimatedSection key={index} delay={index * 0.08}>
                                 <div className="glass-card p-6 h-full">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <skill.icon className="w-6 h-6 text-accent-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <skill.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-3">{skill.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-3">{skill.title}</h3>
                                     <ul className="space-y-2">
                                         {skill.items.map((item, i) => (
                                             <li key={i} className="flex items-center gap-2 text-sm text-gray-400">
@@ -790,13 +790,13 @@ export default function LookingForN8nDeveloperPage() {
                 USE CASES — Internal linking + semantic relevance
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-20 overflow-hidden" aria-label="n8n developer use cases">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             What Can an n8n Developer Build for You?
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg" data-speakable="true">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg" data-speakable="true">
                             From simple API integrations to complex AI-powered automation ecosystems — our n8n developers handle it all.
                         </p>
                     </AnimatedSection>
@@ -804,11 +804,11 @@ export default function LookingForN8nDeveloperPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {useCases.map((uc, index) => (
                             <AnimatedSection key={index} delay={index * 0.08}>
-                                <Link href={uc.link} className="glass-card p-6 h-full flex flex-col group hover:border-accent-500/30 transition-all block">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4 group-hover:bg-accent-500/20 transition-colors">
-                                        <uc.icon className="w-6 h-6 text-accent-400" />
+                                <Link href={uc.link} className="glass-card p-6 h-full flex flex-col group hover:border-[#4285F4]/30 transition-all block">
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4 group-hover:bg-accent-500/20 transition-colors">
+                                        <uc.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-accent-300 transition-colors">{uc.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">{uc.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed flex-grow">{uc.description}</p>
                                     <div className="flex items-center gap-1 text-accent-400 text-sm mt-4 group-hover:gap-2 transition-all">
                                         Learn More <ArrowRight className="w-4 h-4" />
@@ -827,10 +827,10 @@ export default function LookingForN8nDeveloperPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Flexible n8n Developer Hiring Models
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                             Choose the engagement model that fits your budget, timeline, and project scope. Scale up or down anytime — no contracts, no commitments.
                         </p>
                     </AnimatedSection>
@@ -838,16 +838,16 @@ export default function LookingForN8nDeveloperPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {hiringModels.map((model, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
-                                <div className={`glass-card p-6 h-full flex flex-col ${index === 1 ? "border border-accent-500/30 relative" : ""}`}>
+                                <div className={`glass-card p-6 h-full flex flex-col ${index === 1 ? "border border-[#4285F4]/30 relative" : ""}`}>
                                     {index === 1 && (
                                         <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                                             Most Popular
                                         </span>
                                     )}
-                                    <div className="w-14 h-14 rounded-xl bg-accent-500/10 flex items-center justify-center mx-auto mb-4">
-                                        <model.icon className="w-7 h-7 text-accent-400" />
+                                    <div className="w-14 h-14 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mx-auto mb-4">
+                                        <model.icon className="w-7 h-7 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-xl font-semibold text-white text-center mb-1">{model.title}</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 text-center mb-1">{model.title}</h3>
                                     <span className="text-sm text-accent-300 text-center mb-2">{model.subtitle}</span>
                                     <div className="text-2xl font-bold text-white text-center mb-4">{model.price}</div>
                                     <p className="text-sm text-gray-400 leading-relaxed mb-4">{model.description}</p>
@@ -867,7 +867,7 @@ export default function LookingForN8nDeveloperPage() {
                                         href="/contact"
                                         className={`w-full text-center py-3 rounded-lg font-semibold transition-all ${index === 1
                                                 ? "bg-accent-500 text-white hover:bg-accent-600"
-                                                : "bg-white/5 text-white hover:bg-white/10"
+                                                : "bg-gray-50 text-white hover:bg-[#4285F4]/5"
                                             }`}
                                     >
                                         Get Started
@@ -889,13 +889,13 @@ export default function LookingForN8nDeveloperPage() {
                 PROCESS — HowTo schema, step-by-step AEO
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-20 overflow-hidden" aria-label="How to hire an n8n developer">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             How to Hire an n8n Developer — Step by Step
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg" data-speakable="true">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg" data-speakable="true">
                             From your first message to a working developer on your project — the entire process takes under 48 hours.
                         </p>
                     </AnimatedSection>
@@ -910,7 +910,7 @@ export default function LookingForN8nDeveloperPage() {
                                     <div className="flex-grow">
                                         <div className="flex items-center gap-3 mb-2">
                                             <h3 className="text-lg font-semibold text-white">{step.title}</h3>
-                                            <span className="text-xs bg-accent-500/10 text-accent-300 px-2 py-1 rounded-full">
+                                            <span className="text-xs bg-[#4285F4]/10 text-accent-300 px-2 py-1 rounded-full">
                                                 {step.duration}
                                             </span>
                                         </div>
@@ -936,10 +936,10 @@ export default function LookingForN8nDeveloperPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             n8nera vs. Freelancers vs. In-House Hiring
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                             See why businesses choose n8nera when they&apos;re looking for an n8n developer.
                         </p>
                     </AnimatedSection>
@@ -962,9 +962,9 @@ export default function LookingForN8nDeveloperPage() {
                                     </thead>
                                     <tbody>
                                         {comparisonRows.map((row, index) => (
-                                            <tr key={index} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                                            <tr key={index} className="border-b border-white/5 hover:bg-gray-50 transition-colors">
                                                 <td className="p-4 text-gray-300 font-medium">{row.feature}</td>
-                                                <td className="p-4 text-accent-300">{row.n8nera}</td>
+                                                <td className="p-4 text-[#4285F4]">{row.n8nera}</td>
                                                 <td className="p-4 text-gray-500">{row.freelance}</td>
                                                 <td className="p-4 text-gray-500">{row.inHouse}</td>
                                             </tr>
@@ -981,13 +981,13 @@ export default function LookingForN8nDeveloperPage() {
                 WHY CHOOSE US — E-E-A-T trust signals
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-20 overflow-hidden" aria-label="Why choose n8nera">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Why Businesses Choose n8nera When Looking for n8n Developers
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                             More than just developers. A complete automation partnership.
                         </p>
                     </AnimatedSection>
@@ -996,10 +996,10 @@ export default function LookingForN8nDeveloperPage() {
                         {whyChooseUs.map((item, index) => (
                             <AnimatedSection key={index} delay={index * 0.06}>
                                 <div className="glass-card p-6 h-full">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <item.icon className="w-6 h-6 text-accent-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <item.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-base font-semibold text-white mb-2">{item.title}</h3>
+                                    <h3 className="text-base font-semibold text-gray-900 mb-2">{item.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                                 </div>
                             </AnimatedSection>
@@ -1015,16 +1015,16 @@ export default function LookingForN8nDeveloperPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             What You Get When You Hire Through n8nera
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                             Every engagement includes these deliverables — standard, not upgrades.
                         </p>
                     </AnimatedSection>
 
                     <AnimatedSection>
-                        <div className="glass-card p-8">
+                        <div className="google-card p-8 bg-white">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {deliverables.map((item, index) => (
                                     <div key={index} className="flex items-start gap-3">
@@ -1042,10 +1042,10 @@ export default function LookingForN8nDeveloperPage() {
                 TESTIMONIALS — Social proof, E-E-A-T trust
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-20 overflow-hidden" aria-label="Client testimonials">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             What Clients Say After Finding Their n8n Developer
                         </h2>
                     </AnimatedSection>
@@ -1081,17 +1081,17 @@ export default function LookingForN8nDeveloperPage() {
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <article className="prose prose-invert prose-lg max-w-none">
-                            <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                                 The Complete Guide to Finding &amp; Hiring an n8n Developer in 2026
                             </h2>
 
                             <div className="glass-card p-8 space-y-6 text-gray-300 leading-relaxed">
                                 {/* Semantic paragraph 1: What is n8n + developer role */}
                                 <div data-speakable="true">
-                                    <h3 className="text-xl font-semibold text-white mb-3">What Is an n8n Developer and Why Do You Need One?</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">What Is an n8n Developer and Why Do You Need One?</h3>
                                     <p>
-                                        An <strong className="text-white">n8n developer</strong> is a specialized automation engineer who designs, builds, deploys, and maintains workflows on the{" "}
-                                        <Link href="https://n8n.io" target="_blank" rel="noopener noreferrer" className="text-accent-400 hover:underline">
+                                        An <strong className="text-gray-900">n8n developer</strong> is a specialized automation engineer who designs, builds, deploys, and maintains workflows on the{" "}
+                                        <Link href="https://n8n.io" target="_blank" rel="noopener noreferrer" className="text-[#4285F4] hover:underline">
                                             n8n automation platform
                                         </Link>
                                         . Unlike general &ldquo;no-code&rdquo; builders, n8n developers combine visual workflow design with deep technical skills in JavaScript/TypeScript, API architecture, database management, and AI integration.
@@ -1103,10 +1103,10 @@ export default function LookingForN8nDeveloperPage() {
 
                                 {/* Semantic paragraph 2: Why n8n over alternatives */}
                                 <div>
-                                    <h3 className="text-xl font-semibold text-white mb-3">Why Choose n8n Over Other Automation Platforms?</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Why Choose n8n Over Other Automation Platforms?</h3>
                                     <p>
-                                        Businesses choose n8n for several key advantages: <strong className="text-white">self-hosting capability</strong> (full control over data and infrastructure), <strong className="text-white">unlimited executions</strong> at no per-run cost, <strong className="text-white">400+ native integrations</strong>, <strong className="text-white">Code nodes</strong> for custom JavaScript/TypeScript logic, <strong className="text-white">AI agent capabilities</strong> with built-in LLM support, and a vibrant{" "}
-                                        <strong className="text-white">open-source community</strong> with 1,000+ community-built nodes.
+                                        Businesses choose n8n for several key advantages: <strong className="text-gray-900">self-hosting capability</strong> (full control over data and infrastructure), <strong className="text-gray-900">unlimited executions</strong> at no per-run cost, <strong className="text-gray-900">400+ native integrations</strong>, <strong className="text-gray-900">Code nodes</strong> for custom JavaScript/TypeScript logic, <strong className="text-gray-900">AI agent capabilities</strong> with built-in LLM support, and a vibrant{" "}
+                                        <strong className="text-gray-900">open-source community</strong> with 1,000+ community-built nodes.
                                     </p>
                                     <p>
                                         However, unlocking n8n&apos;s full potential requires developers who understand not just the visual interface, but the underlying architecture — execution modes, queue workers, sub-workflow patterns, error boundaries, credential management, and horizontal scaling strategies.
@@ -1115,44 +1115,44 @@ export default function LookingForN8nDeveloperPage() {
 
                                 {/* Semantic paragraph 3: Where to find */}
                                 <div>
-                                    <h3 className="text-xl font-semibold text-white mb-3">Where to Find Qualified n8n Developers</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Where to Find Qualified n8n Developers</h3>
                                     <p>
                                         If you&apos;re looking for an n8n developer, here are the primary channels:
                                     </p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><strong className="text-white">Specialized agencies (like n8nera)</strong> — Pre-vetted developers with proven track records. Best for businesses that want quality assurance without the hiring risk.</li>
-                                        <li><strong className="text-white">n8n Community Forum</strong> — The official n8n community is active, but finding developers available for hire takes effort and offers no quality guarantee.</li>
-                                        <li><strong className="text-white">Freelance platforms (Upwork, Toptal)</strong> — Large talent pools, but n8n expertise verification is difficult. Many developers overstate their skills.</li>
-                                        <li><strong className="text-white">LinkedIn &amp; job boards</strong> — Good for full-time hires, but the niche talent pool means long hiring cycles (4-8 weeks average).</li>
-                                        <li><strong className="text-white">GitHub &amp; open source</strong> — Reviewing n8n community node contributions can help identify skilled developers, but outreach is hit-or-miss.</li>
+                                        <li><strong className="text-gray-900">Specialized agencies (like n8nera)</strong> — Pre-vetted developers with proven track records. Best for businesses that want quality assurance without the hiring risk.</li>
+                                        <li><strong className="text-gray-900">n8n Community Forum</strong> — The official n8n community is active, but finding developers available for hire takes effort and offers no quality guarantee.</li>
+                                        <li><strong className="text-gray-900">Freelance platforms (Upwork, Toptal)</strong> — Large talent pools, but n8n expertise verification is difficult. Many developers overstate their skills.</li>
+                                        <li><strong className="text-gray-900">LinkedIn &amp; job boards</strong> — Good for full-time hires, but the niche talent pool means long hiring cycles (4-8 weeks average).</li>
+                                        <li><strong className="text-gray-900">GitHub &amp; open source</strong> — Reviewing n8n community node contributions can help identify skilled developers, but outreach is hit-or-miss.</li>
                                     </ul>
                                 </div>
 
                                 {/* Semantic paragraph 4: Key skills to evaluate */}
                                 <div>
-                                    <h3 className="text-xl font-semibold text-white mb-3">Key Skills to Look for in an n8n Developer</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Key Skills to Look for in an n8n Developer</h3>
                                     <p>
                                         When evaluating an n8n developer for your project, prioritize these technical competencies:
                                     </p>
                                     <ol className="list-decimal pl-6 space-y-2">
-                                        <li><strong className="text-white">Workflow architecture</strong> — Can they design multi-branch, error-tolerant workflows with proper sub-workflow decomposition?</li>
-                                        <li><strong className="text-white">API integration expertise</strong> — Do they handle REST, GraphQL, OAuth 2.0, webhooks, rate limiting, and pagination efficiently?</li>
-                                        <li><strong className="text-white">Custom Code nodes</strong> — Can they write clean JavaScript/TypeScript inside n8n&apos;s Code nodes for data transformation and custom logic?</li>
-                                        <li><strong className="text-white">Error handling</strong> — Do their workflows include proper try/catch patterns, retry logic, dead-letter queues, and alerting?</li>
-                                        <li><strong className="text-white">AI/LLM integration</strong> — Can they build AI agent workflows, RAG pipelines, and tool-use chains using n8n&apos;s AI nodes?</li>
-                                        <li><strong className="text-white">Self-hosting &amp; DevOps</strong> — Can they deploy, secure, and scale n8n instances using Docker, Kubernetes, or cloud providers?</li>
-                                        <li><strong className="text-white">Custom node development</strong> — Can they create custom n8n nodes with TypeScript when native integrations aren&apos;t available?</li>
+                                        <li><strong className="text-gray-900">Workflow architecture</strong> — Can they design multi-branch, error-tolerant workflows with proper sub-workflow decomposition?</li>
+                                        <li><strong className="text-gray-900">API integration expertise</strong> — Do they handle REST, GraphQL, OAuth 2.0, webhooks, rate limiting, and pagination efficiently?</li>
+                                        <li><strong className="text-gray-900">Custom Code nodes</strong> — Can they write clean JavaScript/TypeScript inside n8n&apos;s Code nodes for data transformation and custom logic?</li>
+                                        <li><strong className="text-gray-900">Error handling</strong> — Do their workflows include proper try/catch patterns, retry logic, dead-letter queues, and alerting?</li>
+                                        <li><strong className="text-gray-900">AI/LLM integration</strong> — Can they build AI agent workflows, RAG pipelines, and tool-use chains using n8n&apos;s AI nodes?</li>
+                                        <li><strong className="text-gray-900">Self-hosting &amp; DevOps</strong> — Can they deploy, secure, and scale n8n instances using Docker, Kubernetes, or cloud providers?</li>
+                                        <li><strong className="text-gray-900">Custom node development</strong> — Can they create custom n8n nodes with TypeScript when native integrations aren&apos;t available?</li>
                                     </ol>
                                 </div>
 
                                 {/* Semantic paragraph 5: Cost analysis */}
                                 <div>
-                                    <h3 className="text-xl font-semibold text-white mb-3">How Much Does an n8n Developer Cost?</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">How Much Does an n8n Developer Cost?</h3>
                                     <p>
-                                        n8n developer costs in 2026 vary significantly based on experience, engagement type, and geography. Freelance rates on platforms like Upwork range from <strong className="text-white">$25-$100/hour</strong>, with experienced developers typically charging $50-$80/hour. Agency rates (like n8nera) start from <strong className="text-white">$35/hour</strong> for pre-vetted experts, offering better quality assurance and team coverage.
+                                        n8n developer costs in 2026 vary significantly based on experience, engagement type, and geography. Freelance rates on platforms like Upwork range from <strong className="text-gray-900">$25-$100/hour</strong>, with experienced developers typically charging $50-$80/hour. Agency rates (like n8nera) start from <strong className="text-gray-900">$35/hour</strong> for pre-vetted experts, offering better quality assurance and team coverage.
                                     </p>
                                     <p>
-                                        For dedicated monthly developers, expect to pay <strong className="text-white">$2,500-$6,000/month</strong> for a full-time resource — significantly less than an in-house hire ($80K-$120K/year plus benefits). Project-based pricing starts from <strong className="text-white">$500 for simple workflows</strong> up to $10,000+ for enterprise automation ecosystems.
+                                        For dedicated monthly developers, expect to pay <strong className="text-gray-900">$2,500-$6,000/month</strong> for a full-time resource — significantly less than an in-house hire ($80K-$120K/year plus benefits). Project-based pricing starts from <strong className="text-gray-900">$500 for simple workflows</strong> up to $10,000+ for enterprise automation ecosystems.
                                     </p>
                                     <p>
                                         The true cost calculation should include failed hire risk, rework costs, and time-to-value. Businesses that skip vetting often spend 2-4x their initial budget fixing broken automations.
@@ -1160,20 +1160,20 @@ export default function LookingForN8nDeveloperPage() {
                                 </div>
 
                                 {/* Internal linking paragraph — semantic SEO */}
-                                <div className="border-t border-white/10 pt-6">
-                                    <h3 className="text-xl font-semibold text-white mb-3">Related Resources</h3>
+                                <div className="border-t border-gray-200 pt-6">
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Related Resources</h3>
                                     <p>
                                         Explore more about how n8nera can help you with automation:
                                     </p>
                                     <ul className="list-disc pl-6 space-y-2">
-                                        <li><Link href="/hire-n8n-developer" className="text-accent-400 hover:underline">Hire a Dedicated n8n Developer</Link> — Detailed hiring models and pricing</li>
-                                        <li><Link href="/n8n-workflow-automation" className="text-accent-400 hover:underline">n8n Workflow Automation Services</Link> — Full-service workflow automation</li>
-                                        <li><Link href="/n8n-ai-automation" className="text-accent-400 hover:underline">n8n AI Automation</Link> — AI agent workflows and LLM integration</li>
-                                        <li><Link href="/n8n-integrations" className="text-accent-400 hover:underline">n8n Integration Services</Link> — Connect any system with n8n</li>
-                                        <li><Link href="/n8n-automation-agency" className="text-accent-400 hover:underline">n8n Automation Agency</Link> — Why choose an agency over freelancers</li>
-                                        <li><Link href="/case-studies" className="text-accent-400 hover:underline">Automation Case Studies</Link> — Real results from real projects</li>
-                                        <li><Link href="/pricing" className="text-accent-400 hover:underline">Pricing Plans</Link> — Transparent pricing for all engagement models</li>
-                                        <li><Link href="/blog" className="text-accent-400 hover:underline">Automation Blog</Link> — Latest insights and tutorials</li>
+                                        <li><Link href="/hire-n8n-developer" className="text-[#4285F4] hover:underline">Hire a Dedicated n8n Developer</Link> — Detailed hiring models and pricing</li>
+                                        <li><Link href="/n8n-workflow-automation" className="text-[#4285F4] hover:underline">n8n Workflow Automation Services</Link> — Full-service workflow automation</li>
+                                        <li><Link href="/n8n-ai-automation" className="text-[#4285F4] hover:underline">n8n AI Automation</Link> — AI agent workflows and LLM integration</li>
+                                        <li><Link href="/n8n-integrations" className="text-[#4285F4] hover:underline">n8n Integration Services</Link> — Connect any system with n8n</li>
+                                        <li><Link href="/n8n-automation-agency" className="text-[#4285F4] hover:underline">n8n Automation Agency</Link> — Why choose an agency over freelancers</li>
+                                        <li><Link href="/case-studies" className="text-[#4285F4] hover:underline">Automation Case Studies</Link> — Real results from real projects</li>
+                                        <li><Link href="/pricing" className="text-[#4285F4] hover:underline">Pricing Plans</Link> — Transparent pricing for all engagement models</li>
+                                        <li><Link href="/blog" className="text-[#4285F4] hover:underline">Automation Blog</Link> — Latest insights and tutorials</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1186,13 +1186,13 @@ export default function LookingForN8nDeveloperPage() {
                 FAQ SECTION — AEO, Voice Search, Featured Snippets
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-20 overflow-hidden" aria-label="Frequently asked questions about hiring n8n developers" id="faq">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Frequently Asked Questions About Hiring n8n Developers
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                             Everything you need to know before hiring an n8n developer — answered by automation experts.
                         </p>
                     </AnimatedSection>
@@ -1201,7 +1201,7 @@ export default function LookingForN8nDeveloperPage() {
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.04}>
                                 <details className="group glass-card overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-accent-300 transition-colors" itemProp="name">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-[#4285F4] transition-colors" itemProp="name">
                                         {faq.question}
                                         <ArrowRight className="w-5 h-5 text-accent-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-4" />
                                     </summary>
@@ -1219,12 +1219,12 @@ export default function LookingForN8nDeveloperPage() {
                 FINAL CTA — Conversion-focused, urgency
             ════════════════════════════════════════════════════════════════ */}
             <section className="relative py-24 overflow-hidden" aria-label="Get started">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-accent-600/5 rounded-full blur-[120px]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <Code2 className="w-14 h-14 text-accent-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Stop Looking. Start Building.
                         </h2>
                         <p className="text-lg text-gray-400 mb-4 max-w-2xl mx-auto" data-speakable="true">
@@ -1250,19 +1250,19 @@ export default function LookingForN8nDeveloperPage() {
                         {/* Trust badges */}
                         <div className="flex flex-wrap items-center justify-center gap-6 mt-10 text-gray-500 text-sm">
                             <div className="flex items-center gap-2">
-                                <ShieldCheck className="w-4 h-4 text-accent-400" />
+                                <ShieldCheck className="w-4 h-4 text-[#4285F4]" />
                                 <span>Satisfaction Guaranteed</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Clock className="w-4 h-4 text-accent-400" />
+                                <Clock className="w-4 h-4 text-[#4285F4]" />
                                 <span>48-Hour Matching</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Users className="w-4 h-4 text-accent-400" />
+                                <Users className="w-4 h-4 text-[#4285F4]" />
                                 <span>200+ Workflows Delivered</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <BadgeCheck className="w-4 h-4 text-accent-400" />
+                                <BadgeCheck className="w-4 h-4 text-[#4285F4]" />
                                 <span>Certified n8n Partner</span>
                             </div>
                         </div>

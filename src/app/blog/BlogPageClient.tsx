@@ -23,21 +23,19 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
         : allPosts.slice(1); // Show all except featured if no filter selected
 
     return (
-        <div className="pt-16 md:pt-20">
+        <div className="pt-16 md:pt-20 bg-white">
             {/* Hero Section */}
-            <section className="relative py-12 md:py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
-                </div>
+            <section className="relative py-12 md:py-20 overflow-hidden bg-[#f8f9fa] border-b border-gray-100">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-[#4285F4]/8 rounded-full blur-[80px]" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <AnimatedSection>
-                        <span className="inline-block text-xs md:text-sm font-semibold text-accent-400 uppercase tracking-wider mb-3 md:mb-4">
-                            Blog & Insights
+                        <span className="inline-block text-xs md:text-sm font-semibold text-[#4285F4] uppercase tracking-wider mb-3 md:mb-4">
+                            Blog &amp; Insights
                         </span>
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 md:mb-6">
-                            Automation <span className="text-gradient">Knowledge Hub</span>
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4 md:mb-6">
+                            Automation <span className="text-gradient-blue italic-accent">Knowledge Hub</span>
                         </h1>
-                        <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto px-4 md:px-0">
+                        <p className="text-sm md:text-base lg:text-lg text-gray-700 max-w-2xl mx-auto px-4 md:px-0">
                             Expert insights, guides, and strategies on workflow automation, AI, and business process optimization.
                         </p>
                     </AnimatedSection>
@@ -45,15 +43,14 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
             </section>
 
             {/* Categories */}
-            <section className="relative py-4 md:py-8 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+            <section className="relative py-4 md:py-8 bg-white border-b border-gray-100">
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+                    <div className="flex overflow-x-auto no-scrollbar gap-2 md:gap-3 pb-1 justify-start md:justify-center md:flex-wrap">
                         <button
                             onClick={() => setSelectedCategory(null)}
-                            className={`px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${selectedCategory === null
-                                ? "bg-accent-500 text-white shadow-premium"
-                                : "bg-white/5 text-gray-400 hover:bg-accent-500/20 hover:text-accent-300"
+                            className={`px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0 ${selectedCategory === null
+                                ? "bg-[#4285F4] text-white shadow-sm"
+                                : "bg-gray-100 text-gray-600 hover:bg-[#4285F4]/10 hover:text-[#4285F4]"
                                 }`}
                         >
                             All Posts
@@ -62,9 +59,9 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
                             <button
                                 key={category.id}
                                 onClick={() => setSelectedCategory(category.name)}
-                                className={`px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${selectedCategory === category.name
-                                    ? "bg-accent-500 text-white shadow-premium"
-                                    : "bg-white/5 text-gray-400 hover:bg-accent-500/20 hover:text-accent-300"
+                                className={`px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0 ${selectedCategory === category.name
+                                    ? "bg-[#4285F4] text-white shadow-sm"
+                                    : "bg-gray-100 text-gray-600 hover:bg-[#4285F4]/10 hover:text-[#4285F4]"
                                     }`}
                             >
                                 {category.name}
@@ -76,24 +73,23 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
 
             {/* Featured Post */}
             {featuredPost && (
-                <section className="relative py-16 overflow-hidden">
-                    <div className="absolute inset-0 bg-dark-950" />
+                <section className="relative py-16 overflow-hidden bg-white">
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <AnimatedSection>
                             <Link href={`/blog/${featuredPost.slug}`} className="group block">
-                                <div className="glass-card p-8 md:p-12 bg-gradient-to-br from-accent-500/10 to-primary-600/10">
+                                <div className="google-card p-8 md:p-12 bg-gradient-to-br from-[#4285F4]/5 to-[#34A853]/5">
                                     <div className="grid lg:grid-cols-2 gap-8 items-center">
                                         <div>
-                                            <span className="inline-block px-3 py-1 rounded-full bg-accent-500/20 text-accent-400 text-sm font-medium mb-4">
+                                            <span className="inline-block px-3 py-1 rounded-full bg-[#4285F4]/10 text-[#4285F4] text-sm font-medium mb-4">
                                                 Featured
                                             </span>
-                                            <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4 group-hover:text-accent-300 transition-colors">
+                                            <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-4 group-hover:text-[#4285F4] transition-colors">
                                                 {featuredPost.title}
                                             </h2>
-                                            <p className="text-gray-400 mb-6">
+                                            <p className="text-gray-700 mb-6">
                                                 {featuredPost.excerpt}
                                             </p>
-                                            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-6">
+                                            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-6">
                                                 <span className="flex items-center gap-1">
                                                     <User className="w-4 h-4" />
                                                     {featuredPost.author.name}
@@ -107,13 +103,13 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
                                                     {featuredPost.readTime} min read
                                                 </span>
                                             </div>
-                                            <div className="flex items-center gap-2 text-accent-400 font-medium group-hover:text-accent-300">
+                                            <div className="flex items-center gap-2 text-[#4285F4] font-medium group-hover:text-blue-700">
                                                 Read Full Article
                                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                             </div>
                                         </div>
                                         <div className="hidden lg:block">
-                                            <div className="relative aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-accent-500/20 to-primary-600/20">
+                                            <div className="relative aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10">
                                                 {featuredPost.featuredImage ? (
                                                     <Image
                                                         src={featuredPost.featuredImage}
@@ -139,11 +135,10 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
             )}
 
             {/* Recent Posts Grid */}
-            <section className="relative py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+            <section className="relative py-16 overflow-hidden bg-[#f8f9fa]">
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="mb-12">
-                        <h2 className="text-2xl font-display font-bold text-white">
+                        <h2 className="text-2xl font-display font-bold text-gray-900">
                             {selectedCategory ? `${selectedCategory} Articles` : "Recent Articles"}
                             <span className="text-gray-500 text-base ml-3">({filteredPosts.length})</span>
                         </h2>
@@ -153,10 +148,10 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
                         {filteredPosts.map((post, index) => (
                             <AnimatedSection key={post.id} delay={index * 0.1}>
                                 <Link href={`/blog/${post.slug}`} className="group block h-full">
-                                    <article className="glass-card h-full overflow-hidden flex flex-col">
+                                    <article className="google-card h-full overflow-hidden flex flex-col bg-white">
                                         {/* Featured Image */}
                                         {post.featuredImage && (
-                                            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-accent-500/10 to-primary-600/10">
+                                            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10">
                                                 <Image
                                                     src={post.featuredImage}
                                                     alt={post.title}
@@ -168,22 +163,22 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
                                         )}
                                         <div className="p-6 flex flex-col flex-grow">
                                         {/* Category */}
-                                        <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-gray-400 text-xs font-medium mb-4 self-start">
+                                        <span className="inline-block px-3 py-1 rounded-full bg-[#4285F4]/10 text-[#4285F4] text-xs font-medium mb-4 self-start">
                                             {post.category}
                                         </span>
 
                                         {/* Title */}
-                                        <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-accent-300 transition-colors line-clamp-2">
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors line-clamp-2">
                                             {post.title}
                                         </h3>
 
                                         {/* Excerpt */}
-                                        <p className="text-sm text-gray-400 mb-4 flex-grow line-clamp-3">
+                                        <p className="text-sm text-gray-700 mb-4 flex-grow line-clamp-3">
                                             {post.excerpt}
                                         </p>
 
                                         {/* Meta */}
-                                        <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-white/5">
+                                        <div className="flex items-center justify-between text-xs text-gray-600 pt-4 border-t border-gray-100">
                                             <span>{new Date(post.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}</span>
                                             <span className="flex items-center gap-1">
                                                 <Clock className="w-3 h-3" />
@@ -200,8 +195,9 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
             </section>
 
             {/* Newsletter CTA */}
-            <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+            <section className="relative py-20 overflow-hidden bg-[#0D0D0D] dark-cta-section">
+                <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#4285F4]/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#34A853]/10 rounded-full blur-[120px]" />
                 <div className="relative max-w-3xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <h2 className="text-3xl font-display font-bold text-white mb-4">
@@ -214,7 +210,7 @@ export default function BlogPageClient({ allPosts }: BlogPageClientProps) {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="input-premium flex-grow"
+                                className="flex-grow px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#4285F4] transition-colors"
                             />
                             <button type="submit" className="btn-primary whitespace-nowrap">
                                 Subscribe

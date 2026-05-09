@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
@@ -190,7 +190,7 @@ export default function N8nWorkflowAutomationPage() {
             {/* Hero */}
             <section className="relative py-24 md:py-32 overflow-hidden">
                 <div className="absolute inset-0 bg-dark-950">
-                    <div className="absolute inset-0 bg-premium-pattern" />
+                    <div className="absolute inset-0 bg-white" />
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-600/10 rounded-full blur-[120px]" />
                     <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[120px]" />
                 </div>
@@ -199,8 +199,8 @@ export default function N8nWorkflowAutomationPage() {
                         <span className="inline-block text-sm font-semibold text-accent-400 uppercase tracking-wider mb-4">
                             n8n Workflow Automation
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                            Workflows That Run While <span className="text-gradient">You Sleep</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+                            Workflows That Run While <span className="text-[#4285F4]">You Sleep</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
                             We build n8n workflows that connect your apps, move your data, and handle the boring stuff automatically.
@@ -220,11 +220,11 @@ export default function N8nWorkflowAutomationPage() {
 
             {/* What Is It */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection>
                         <article className="prose prose-invert prose-lg max-w-none">
-                            <h2 className="text-3xl font-display font-bold text-white mb-6 text-center">
+                            <h2 className="text-3xl font-display font-bold text-gray-900 mb-6 text-center">
                                 What Is n8n Workflow Automation?
                             </h2>
                             <div className="glass-card p-8 space-y-5 text-gray-300 leading-relaxed">
@@ -232,7 +232,7 @@ export default function N8nWorkflowAutomationPage() {
                                     Think of a workflow as a set of instructions: <em>&ldquo;When this happens, do these things in this order.&rdquo;</em> That&apos;s it. No magic, no jargon.
                                 </p>
                                 <p>
-                                    <strong className="text-white">n8n</strong> is the platform we use to build those instructions. It&apos;s open-source, incredibly flexible, and connects to over 400 apps your business probably already uses — Google Sheets, Slack, HubSpot, Shopify, WhatsApp, you name it.
+                                    <strong className="text-gray-900">n8n</strong> is the platform we use to build those instructions. It&apos;s open-source, incredibly flexible, and connects to over 400 apps your business probably already uses — Google Sheets, Slack, HubSpot, Shopify, WhatsApp, you name it.
                                 </p>
                                 <p>
                                     The difference between doing this yourself and hiring us? We&apos;ve built hundreds of these. We know what breaks, what scales, and what saves the most time. You get a workflow that works perfectly from day one — not a DIY experiment that falls apart when your data gets messy.
@@ -248,10 +248,10 @@ export default function N8nWorkflowAutomationPage() {
                 <div className="absolute inset-0 bg-dark-950" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Types of Workflows We Build
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             Every business is different. Here are the most common workflow patterns we deliver.
                         </p>
                     </AnimatedSection>
@@ -259,10 +259,10 @@ export default function N8nWorkflowAutomationPage() {
                         {workflowTypes.map((type, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
                                 <div className="glass-card p-6 h-full">
-                                    <div className="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-4">
-                                        <type.icon className="w-6 h-6 text-accent-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-4">
+                                        <type.icon className="w-6 h-6 text-[#4285F4]" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">{type.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{type.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed">{type.description}</p>
                                 </div>
                             </AnimatedSection>
@@ -273,13 +273,13 @@ export default function N8nWorkflowAutomationPage() {
 
             {/* Use Cases */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Real Workflow Use Cases
                         </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto">
                             These aren&apos;t hypothetical. These are workflows we build every week for real businesses.
                         </p>
                     </AnimatedSection>
@@ -287,7 +287,7 @@ export default function N8nWorkflowAutomationPage() {
                         {useCases.map((useCase, index) => (
                             <AnimatedSection key={index} delay={index * 0.1}>
                                 <div className="glass-card p-6 h-full">
-                                    <h3 className="text-lg font-semibold text-white mb-4">{useCase.title}</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-4">{useCase.title}</h3>
                                     <ul className="space-y-2">
                                         {useCase.items.map((item, i) => (
                                             <li key={i} className="flex items-start gap-2 text-sm text-gray-400">
@@ -327,7 +327,7 @@ export default function N8nWorkflowAutomationPage() {
                                             <th className="text-center p-4 text-gray-400 font-medium">Make</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="text-gray-300">
+                                    <tbody className="text-gray-700">
                                         {[
                                             ["Self-hosting option", "✅", "❌", "❌"],
                                             ["Complex logic & loops", "✅", "Limited", "✅"],
@@ -340,7 +340,7 @@ export default function N8nWorkflowAutomationPage() {
                                         ].map((row, i) => (
                                             <tr key={i} className="border-b border-white/5">
                                                 <td className="p-4 font-medium text-white">{row[0]}</td>
-                                                <td className="p-4 text-center text-accent-400">{row[1]}</td>
+                                                <td className="p-4 text-center text-[#4285F4]">{row[1]}</td>
                                                 <td className="p-4 text-center">{row[2]}</td>
                                                 <td className="p-4 text-center">{row[3]}</td>
                                             </tr>
@@ -355,10 +355,10 @@ export default function N8nWorkflowAutomationPage() {
 
             {/* FAQ */}
             <section className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-dark-900/50" />
+                <div className="absolute inset-0 bg-gray-50" />
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <AnimatedSection className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
                             Common Questions About Workflow Automation
                         </h2>
                     </AnimatedSection>
@@ -366,7 +366,7 @@ export default function N8nWorkflowAutomationPage() {
                         {faqs.map((faq, index) => (
                             <AnimatedSection key={index} delay={index * 0.05}>
                                 <details className="group glass-card overflow-hidden">
-                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-accent-300 transition-colors">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-[#4285F4] transition-colors">
                                         {faq.question}
                                         <ArrowRight className="w-5 h-5 text-accent-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-4" />
                                     </summary>
@@ -380,11 +380,11 @@ export default function N8nWorkflowAutomationPage() {
 
             {/* CTA */}
             <section className="relative py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-950/50 via-dark-950 to-primary-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-br [#4285F4]" />
                 <div className="relative max-w-4xl mx-auto px-4 text-center">
                     <AnimatedSection>
                         <Workflow className="w-12 h-12 text-accent-400 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                             Let&apos;s Build Your First Workflow
                         </h2>
                         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
